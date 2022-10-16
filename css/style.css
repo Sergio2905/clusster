@@ -313,6 +313,8 @@ body._lock {
   flex: 0 0 320px;
   align-self: flex-start;
   z-index: 5;
+  max-height: calc(100vh - 154px);
+  overflow-y: auto;
 }
 
 .menu__list {
