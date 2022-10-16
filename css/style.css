@@ -315,6 +315,11 @@ body._lock {
   z-index: 5;
   max-height: calc(100vh - 154px);
   overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
 }
 
 .menu__list {
