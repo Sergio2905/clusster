@@ -120,7 +120,7 @@ body._lock {
   width: 100%;
   height: calc(100vh - 94px);
   padding-bottom: 30px;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .page__body {
@@ -1028,6 +1028,7 @@ body._lock {
 @media (max-width: 992px) {
   .page {
     top: 65px;
+    height: calc(100vh - 65px);
   }
 
   .page__body {
@@ -1101,6 +1102,7 @@ body._lock {
     width: 100%;
     padding: 16px 23px;
     top: 20px;
+    max-height: calc(100vh - 65px - 40px);
   }
 
   .menu__list {
@@ -1277,6 +1279,7 @@ body._lock {
 @media (max-width: 480px) {
   .page {
     top: 50px;
+    height: calc(100vh - 50px);
   }
 
   .page__body {
@@ -1314,6 +1317,7 @@ body._lock {
 
   .menu {
     top: 10px;
+    max-height: calc(100vh - 50px - 20px);
   }
 
   .post__option {
