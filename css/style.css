@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400%3b600%3b700%3b800&display=swap");
 
 * {
@@ -173,6 +175,201 @@ body._lock {
   padding: 30px 45px;
 }
 
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  line-height: 150%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.popup .messages__body {
+  display: flex;
+  position: static;
+  max-height: unset;
+}
+
+.popup .messages__body svg {
+  fill: #86BB64;
+}
+
+.popup .messages__details {
+  gap: 0;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__content {
+  transform: translate(0, 0);
+  opacity: 1;
+  animation: popupShow 1s linear;
+}
+
+.popup__body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.popup__content {
+  max-width: 680px;
+  position: relative;
+  opacity: 1;
+  background: #fff;
+  border-radius: 10px;
+  animation: popupHide 0.3s linear forwards;
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.popup-confirm .popup__content {
+  padding: 60px 50px;
+}
+
+.popup-confirm .close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.popup-confirm__title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+}
+
+.popup-confirm__text {
+  color: #8E8E8E;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto;
+}
+
+.popup-confirm__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-confirm__btn_white {
+  font-weight: 600;
+  color: #86BB64;
+  width: 160px;
+  height: 54px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #86BB64;
+  transition: all 0.2s linear;
+}
+
+.popup-confirm__btn_white:hover {
+  color: #3B7319;
+  border: 2px solid #3B7319;
+}
+
+.popup-confirm__btn_white.close-popup {
+  position: static;
+}
+
+.popup-confirm__btn_green {
+  background: #86BB64;
+  border-radius: 10px;
+  width: 160px;
+  height: 54px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.popup-confirm__btn_green:hover {
+  background: #3B7319;
+}
+
+.popup-confirm__sign {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid #86BB64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.popup-confirm__sign svg {
+  width: 34px;
+  height: 34px;
+  fill: #86BB64;
+}
+
+@keyframes popupShow {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  30% {
+    transform: translate(0, 15px);
+  }
+
+  40% {
+    transform: translate(0, -7px);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+
+  60% {
+    transform: translate(0, -4px);
+  }
+
+  70% {
+    transform: translate(0, 3px);
+  }
+
+  80% {
+    transform: translate(0, -2px);
+  }
+
+  90% {
+    transform: translate(0, 1px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes popupHide {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 120%);
+    opacity: 0;
+  }
+}
+
 .header {
   background: #fff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
@@ -294,6 +491,10 @@ body._lock {
 }
 
 .menu-header__icon:hover .messages__info svg {
+  fill: #292929;
+}
+
+.menu-header__icon:hover .messages__menu svg {
   fill: #292929;
 }
 
@@ -435,6 +636,7 @@ body._lock {
 .messages__item {
   display: flex;
   align-items: flex-start;
+  padding-right: 10px;
 }
 
 .messages__item:not(:last-of-type) {
@@ -447,6 +649,7 @@ body._lock {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
+  flex: 0 0 42px;
 }
 
 .messages__avatar svg {
@@ -462,6 +665,7 @@ body._lock {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  flex: 1 1 auto;
 }
 
 .messages__user {
@@ -491,6 +695,11 @@ body._lock {
   color: #8E8E8E;
 }
 
+.messages__mutual {
+  font-size: 0.6666666667rem;
+  color: #8E8E8E;
+}
+
 .messages__footer {
   display: flex;
   justify-content: center;
@@ -517,6 +726,51 @@ body._lock {
 
 .messages__all:hover {
   color: #3B7319;
+}
+
+.messages__link {
+  cursor: pointer;
+}
+
+.messages__btn {
+  min-width: 190px;
+  height: 47px;
+  margin-left: 10px;
+}
+
+.messages__menu {
+  width: 34px;
+  height: 34px;
+}
+
+.messages__menu svg {
+  width: 80%;
+  height: 80%;
+  fill: #292929;
+}
+
+.messages__image {
+  height: 73px;
+  border: 1px solid #CAC8C8;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 0 0 73px;
+}
+
+.messages__image img {
+  max-width: 100%;
+}
+
+.messages__text {
+  font-size: 0.6666666667rem;
+  color: #292929;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu {
@@ -1004,6 +1258,20 @@ body._lock {
   align-items: center;
 }
 
+.comments__form .messages__body {
+  left: 0;
+  top: unset;
+  bottom: 120%;
+  max-width: 375px;
+  max-height: 275px;
+  padding: 16px;
+}
+
+.comments__form .messages__items {
+  margin-top: 0;
+  flex: 1 1 auto;
+}
+
 .comments__form input {
   border: none;
   background: none;
@@ -1043,6 +1311,10 @@ body._lock {
   height: 100%;
 }
 
+.emoji {
+  position: relative;
+}
+
 .emoji__icon {
   width: 22px;
   height: 22px;
@@ -1057,13 +1329,19 @@ body._lock {
 }
 
 .emoji__list {
-  padding: 10px 12px;
-  position: absolute;
-  top: 100%;
-  right: 0;
   display: none;
   gap: 10px;
-  background: #fff;
+  position: absolute;
+  top: 100%;
+  right: -20px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 10px 10px 10px;
+  padding: 15px 25px;
+}
+
+.emoji__list.active {
+  display: flex;
 }
 
 .emoji__item {
