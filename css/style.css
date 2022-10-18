@@ -1787,8 +1787,8 @@ body._lock {
     height: 16px;
   }
 
-  .menu__image img {
-    width: 16px;
+  .menu__image {
+    max-width: 16px;
     height: 16px;
   }
 
