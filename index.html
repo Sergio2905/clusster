@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221018211009">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221020175159">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -13,7 +13,7 @@
 		<header class="header">
     <div class="header__container container">
         <div class="header__body">
-            <a href="#" class="header__logo">
+            <a href="./" class="header__logo">
                 <img src="img/logo.svg" alt="Logo">
             </a>
             <a href="#" class="header__logo_mob">
@@ -543,7 +543,7 @@
 				<div class="page__body">
 					<div class="page__menu menu">
 						<div class="menu__header">
-							<a href="#" class="menu__link active">
+							<a href="profile.html" class="menu__link active">
 								<span class="menu__image">
 									<picture><source srcset="img/menu/avatar.webp" type="image/webp"><img src="img/menu/avatar.png" alt="Avatar"></picture>
 								</span>
@@ -1927,8 +1927,355 @@
     </div>
 </div>
 
+<div class="popup viewer" id="viewer">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="viewer__body">
+                <div class="viewer__photo photo-viewer">
+                    <div class="photo-viewer__slider">
+                        <div class="photo-viewer__wrapper swiper-wrapper">
+                            <!--<div class="photo-viewer__slide swiper-slide">
+                                <div class="photo-viewer__photo">
+                                    <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Photo"></picture>
+                                </div>
+                            </div>
+                            <div class="photo-viewer__slide swiper-slide">
+                                <div class="photo-viewer__photo">
+                                    <picture><source srcset="img/profile/photos/photo2.webp" type="image/webp"><img src="img/profile/photos/photo2.jpg" alt="Photo"></picture>
+                                </div>
+                            </div>
+                            <div class="photo-viewer__slide swiper-slide">
+                                <div class="photo-viewer__photo">
+                                    <picture><source srcset="img/profile/photos/photo3.webp" type="image/webp"><img src="img/profile/photos/photo3.jpg" alt="Photo"></picture>
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="photo-viewer__navigation">
+                            <div class="photo-viewer__prev">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="photo-viewer__next">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="photo-viewer__close close-popup">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="viewer__comments comments-viewer">
+                    <div class="comments-viewer__slider">
+                        <div class="comments-viewer__wrapper swiper-wrapper">
+                            <!--<div class="comments-viewer__slide swiper-slide">
+                                <div class="comments-viewer__post content__post post active">
+                                    <div class="post__header">
+                                        <div class="post__author author">
+                                            <div class="author__avatar">
+                                                <picture>
+                                                    <source srcset="img/Avatar.webp" type="image/webp"><img
+                                                        src="img/Avatar.png" alt="Avatar">
+                                                </picture>
+                                            </div>
+                                            <div class="author__details">
+                                                <div class="author__header">
+                                                    <div class="author__name">Игорь Бандера</div>
+                                                    <div class="author__status">
+                                                        <svg>
+                                                            <use xlink:="" href="img/icons/icons.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="author__time">11 хвилин тому</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__body">
+                                        <div class="post__content">
+                                            <div class="post__message">
+                                                Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+                                                безкоштовно!
+                                            </div>
+                                            <div class="post__info">
+                                                <div class="post__likes">
+                                                    <button type="button" class="post__like">
+                                                        <svg>
+                                                            <use xlink:="" href="img/icons/icons.svg#like"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post__footer">
+                                            <a href="#" class="post__option">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#vote"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="post__option">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="post__option">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#share"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="post__comments comments">
+                                            <div class="comments__item">
+                                                <div class="comments__avatar">
+                                                    <picture>
+                                                        <source srcset="img/main/avatar2.webp" type="image/webp"><img
+                                                            src="img/main/avatar2.png" alt="Avatar">
+                                                    </picture>
+                                                </div>
+                                                <div class="comments__details">
+                                                    <div class="comments__name">
+                                                        Мария Свиженец
+                                                    </div>
+                                                    <div class="comments__message">
+                                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать
+                                                        несколько абзацев более менее осмысленного текста рыбы на
+                                                        русском
+                                                        языке,
+                                                        а начинающему оратору отточить навык публичных выступлений в
+                                                        домашних
+                                                        условиях.
+                                                        <a href="#likes" class="comments__likes popup-link">
+                                                            <span class="comments__like">
+                                                                <svg>
+                                                                    <use xlink:="" href="img/icons/icons.svg#like">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                            <span>25</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments__item">
+                                                <div class="comments__avatar">
+                                                    <picture>
+                                                        <source srcset="img/main/avatar3.webp" type="image/webp"><img
+                                                            src="img/main/avatar3.png" alt="Avatar">
+                                                    </picture>
+                                                </div>
+                                                <div class="comments__details">
+                                                    <div class="comments__name">
+                                                        Ольга Деркачук
+                                                    </div>
+                                                    <div class="comments__message">
+                                                        Сайт рыбатекст поможет дизайнеру
+                                                        <a href="#likes" class="comments__likes popup-link">
+                                                            <span class="comments__like">
+                                                                <svg>
+                                                                    <use xlink:="" href="img/icons/icons.svg#like">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                            <span>15</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments__item">
+                                                <div class="comments__avatar">
+                                                    <picture>
+                                                        <source srcset="img/main/avatar3.webp" type="image/webp"><img
+                                                            src="img/main/avatar3.png" alt="Avatar">
+                                                    </picture>
+                                                </div>
+                                                <div class="comments__details">
+                                                    <div class="comments__name">
+                                                        Ольга Деркачук
+                                                    </div>
+                                                    <div class="comments__message">
+                                                        <span class="comments__reply">@Мария Свиженец</span> рыбатекст
+                                                        поможет дизайнеру,
+                                                        верстальщику,
+                                                        вебмастеру сгенерировать несколько абзацев более менее
+                                                        осмысленного
+                                                        текста рыбы на русском языке, а начинающему.
+                                                        <a href="#likes" class="comments__likes popup-link">
+                                                            <span class="comments__like">
+                                                                <svg>
+                                                                    <use xlink:="" href="img/icons/icons.svg#like">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                            <span>15</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="comments__all">
+                                                Переглянути попередні коментарі
+                                            </a>
+                                            <div class="comments__new">
+                                                <div class="comments__avatar">
+                                                    <picture>
+                                                        <source srcset="img/Avatar.webp" type="image/webp"><img
+                                                            src="img/Avatar.png" alt="Avatar">
+                                                    </picture>
+                                                </div>
+                                                <div class="comments__creation">
+                                                    <div class="comments__form messages">
+                                                        <input type="text" placeholder="Напишіть свій коментарій">
+                                                        <div class="messages__body">
+                                                            <div class="messages__items">
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar3.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar3.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar2.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar2.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar3.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar3.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar2.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar2.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar3.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar3.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="messages__item">
+                                                                    <div class="messages__avatar">
+                                                                        <picture>
+                                                                            <source srcset="img/main/avatar2.webp"
+                                                                                type="image/webp"><img
+                                                                                src="img/main/avatar2.png" alt="Avatar">
+                                                                        </picture>
+                                                                    </div>
+                                                                    <div class="messages__details">
+                                                                        <div class="messages__user">Джигурда
+                                                                            Джигурдинович
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <input type="file" id="file1">
+                                                        <div class="comments__emoji emoji">
+                                                            <button type="button" class="emoji__icon">
+                                                                <svg>
+                                                                    <use xlink:="" href="img/icons/icons.svg#emoji">
+                                                                    </use>
+                                                                </svg>
+                                                            </button>
+                                                            <ul class="emoji__list">
+                                                                <li class="emoji__item">🙂</li>
+                                                                <li class="emoji__item">😢</li>
+                                                                <li class="emoji__item">😜</li>
+                                                                <li class="emoji__item">🤔</li>
+                                                                <li class="emoji__item">🤑</li>
+                                                                <li class="emoji__item">😐</li>
+                                                                <li class="emoji__item">😍</li>
+                                                                <li class="emoji__item">😘</li>
+                                                                <li class="emoji__item">😇</li>
+                                                                <li class="emoji__item">😆</li>
+                                                                <li class="emoji__item">😡</li>
+                                                                <li class="emoji__item">🤕</li>
+                                                                <li class="emoji__item">🤩</li>
+                                                                <li class="emoji__item">😅</li>
+                                                                <li class="emoji__item">👍</li>
+                                                                <li class="emoji__item">👎</li>
+                                                            </ul>
+                                                        </div>
+                                                        <label for="file1" class="comments__camera">
+                                                            <svg>
+                                                                <use xlink:="" href="img/icons/icons.svg#camera"></use>
+                                                            </svg>
+                                                        </label>
+                                                    </div>
+                                                    <div class="comments__help">
+                                                        Натисніть ENTER, щоб надіслати коментар.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments-viewer__slide swiper-slide">
+                                Коммент 2
+                            </div>
+                            <div class="comments-viewer__slide swiper-slide">
+                                Коммент 3
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 	</div> <!-- wrapper -->
-	<script src="js/app.min.js?_v=20221018211009"></script>
+	<script src="js/app.min.js?_v=20221020175159"></script>
 </body>
 
 </html>
