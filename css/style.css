@@ -3507,25 +3507,126 @@ body._lock {
   text-align: center;
 }
 
-.rating__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .rating__number {
   font-weight: 600;
   font-size: 0.6666666667rem;
-  color: #292929;
+  color: #8E8E8E;
+  width: 44px;
+  display: flex;
+  justify-content: center;
 }
 
 .rating__partner {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.rating__circle {
+  font-size: 0.6666666667rem;
+  color: #8E8E8E;
+  width: 69px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating__sum {
+  font-size: 0.6666666667rem;
+  color: #8E8E8E;
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(133, 187, 101, 0.08);
+  height: 100%;
+}
+
+.rating__friends {
+  font-size: 0.6666666667rem;
+  color: #8E8E8E;
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(133, 187, 101, 0.15);
+  height: 100%;
+}
+
+.rating__profit {
+  font-size: 0.6666666667rem;
+  color: #8E8E8E;
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(133, 187, 101, 0.08);
+  height: 100%;
+}
+
+.rating__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.rating__item:hover {
+  background: #EBF4E5;
+}
+
+.rating__item.fixed {
+  border-top: 1px solid #86BB64;
+  border-bottom: 1px solid #86BB64;
+}
+
+.rating__photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 5px;
+}
+
+.rating__photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rating__name {
   font-weight: 600;
   font-size: 0.6666666667rem;
   color: #292929;
 }
 
-.rating__circle {
+.header-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.header-rating__number {
+  font-weight: 600;
+  font-size: 0.6666666667rem;
+  color: #292929;
+  width: 44px;
+  text-align: center;
+}
+
+.header-rating__partner {
+  font-weight: 600;
+  font-size: 0.6666666667rem;
+  color: #292929;
+  flex: 1 1 auto;
+}
+
+.header-rating__circle {
   width: 40px;
   height: 40px;
   font-size: 0.6666666667rem;
@@ -3534,10 +3635,10 @@ body._lock {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  width: 69px;
 }
 
-.rating__circle span {
+.header-rating__circle span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3546,36 +3647,44 @@ body._lock {
   position: absolute;
 }
 
-.rating__circle span.active {
+.header-rating__circle span.active {
   border: 1.5px solid #86BB64;
 }
 
-.rating__circle span:nth-child(1) {
+.header-rating__circle span:nth-child(1) {
   width: 16px;
   height: 16px;
 }
 
-.rating__circle span:nth-child(2) {
+.header-rating__circle span:nth-child(2) {
   width: 22px;
   height: 22px;
 }
 
-.rating__circle span:nth-child(3) {
+.header-rating__circle span:nth-child(3) {
   width: 28px;
   height: 28px;
 }
 
-.rating__circle span:nth-child(4) {
+.header-rating__circle span:nth-child(4) {
   width: 34px;
   height: 34px;
 }
 
-.rating__circle span:nth-child(5) {
+.header-rating__circle span:nth-child(5) {
   width: 40px;
   height: 40px;
 }
 
-.rating__sum {
+.header-rating__sum {
+  width: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-rating__sum span {
+  display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -3585,22 +3694,24 @@ body._lock {
   align-items: center;
 }
 
-.rating__sum svg {
+.header-rating__sum svg {
   width: 30%;
   height: 30%;
   stroke: #fff;
 }
 
-.rating__friends {
+.header-rating__friends {
   font-weight: 600;
   font-size: 0.6666666667rem;
   color: #292929;
+  width: 99px;
 }
 
-.rating__profit {
+.header-rating__profit {
   font-weight: 600;
   font-size: 0.6666666667rem;
   color: #292929;
+  width: 99px;
 }
 
 /**
