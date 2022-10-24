@@ -1,0 +1,15 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M55 52H53V54H55V52Z" fill="white"/>
+<path d="M58 48H56V50H58V48Z" fill="white"/>
+<path d="M51 55H49V57H51V55Z" fill="white"/>
+<path d="M36.727 11.999C34.089 10.718 31.129 10 28 10C16.954 10 8 18.954 8 30C8 41.046 16.954 50 28 50C36.184 50 43.219 45.089 46.315 38.048L43.611 36.921C43.252 36.77 43 36.414 43 36C43 35.679 43.152 35.393 43.387 35.21L52.382 28.214C52.553 28.08 52.767 28 53 28C53.468 28 53.862 28.322 53.97 28.757L56.97 40.757C56.99 40.834 57 40.916 57 41C57 41.552 56.552 42 56 42C55.862 42 55.73 41.972 55.611 41.921L52.78 40.741C48.626 50.309 39.095 57 28 57C13.088 57 1 44.912 1 30C1 23.266 3.465 17.108 7.542 12.379" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M40.8105 14.6405C40.2995 14.2135 39.7665 13.8115 39.2145 13.4375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.6055 18.8477C44.2165 18.2697 43.7975 17.7127 43.3525 17.1797" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M48.6572 12.613C43.7052 6.735 36.2882 3 28.0002 3C21.2892 3 15.1512 5.448 10.4282 9.5" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M51.5781 16.8338C51.2621 16.2688 50.9261 15.7158 50.5711 15.1758" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M53.4111 20.8529C53.2061 20.2839 52.9821 19.7229 52.7411 19.1719" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M19.5 39H34.5C35.88 39 37 37.88 37 36.5V26.5C37 25.12 35.88 24 34.5 24H19.5C18.12 24 17 25.12 17 26.5V36.5C17 37.88 18.12 39 19.5 39Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M30.75 24V20.25C30.75 19.5588 30.1912 19 29.5 19H24.5C23.8088 19 23.25 19.5588 23.25 20.25V24" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M18.0559 24.4609L22.4996 30.4834C22.9709 31.1209 23.7184 31.4984 24.5121 31.4984H29.4871C30.2809 31.4984 31.0271 31.1209 31.4984 30.4822L35.9434 24.4609" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27 35.25V31.5" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
