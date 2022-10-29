@@ -649,7 +649,7 @@
                                     <span>Мої кола</span>
                                 </a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item active">
                                 <a href="tasks.html" class="menu__link">
                                     <svg>
                                         <use xlink: href="img/icons/icons.svg#target"></use>
@@ -673,7 +673,7 @@
                                     <span>Калькулятор</span>
                                 </a>
                             </li>
-                            <li class="menu__item active">
+                            <li class="menu__item">
                                 <a href="faq.html" class="menu__link">
                                     <svg class="stroke">
                                         <use xlink: href="img/icons/icons.svg#faq"></use>
@@ -695,233 +695,46 @@
                     <div class="page__content content">
                         <div class="content__body">
                             <h1 class="content__title title">
-                                Питання та відповіді
+                                Завдання
                                 <div class="content__prompt prompt">
                                     <div class="prompt__icon">
                                         <span>i</span>
                                     </div>
                                     <div class="prompt__info">
-                                        Тут ви знайдете відповіді на найчастіші питання
+                                        <p class="bold">Завдання:</p>
+                                        <p>
+                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
+                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
+                                        </p>
+                                        <p>
+                                            Більш детально про Виплату одиниць читайте у розділі <span
+                                                class="bold">Питаннях та відповідях</span>
+                                        </p>
                                     </div>
                                 </div>
                             </h1>
 
-                            <div class="content__faq faq" data-spollers data-one-spoller>
-                                <h3 class="faq__intro">Виберіть категорію та питання на яке потрібна відповідь</h3>
-
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Мої кола</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Як додати людей мого кола?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Якщо доставка здійснювалася нашим водієм, і товар прийшов в незадовільному
-                                            вигляді,
-                                            слід вжити таких заходів:
-                                            Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте;
-                                            Зробити фото пошкодженого товару;
-                                            Залишити товар у водія, для подальшого повернення
-                                            Додаткову доставку ми оплатимо самі.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що таке друг, треттє....шосте коло?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Скільки всього clusster має кіл?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я впливати на інші кола окрім мого?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, magni.
-                                            Voluptatem omnis, blanditiis velit sit commodi ducimus amet deserunt quos!
+                            <div class="content__tasks tasks__single tasks">
+                                <div class="tasks__block">
+                                    <h2 class="tasks__title">Перша
+                                        абонплата</h2>
+                                    <div class="tasks__items">
+                                        <a href="#task-done" class="tasks__item done popup-link">
+                                            <div class="tasks__image">
+                                                <img src="img/tasks/Money transfer.svg" alt="Task">
+                                            </div>
+                                            <div class="tasks__desc">
+                                                Поповніть свій баланс вперше, для можливості сплати щомісячної абонплати в розмірі 10 одиниць.
+                                            </div>
+                                        </a>
+                                        <div class="tasks__bg">
+                                            <img src="img/tasks/task_bg.svg" alt="Background">
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Розсилка</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci
-                                            iusto
-                                            esse quos necessitatibus accusamus dolor distinctio, neque repellat dolorem
-                                            omnis ad est tenetur soluta doloribus officia minima aut voluptate.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, magni.
-                                            Voluptatem omnis, blanditiis velit sit commodi ducimus amet deserunt quos!
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Калькулятор</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci
-                                            iusto
-                                            esse quos necessitatibus accusamus dolor distinctio, neque repellat dolorem
-                                            omnis ad est tenetur soluta doloribus officia minima aut voluptate.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
 
-                        </div> <!-- content__body -->
+                        </div> <!-- content__body --> 
                     </div> <!-- content -->
 
                 </div> <!-- page__body -->

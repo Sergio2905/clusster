@@ -641,7 +641,7 @@
                                     <span>Розсилання</span>
                                 </a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item active">
                                 <a href="circles.html" class="menu__link">
                                     <svg class="stroke">
                                         <use xlink: href="img/icons/icons.svg#circle"></use>
@@ -667,13 +667,13 @@
                             </li>
                             <li class="menu__item">
                                 <a href="calc.html" class="menu__link">
-                                    <svg>
+                                    <svg class="stroke">
                                         <use xlink: href="img/icons/icons.svg#calc"></use>
                                     </svg>
                                     <span>Калькулятор</span>
                                 </a>
                             </li>
-                            <li class="menu__item active">
+                            <li class="menu__item">
                                 <a href="faq.html" class="menu__link">
                                     <svg class="stroke">
                                         <use xlink: href="img/icons/icons.svg#faq"></use>
@@ -694,231 +694,885 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Питання та відповіді
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        Тут ви знайдете відповіді на найчастіші питання
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Мої кола</h1>
 
-                            <div class="content__faq faq" data-spollers data-one-spoller>
-                                <h3 class="faq__intro">Виберіть категорію та питання на яке потрібна відповідь</h3>
-
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Мої кола</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Як додати людей мого кола?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Якщо доставка здійснювалася нашим водієм, і товар прийшов в незадовільному
-                                            вигляді,
-                                            слід вжити таких заходів:
-                                            Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте;
-                                            Зробити фото пошкодженого товару;
-                                            Залишити товар у водія, для подальшого повернення
-                                            Додаткову доставку ми оплатимо самі.
+                            <div class="content__circles circles">
+                                <div class="circles__header">
+                                    <div class="circles__user">
+                                        <div class="circles__avatar">
+                                            <div class="circles__photo">
+                                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                            </div>
+                                            <div class="circles__header-count">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div class="circles__name">
+                                            Сергей Савчук
                                         </div>
                                     </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що таке друг, треттє....шосте коло?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
+                                    <div class="circles__referal referal-circles">
+                                        <span>Реферал:</span>
+                                        <div class="referal-circles__prompt prompt">
+                                            <div class="prompt__icon">
+                                                <span>i</span>
+                                            </div>
+                                            <div class="prompt__info">
+                                                <p>
+                                                    <span class="bold">Реферал</span>
+                                                    Це виплати, які здійснюються з вашого рахунку у кінці кожного
+                                                    місяця.
+                                                    Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
+                                                </p>
+                                                <p>
+                                                    Більш детально про Виплату одиниць читайте у розділі <span
+                                                        class="bold">
+                                                        Питаннях та
+                                                        відповідях
+                                                    </span>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Скільки всього clusster має кіл?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
+                                        <div class="referal-circles__avatar">
+                                            <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
                                         </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я впливати на інші кола окрім мого?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, magni.
-                                            Voluptatem omnis, blanditiis velit sit commodi ducimus amet deserunt quos!
+                                        <div class="referal-circles__name">
+                                            Iгнат Руминов
                                         </div>
                                     </div>
                                 </div>
+                                <div class="circles__tabs tabs" data-tabs="1">
+                                    <div class="tabs__header" data-tabs="1">
+                                        <div class="tabs__item _active" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">1</span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>36</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    <p>
+                                                        <span class="bold">Опис коло 1:</span>
+                                                        Це виплати, які здійснюються з вашого рахунку у кінці кожного
+                                                        місяця.
+                                                        Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до
+                                                        гривні.
+                                                    </p>
 
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Розсилка</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci
-                                            iusto
-                                            esse quos necessitatibus accusamus dolor distinctio, neque repellat dolorem
-                                            omnis ad est tenetur soluta doloribus officia minima aut voluptate.
+                                                    <p>
+                                                        Більш детально про Виплату одиниць читайте у розділі <span
+                                                            class="bold">
+                                                            Питаннях та відповідях </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">2</span>
+                                                <span class="active"></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>2</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                                    dolorum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">3</span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>2</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                                    dolorum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">4</span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>6</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                                    dolorum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">6</span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>6</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                                    dolorum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item empty" data-tabs="1">
+                                            <div class="circles__circle circle">
+                                                <span class="active">6</span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                            </div>
+                                            <div class="circles__count">
+                                                (<span>0</span>)
+                                            </div>
+                                            <div class="circles__prompt prompt">
+                                                <div class="prompt__icon">
+                                                    <span>i</span>
+                                                </div>
+                                                <div class="prompt__info">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                                    dolorum.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
+
+                                    <div class="tabs__body" data-tabs="1">
+                                        <div class="tabs__block _active" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>36</span>
+                                                </div>
+                                                <div class="circles__items">
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend5.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрій Кулявець
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend5.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрій Кулявець
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend5.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрій Кулявець
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
+                                        <div class="tabs__block" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="circles__items">
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, magni.
-                                            Voluptatem omnis, blanditiis velit sit commodi ducimus amet deserunt quos!
+                                        <div class="tabs__block" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="circles__items">
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__block" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>6</span>
+                                                </div>
+                                                <div class="circles__items">
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend5.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрій Кулявець
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__block" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>6</span>
+                                                </div>
+                                                <div class="circles__items">
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Игорь Бандера
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend3.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <div class="item-circles__photo">
+                                                                <img src="img/profile/friends/friend5.jpg"
+                                                                    alt="Avatar">
+                                                            </div>
+                                                            <div class="item-circles__count">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрій Кулявець
+                                                        </div>
+                                                    </div>
+                                                    <div class="circles__item item-circles">
+                                                        <div class="item-circles__avatar">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="item-circles__name">
+                                                            Андрей Андреев
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__block" data-tabs="1">
+                                            <div class="tabs__content">
+                                                <div class="circles__title">
+                                                    Учасники
+                                                    <span>0</span>
+                                                </div>
+                                                <div class="circles__no-ref">
+                                                    Ще немає рефералів
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="faq__block">
-                                    <h2 class="faq__title">Калькулятор</h2>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci
-                                            iusto
-                                            esse quos necessitatibus accusamus dolor distinctio, neque repellat dolorem
-                                            omnis ad est tenetur soluta doloribus officia minima aut voluptate.
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Чи можу я поміняти те, що залишилось після ремонту?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam itaque,
-                                            nulla dolorum, nam eum quo laborum odio nihil, tempore ipsa maiores
-                                            voluptate!
-                                            Consequuntur aut quae nostrum facere ad, earum veritatis. Odit consequuntur
-                                            iste
-                                            veritatis inventore, impedit, deserunt quae esse accusantium ratione
-                                            adipisci
-                                            iusto neque, dolorum assumenda! Dicta, dolorum quod!
-                                        </div>
-                                    </div>
-                                    <div class="faq__item">
-                                        <button class="faq__question" data-spoller>
-                                            Що робити, якщо мені привезли пошкоджений товар?
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="faq__answer">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis quae
-                                            soluta voluptate repudiandae dolore perferendis temporibus et reiciendis ad
-                                            minus ducimus exercitationem illum, eos assumenda veniam architecto
-                                            doloremque
-                                            fugiat consequatur alias! Molestias perspiciatis adipisci earum odit, sed,
-                                            debitis asperiores delectus veritatis quia accusamus voluptatibus explicabo
-                                            dolorum voluptate ut maiores officia repellat! Quaerat ducimus obcaecati
-                                            totam
-                                            beatae natus maxime deserunt corrupti nobis nemo pariatur doloremque quo
-                                            accusamus assumenda perspiciatis in at temporibus dicta recusandae nihil
-                                            tenetur
-                                            alias cum, dolores provident? Nostrum provident laborum id fugit sed tenetur
-                                            saepe iusto ducimus consequuntur, nihil nobis animi alias reprehenderit nemo
-                                            eum
-                                            impedit possimus.
-                                        </div>
-                                    </div>
-                                </div>
+                            <button class="content__more">
+                                <svg>
+                                    <use xlink:="" href="img/icons/icons.svg#refresh">
+                                    </use>
+                                </svg>
+                                <span>Завантажити ще</span>
+                            </button>
 
+                            <div class="content__navigation navigation">
+                                <a href="#" class="navigation__prev">
+                                    <svg>
+                                        <use xlink:="" href="img/icons/icons.svg#prev">
+                                        </use>
+                                    </svg>
+                                    Назад
+                                </a>
+                                <a href="#" class="navigation__page">1</a>
+                                <a href="#" class="navigation__page active">2</a>
+                                <a href="#" class="navigation__page">3</a>
+                                <a href="#" class="navigation__page">4</a>
+                                <a href="#" class="navigation__page">5</a>
+                                <a href="#" class="navigation__next">
+                                    Вперед
+                                    <svg>
+                                        <use xlink:="" href="img/icons/icons.svg#next">
+                                        </use>
+                                    </svg>
+                                </a>
                             </div>
 
                         </div> <!-- content__body -->
