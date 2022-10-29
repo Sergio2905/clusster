@@ -781,8 +781,8 @@ body._lock {
   position: absolute;
   bottom: 22px;
   right: 22px;
-  -webkit-mask: url("img/icons/icons.svg#check") center/cover no-repeat;
-          mask: url("img/icons/icons.svg#check") center/cover no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#check") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#check") center/cover no-repeat;
   background: #fff;
   z-index: 1;
 }
@@ -1900,8 +1900,8 @@ body._lock {
   width: 18px;
   height: 18px;
   transform: translate(0, -50%);
-  -webkit-mask: url("../../img/icons/icons.svg#arrow") center/cover no-repeat;
-          mask: url("../../img/icons/icons.svg#arrow") center/cover no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/cover no-repeat;
   background: #8E8E8E;
   transition: all 0.2s linear;
 }
