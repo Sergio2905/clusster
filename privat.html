@@ -626,67 +626,43 @@
                         </div>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="family-profile.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
-                                    </svg>
-                                    <span>Профіль</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#message"></use>
-                                    </svg>
-                                    <span>Розсилання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
+                                <a href="settings.html" class="menu__link">
                                     <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
+                                        <use xlink: href="img/icons/icons.svg#login"></use>
                                     </svg>
-                                    <span>Мої кола</span>
+                                    <span>Дані для входу</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="personal.html" class="menu__link">
+                                    <svg class="stroke">
+                                        <use xlink: href="img/icons/icons.svg#settings"></use>
+                                    </svg>
+                                    <span>Персональні дані</span>
                                 </a>
                             </li>
                             <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
+                                <a href="privat.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
+                                        <use xlink: href="img/icons/icons.svg#lock"></use>
                                     </svg>
-                                    <span>Завдання</span>
+                                    <span>Приватність</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
+                                <a href="block.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
+                                        <use xlink: href="img/icons/icons.svg#block"></use>
                                     </svg>
-                                    <span>Рейтинг</span>
+                                    <span>Блокування</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
+                                <a href="delete.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
+                                        <use xlink: href="img/icons/icons.svg#basket"></use>
                                     </svg>
-                                    <span>Калькулятор</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
-                                    </svg>
-                                    <span>Питання та відповіді</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
-                                    </svg>
-                                    <span>Про Clusster</span>
+                                    <span>Видалити акаунт</span>
                                 </a>
                             </li>
                         </ul>
@@ -694,47 +670,255 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Приватність</h1>
 
-                            <div class="content__tasks tasks__single tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перша
-                                        абонплата</h2>
-                                    <div class="tasks__items">
-                                        <a href="#task-done" class="tasks__item done popup-link">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Поповніть свій баланс вперше, для можливості сплати щомісячної абонплати в розмірі 10 одиниць.
-                                            </div>
-                                        </a>
-                                        <div class="tasks__bg">
-                                            <img src="img/tasks/task_bg.svg" alt="Background">
-                                        </div>
+                            <div class="content__settings settings">
+                                <form action="#" class="settings__form">
+                                    <div class="settings__block">
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Чат</div>
+                                                <div class="settings__select select-settings">
+													<span>Онлайн</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Онлайн</span>															
+															<input type="radio" name="status" value="online">
+														</div>
+														<div class="radio-options__item">
+															<span>Оффлайн</span>															
+															<input type="radio" name="status" value="offline">
+														</div>
+													</div>
+												</div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити вашу освіту</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                        </div> 
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість публікувати у вашій стрічці</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити ваших друзів </div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                        </div> 
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити дату вашого народження</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити ваші фото</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                        </div>   
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити ваше місце роботи</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити ваші улюбленні сторінки</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                        </div>     
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість бачити ваше місце перебування</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Можливість додати вас до груп</div>
+                                                <div class="settings__select select-settings">
+													<span>Для усіх</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item">
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+                                            </div>                                             
+                                        </div>                               
                                     </div>
-                                </div>
+                                    <div class="settings__btns settings__btns_wide">
+                                        <button type="button" class="settings__btn btn_green">Зберегти зміни</button>
+                                    </div>                                    
+                                </form>
                             </div>
 
-                        </div> <!-- content__body --> 
+                        </div> <!-- content__body -->
                     </div> <!-- content -->
 
                 </div> <!-- page__body -->

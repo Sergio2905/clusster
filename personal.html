@@ -626,67 +626,43 @@
                         </div>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="family-profile.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
-                                    </svg>
-                                    <span>Профіль</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#message"></use>
-                                    </svg>
-                                    <span>Розсилання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
+                                <a href="settings.html" class="menu__link">
                                     <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
+                                        <use xlink: href="img/icons/icons.svg#login"></use>
                                     </svg>
-                                    <span>Мої кола</span>
+                                    <span>Дані для входу</span>
                                 </a>
                             </li>
                             <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
-                                    </svg>
-                                    <span>Завдання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
-                                    </svg>
-                                    <span>Рейтинг</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
-                                    </svg>
-                                    <span>Калькулятор</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
+                                <a href="personal.html" class="menu__link">
                                     <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
+                                        <use xlink: href="img/icons/icons.svg#settings"></use>
                                     </svg>
-                                    <span>Питання та відповіді</span>
+                                    <span>Персональні дані</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
+                                <a href="privat.html" class="menu__link">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#lock"></use>
                                     </svg>
-                                    <span>Про Clusster</span>
+                                    <span>Приватність</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="block.html" class="menu__link">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#block"></use>
+                                    </svg>
+                                    <span>Блокування</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="delete.html" class="menu__link">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#basket"></use>
+                                    </svg>
+                                    <span>Видалити акаунт</span>
                                 </a>
                             </li>
                         </ul>
@@ -694,47 +670,198 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Персональні дані</h1>
 
-                            <div class="content__tasks tasks__single tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перша
-                                        абонплата</h2>
-                                    <div class="tasks__items">
-                                        <a href="#task-done" class="tasks__item done popup-link">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Поповніть свій баланс вперше, для можливості сплати щомісячної абонплати в розмірі 10 одиниць.
-                                            </div>
-                                        </a>
-                                        <div class="tasks__bg">
-                                            <img src="img/tasks/task_bg.svg" alt="Background">
-                                        </div>
+                            <div class="content__settings settings">
+                                <form action="#" class="settings__form">
+                                    <div class="settings__block">
+                                        <h2 class="settings__title">Нікнейм / Id</h2>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Ваш нікнейм</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Igorsletters_2022">
+                                                </div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Ваш id</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="20 125 236 213 012">
+                                                </div>
+                                            </div> 
+                                        </div>                                      
                                     </div>
-                                </div>
+                                    <div class="settings__block">
+                                        <h2 class="settings__title">Основна інформація</h2>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">ПІБ</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Прізвище, імя, по батькові">
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Стать</div>
+                                                <div class="settings__select select-settings">
+													<span>Чоловіча</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Чоловіча</span>															
+															<input type="radio" name="gender" value="male">
+														</div>
+														<div class="radio-options__item">
+															<span>Жіноча</span>															
+															<input type="radio" name="gender" value="female">
+														</div>
+													</div>
+												</div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Дата народження</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="__/__/____">
+                                                </div>
+                                            </div> 
+                                        </div>                                      
+                                    </div>
+                                    <div class="settings__block">
+                                        <h2 class="settings__title">Місце роботи</h2>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Назва компанії</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="ООО “СКАЙ-СІТІ”">
+                                                </div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Посада</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Маркетолог">
+                                                </div>
+                                            </div> 
+                                        </div>   
+                                        <div class="settings__btns settings__btns_wide">
+                                            <button type="button" class="settings__add">
+                                                <span>
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#plus"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>Додати ще</span>
+                                            </button>
+                                        </div>                                 
+                                    </div>
+                                    <div class="settings__block">
+                                        <h2 class="settings__title">Контактна інформація</h2>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Адреса</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Київ, вул Щорса 15, кв 687">
+                                                </div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Номер телефону</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="095 233 21 025">
+                                                </div>
+                                            </div> 
+                                        </div>                                   
+                                    </div>
+                                    <div class="settings__block">
+                                        <h2 class="settings__title">Місце навчання</h2>
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Рівень освіти</div>
+                                                <div class="settings__select select-settings">
+													<span>Неповна вища (незакінченна)</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="select-settings__list radio-options">
+														<div class="radio-options__item _active">
+															<span>Початкова</span>															
+															<input type="radio" name="education" value="elementary">
+														</div>
+														<div class="radio-options__item">
+															<span>Базова середня</span>															
+															<input type="radio" name="education" value="base-middle">
+														</div>
+														<div class="radio-options__item">
+															<span>Повна середня</span>															
+															<input type="radio" name="education" value="full-middle">
+														</div>
+														<div class="radio-options__item">
+															<span>Неповна вища (незакінченна)</span>															
+															<input type="radio" name="education" value="incomplete-higher">
+														</div>
+														<div class="radio-options__item">
+															<span>Бакалаврат</span>															
+															<input type="radio" name="education" value="bachelor">
+														</div>
+														<div class="radio-options__item">
+															<span>Магістратура</span>															
+															<input type="radio" name="education" value="magistracy">
+														</div>
+														<div class="radio-options__item">
+															<span>Докторантура</span>															
+															<input type="radio" name="education" value="doctoral">
+														</div>
+													</div>
+												</div>
+                                            </div> 
+                                        </div>   
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Навчальний заклад</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Академія МВД України">
+                                                </div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Факультет</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Факультит криміналістики">
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                        <div class="settings__wrapper">
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Кафедра / група / клас</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="Кафедра">
+                                                </div>
+                                            </div> 
+                                            <div class="settings__item">
+                                                <div class="settings__subtitle">Роки навчання</div>
+                                                <div class="settings__input">
+                                                    <input type="text" placeholder="2012-2018">
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                        <div class="settings__btns settings__btns_wide">
+                                            <button type="button" class="settings__add">
+                                                <span>
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#plus"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>Додати ще</span>
+                                            </button>
+                                        </div>                                 
+                                    </div>
+                                    <div class="settings__btns settings__btns_wide">
+                                        <button type="button" class="settings__btn btn_green">Зберегти зміни</button>
+                                    </div>                                    
+                                </form>
                             </div>
 
-                        </div> <!-- content__body --> 
+                        </div> <!-- content__body -->
                     </div> <!-- content -->
 
                 </div> <!-- page__body -->

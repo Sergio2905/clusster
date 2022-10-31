@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221029123211">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221031142418">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -13,10 +13,10 @@
         <header class="header">
     <div class="header__container container">
         <div class="header__body">
-            <a href="./" class="header__logo">
+            <a href="main.html" class="header__logo">
                 <img src="img/logo.svg" alt="Logo">
             </a>
-            <a href="#" class="header__logo_mob">
+            <a href="main.html" class="header__logo_mob">
                 <img src="img/logo-mob.svg" alt="Logo">
             </a>
             <a href="#" class="header__btn btn_green">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="messages__footer">
-                        <a href="#" class="messages__all">
+                        <a href="search.html" class="messages__all">
                             Переглянути усі результати
                         </a>
                     </div>
@@ -537,12 +537,12 @@
                     </div>
                     <ul class="options__list">
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="settings.html" class="options__link options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#settings"></use>
                                 </svg>
                                 <span>Налаштування</span>
-                            </button>
+                            </a>
                         </li>
                         <li class="options__item">
                             <button class="options__link options__link">
@@ -1810,7 +1810,8 @@
                 </svg>
             </a>
             <h2 class="popup-confirm__title">Видалити альбом?</h2>
-            <div class="popup-confirm__text">Ви дійсно хочите видалити альбом Допомога? Усі медіафайли із цього альбома
+            <div class="popup-confirm__text">Ви дійсно хочите видалити альбом Допомога? Усі медіафайли із цього
+                альбома
                 будуть також видалені.
             </div>
             <div class="popup-confirm__btns">
@@ -2093,7 +2094,7 @@
                 </svg>
             </a>
             <h2 class="popup-confirm__title">Поповнити баланс</h2>
-            <div class="popup-confirm__desc">1 одиниця =  50 грн
+            <div class="popup-confirm__desc">1 одиниця = 50 грн
             </div>
             <div class="popup-confirm__form">
                 <input type="text" value="10">
@@ -2120,9 +2121,46 @@
                     <use xlink: href="img/icons/icons.svg#vote"></use>
                 </svg>
             </div>
-            <div class="popup-confirm__text">Ваш баланс було поповнено 
+            <div class="popup-confirm__text">Ваш баланс було поповнено
                 на 10 одиниць!
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення акаунту</h2>
+            <div class="popup-confirm__text">Акаунт буде видалено,ви точно цього бажаєте?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-account" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Акаунт було видалено!</div>
         </div>
     </div>
 </div>
@@ -2170,7 +2208,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221029123211"></script>
+    <script src="js/app.min.js?_v=20221031142418"></script>
 </body>
 
 </html>

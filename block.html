@@ -626,67 +626,43 @@
                         </div>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="family-profile.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
-                                    </svg>
-                                    <span>Профіль</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#message"></use>
-                                    </svg>
-                                    <span>Розсилання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
+                                <a href="settings.html" class="menu__link">
                                     <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
+                                        <use xlink: href="img/icons/icons.svg#login"></use>
                                     </svg>
-                                    <span>Мої кола</span>
+                                    <span>Дані для входу</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="personal.html" class="menu__link">
+                                    <svg class="stroke">
+                                        <use xlink: href="img/icons/icons.svg#settings"></use>
+                                    </svg>
+                                    <span>Персональні дані</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="privat.html" class="menu__link">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#lock"></use>
+                                    </svg>
+                                    <span>Приватність</span>
                                 </a>
                             </li>
                             <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
+                                <a href="block.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
+                                        <use xlink: href="img/icons/icons.svg#block"></use>
                                     </svg>
-                                    <span>Завдання</span>
+                                    <span>Блокування</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
+                                <a href="delete.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
+                                        <use xlink: href="img/icons/icons.svg#basket"></use>
                                     </svg>
-                                    <span>Рейтинг</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
-                                    </svg>
-                                    <span>Калькулятор</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
-                                    </svg>
-                                    <span>Питання та відповіді</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
-                                    </svg>
-                                    <span>Про Clusster</span>
+                                    <span>Видалити акаунт</span>
                                 </a>
                             </li>
                         </ul>
@@ -694,47 +670,145 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Блокування</h1>
 
-                            <div class="content__tasks tasks__single tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перша
-                                        абонплата</h2>
-                                    <div class="tasks__items">
-                                        <a href="#task-done" class="tasks__item done popup-link">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
+                            <div class="content__settings settings">
+                                <div class="settings__intro">
+                                    <p>
+                                        Після того, як ви когось заблокуєте, людина більше не зможе бачити речі, які ви
+                                        розміщуєте
+                                        в своїй хронології подій.
+                                    </p>
+                                    <p>
+                                        Примітка: Не включає в себе додатки, ігри або групи, в яких ви разом берете
+                                        участь.
+                                    </p>
+                                </div>
+                                <div class="settings__block block">
+                                    <ul class="block__list">
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Андрей Андреев</div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Поповніть свій баланс вперше, для можливості сплати щомісячної абонплати в розмірі 10 одиниць.
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Сьюзен Майер</div>
                                             </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Андрей Кошенко</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Ольга Деркач</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Сьюзен Майер</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Андрей Андреев</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Сьюзен Майер</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Андрей Кошенко</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Ольга Деркач</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__user">
+                                                <div class="block__avatar">
+                                                    <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                </div>
+                                                <div class="block__name">Сьюзен Майер</div>
+                                            </div>
+                                            <button class="block__btn btn_dark">Розблокувати</button>
+                                        </li>
+                                    </ul>
+                                    <button class="block__more">
+                                        <svg>
+                                            <use xlink:="" href="img/icons/icons.svg#refresh">
+                                            </use>
+                                        </svg>
+                                        <span>Завантажити ще</span>
+                                    </button>
+                                    <div class="block__navigation navigation">
+                                        <a href="#" class="navigation__prev">
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                                </use>
+                                            </svg>
+                                            Назад
                                         </a>
-                                        <div class="tasks__bg">
-                                            <img src="img/tasks/task_bg.svg" alt="Background">
-                                        </div>
+                                        <a href="#" class="navigation__page">1</a>
+                                        <a href="#" class="navigation__page active">2</a>
+                                        <a href="#" class="navigation__page">3</a>
+                                        <a href="#" class="navigation__page">4</a>
+                                        <a href="#" class="navigation__page">5</a>
+                                        <a href="#" class="navigation__next">
+                                            Вперед
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#next">
+                                                </use>
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
-                        </div> <!-- content__body --> 
+                        </div> <!-- content__body -->
                     </div> <!-- content -->
 
                 </div> <!-- page__body -->

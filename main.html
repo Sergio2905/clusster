@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
+	<div class="wrapper">
+		<header class="header">
     <div class="header__container container">
         <div class="header__body">
             <a href="main.html" class="header__logo">
@@ -610,138 +610,1313 @@
     </div>
 </header>
 
-        <div class="page">
-            <div class="page__container container">
-                <div class="page__body">
+		<div class="page">
+			<div class="page__container container">
+				<div class="page__body">
+					<div class="page__menu menu">
+						<div class="menu__header">
+							<a href="profile.html" class="menu__link active">
+								<span class="menu__image">
+									<picture><source srcset="img/menu/avatar.webp" type="image/webp"><img src="img/menu/avatar.png" alt="Avatar"></picture>
+								</span>
+								<span>Игорь Бандера</span>
+							</a>
+							<button type="button" class="menu__icon"></button>
+						</div>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="family-profile.html" class="menu__link">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#family"></use>
+									</svg>
+									<span>Сім’я</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#message"></use>
+									</svg>
+									<span>Повідомлення</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#friends"></use>
+									</svg>
+									<span>Друзі</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#bookmark"></use>
+									</svg>
+									<span>Збережено</span>
+								</a>
+							</li>
+							<li class="menu__item" data-spollers>
+								<button type="button" class="menu__link" data-spoller>
+									<svg>
+										<use xlink: href="img/icons/icons.svg#pages"></use>
+									</svg>
+									<span>Сторінки</span>
+									<svg>
+										<use xlink: href="img/icons/icons.svg#arrow"></use>
+									</svg>
+								</button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a href="#" class="menu__link">
+											<span class="menu__image">
+												<picture><source srcset="img/menu/recipes.webp" type="image/webp"><img src="img/menu/recipes.png" alt="Recipes"></picture>
+											</span>
+											<span>Домашні пецепти</span>
+										</a>
+									</li>
+									<li class="menu__subitem">
+										<a href="#" class="menu__link">
+											<span class="menu__image">
+												<picture><source srcset="img/menu/economist.webp" type="image/webp"><img src="img/menu/economist.png" alt="Economist"></picture>
+											</span>
+											<span>Я економіст</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item" data-spollers>
+								<button type="button" class="menu__link" data-spoller>
+									<svg>
+										<use xlink: href="img/icons/icons.svg#groups"></use>
+									</svg>
+									<span>Групи</span>
+									<svg>
+										<use xlink: href="img/icons/icons.svg#arrow"></use>
+									</svg>
+								</button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a href="#" class="menu__link">
+											<span class="menu__image">
+												<picture><source srcset="img/menu/businesman.webp" type="image/webp"><img src="img/menu/businesman.png" alt="Businesman"></picture>
+											</span>
+											<span>Молоді бізнесмени</span>
+										</a>
+									</li>
+									<li class="menu__subitem">
+										<a href="#" class="menu__link">
+											<span class="menu__image">
+												<picture><source srcset="img/menu/invest.webp" type="image/webp"><img src="img/menu/invest.png" alt="Invest"></picture>
+											</span>
+											<span>Нові інвестиції</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 
-                    <div class="page__menu menu">
-                        <div class="menu__header">
-                            <a href="profile.html" class="menu__link active">
-                                <span class="menu__image">
-                                    <picture><source srcset="img/menu/avatar.webp" type="image/webp"><img src="img/menu/avatar.png" alt="Avatar"></picture>
-                                </span>
-                                <span>Игорь Бандера</span>
-                            </a>
-                            <button type="button" class="menu__icon"></button>
-                        </div>
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="family-profile.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
-                                    </svg>
-                                    <span>Профіль</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#message"></use>
-                                    </svg>
-                                    <span>Розсилання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
-                                    </svg>
-                                    <span>Мої кола</span>
-                                </a>
-                            </li>
-                            <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
-                                    </svg>
-                                    <span>Завдання</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
-                                    </svg>
-                                    <span>Рейтинг</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
-                                    </svg>
-                                    <span>Калькулятор</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
-                                    </svg>
-                                    <span>Питання та відповіді</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
-                                    </svg>
-                                    <span>Про Clusster</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+					<div class="page__content content">
+						<div class="content__body">
+							<h1 class="content__title title">Моя сторінка</h1>
+							<form class="content__post-new post-new">
+								<textarea class="post-new__message"
+									placeholder="Що у Вас нового? Напишіть повідомлення..."></textarea>
+								<div class="post-new__options">
+									<div class="post-new__add">
+										<div class="post-new__file">
+											<input type="file" id="file-main">
+											<label for="file-main" class="post-new__camera">
+												<span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#camera"></use>
+													</svg>
+												</span>
+												<span>Фото/відео</span>
+											</label>
+										</div>
+										<div class="post-new__emoji emoji-post">
+											<button type="button" class="emoji-post__btn">
+												<span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#emoji"></use>
+													</svg>
+												</span>
+												<span>Emoji</span>
+											</button>
+											<ul class="emoji-post__list">
+												<li class="emoji-post__item">🙂</li>
+												<li class="emoji-post__item">😢</li>
+												<li class="emoji-post__item">😜</li>
+												<li class="emoji-post__item">🤔</li>
+												<li class="emoji-post__item">🤑</li>
+												<li class="emoji-post__item">😐</li>
+												<li class="emoji-post__item">😍</li>
+												<li class="emoji-post__item">😘</li>
+												<li class="emoji-post__item">😇</li>
+												<li class="emoji-post__item">😆</li>
+												<li class="emoji-post__item">😡</li>
+												<li class="emoji-post__item">🤕</li>
+												<li class="emoji-post__item">🤩</li>
+												<li class="emoji-post__item">😅</li>
+												<li class="emoji-post__item">👍</li>
+												<li class="emoji-post__item">👎</li>
 
-                    <div class="page__content content">
-                        <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+											</ul>
+										</div>
+									</div>
+									<button type="submit" class="post-new__btn btn_green">Опублікувати</button>
+								</div>
+							</form>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<div class="author__visibility visibility">
+													<span>Друзі</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#friends"></use>
+													</svg>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<div class="visibility__list radio-options">
+														<div class="radio-options__item">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#earth"></use>
+															</svg>
+															<span>Для усіх</span>															
+															<input type="radio" name="visibility" value="all">
+														</div>
+														<div class="radio-options__item _active">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#friends"></use>
+															</svg>
+															<span>Друзі</span>															
+															<input type="radio" name="visibility" value="friends">
+														</div>
+														<div class="radio-options__item">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#lock"></use>
+															</svg>
+															<span>Тільки я</span>															
+															<input type="radio" name="visibility" value="me">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<a href="#post-delete" type="button"
+														class="options__link popup-link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</a>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+											безкоштовно!
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+												<span>10</span>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Поділились:
+													<span>10</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/main/avatar2.webp" type="image/webp"><img src="img/main/avatar2.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Сніжана Кальмар</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<div class="author__visibility">
+													<span>Друзі</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#friends"></use>
+													</svg>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list_other">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження публікації</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#rss"></use>
+														</svg>
+														<span>Підписатися на Джигурда Джигурдинович</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#minus"></use>
+														</svg>
+														<span>Відписатися від Джигурда Джигурдинович</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#eye"></use>
+														</svg>
+														<span>Приховати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#attention"></use>
+														</svg>
+														<span>Поскаржитись на публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+											несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+											начинающему оратору отточить навык публичных выступлений в домашних
+											условиях.
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Поділились:
+													<span>150</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<div class="author__visibility">
+													<span>Друзі</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#friends"></use>
+													</svg>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+											безкоштовно!
+										</div>
+										<div class="post__gallery">
+											<div class="post__image">
+												<picture><source srcset="img/main/Image1.webp" type="image/webp"><img src="img/main/Image1.jpg" alt="Image"></picture>
+											</div>
+											<div class="post__image">
+												<picture><source srcset="img/main/Image2.webp" type="image/webp"><img src="img/main/Image2.jpg" alt="Image"></picture>
+											</div>
+											<div class="post__image">
+												<picture><source srcset="img/main/Image3.webp" type="image/webp"><img src="img/main/Image3.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+												<span>120</span>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Поділились:
+													<span>120</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<a href="#" class="author__added">
+													<span>додано фото</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<span>Star</span>
+												</a>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+											безкоштовно!
+										</div>
+										<div class="post__gallery_single">
+											<div class="post__image">
+												<picture><source srcset="img/main/Image4.webp" type="image/webp"><img src="img/main/Image4.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+												<span>10</span>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Коментарі:
+													<span>2</span>
+												</div>
+												<div class="post__detail">
+													Поділились:
+													<span>10</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<div class="author__visibility">
+													<span>Друзі</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#friends"></use>
+													</svg>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+											несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+											начинающему оратору отточить навык публичных выступлений в домашних
+											условиях.
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like post__like_empty">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<a href="#" class="author__added">
+													<span>оновлено фото групи</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+													<span>група SunLight</span>
+												</a>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+											безкоштовно!
+										</div>
+										<div class="post__gallery_single">
+											<div class="post__image">
+												<picture><source srcset="img/main/Image4.webp" type="image/webp"><img src="img/main/Image4.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+												<span>10</span>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Коментарі:
+													<span>2</span>
+												</div>
+												<div class="post__detail">
+													Поділились:
+													<span>10</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="content__post post active">
+								<div class="post__header">
+									<div class="post__author author">
+										<div class="author__avatar">
+											<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+										</div>
+										<div class="author__details">
+											<div class="author__header">
+												<div class="author__name">Игорь Бандера</div>
+												<div class="author__status">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#check"></use>
+													</svg>
+												</div>
+												<div class="author__visibility">
+													<span>Друзі</span>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#friends"></use>
+													</svg>
+													<svg>
+														<use xlink: href="img/icons/icons.svg#arrow"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="author__time">11 хвилин тому</div>
+										</div>
+										<div class="author__options options">
+											<div class="options__icon">
+												<svg>
+													<use xlink: href="img/icons/icons.svg#arrow"></use>
+												</svg>
+											</div>
+											<ul class="options__list options__list">
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Зберегти публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#bookmark"></use>
+														</svg>
+														<span>Скасувати збереження</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link switcher">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Закріпити публікацію</span>
+														<svg>
+															<use xlink: href="img/icons/icons.svg#needle"></use>
+														</svg>
+														<span>Від’єднати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#pencil"></use>
+														</svg>
+														<span>Редагувати публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#basket"></use>
+														</svg>
+														<span>Видалити публікацію</span>
+													</button>
+												</li>
+												<li class="options__item">
+													<button type="button" class="options__link">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#link"></use>
+														</svg>
+														<span>Відкрити у новій вкладці</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post__body">
+									<div class="post__content">
+										<div class="post__message">
+											Купуй зручно та заощаджуй. Здійсни замовлення, а ми доставимо його
+											безкоштовно!
+										</div>
+										<div class="post__info">
+											<div class="post__likes">
+												<button type="button" class="post__like">
+													<svg>
+														<use xlink: href="img/icons/icons.svg#like"></use>
+													</svg>
+												</button>
+												<span>10</span>
+											</div>
+											<div class="post__details">
+												<div class="post__detail">
+													Коментарі:
+													<span>3</span>
+												</div>
+												<div class="post__detail">
+													Поділились:
+													<span>10</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post__footer">
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#vote"></use>
+											</svg>
+											<span>Подобається</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#message"></use>
+											</svg>
+											<span>Коментувати</span>
+										</a>
+										<a href="#" class="post__option">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#share"></use>
+											</svg>
+											<span>Поділитись</span>
+										</a>
+									</div>
+									<div class="post__comments comments">
+										<div class="comments__item">
+											<div class="comments__avatar">
+												<picture><source srcset="img/main/avatar2.webp" type="image/webp"><img src="img/main/avatar2.png" alt="Avatar"></picture>
+											</div>
+											<div class="comments__details">
+												<div class="comments__name">
+													Мария Свиженец
+												</div>
+												<div class="comments__message">
+													Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+													сгенерировать
+													несколько абзацев более менее осмысленного текста рыбы на русском
+													языке,
+													а начинающему оратору отточить навык публичных выступлений в
+													домашних
+													условиях.
+													<a href="#likes" class="comments__likes popup-link">
+														<span class="comments__like">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#like"></use>
+															</svg>
+														</span>
+														<span>25</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="comments__item">
+											<div class="comments__avatar">
+												<picture><source srcset="img/main/avatar3.webp" type="image/webp"><img src="img/main/avatar3.png" alt="Avatar"></picture>
+											</div>
+											<div class="comments__details">
+												<div class="comments__name">
+													Ольга Деркачук
+												</div>
+												<div class="comments__message">
+													Сайт рыбатекст поможет дизайнеру
+													<a href="#likes" class="comments__likes popup-link">
+														<span class="comments__like">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#like"></use>
+															</svg>
+														</span>
+														<span>15</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="comments__item">
+											<div class="comments__avatar">
+												<picture><source srcset="img/main/avatar3.webp" type="image/webp"><img src="img/main/avatar3.png" alt="Avatar"></picture>
+											</div>
+											<div class="comments__details">
+												<div class="comments__name">
+													Ольга Деркачук
+												</div>
+												<div class="comments__message">
+													<span class="comments__reply">@Мария Свиженец</span> рыбатекст
+													поможет дизайнеру,
+													верстальщику,
+													вебмастеру сгенерировать несколько абзацев более менее осмысленного
+													текста рыбы на русском языке, а начинающему.
+													<a href="#likes" class="comments__likes popup-link">
+														<span class="comments__like">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#like"></use>
+															</svg>
+														</span>
+														<span>15</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="comments__all">
+											Переглянути попередні коментарі
+										</a>
+										<div class="comments__new">
+											<div class="comments__avatar">
+												<picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+											</div>
+											<div class="comments__creation">
+												<div class="comments__form messages">
+													<input type="text" placeholder="Напишіть свій коментарій">
+													<div class="messages__body">
+														<div class="messages__wrapper">
+															<div class="messages__items" data-simplebar>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar3.webp" type="image/webp"><img src="img/main/avatar3.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar2.webp" type="image/webp"><img src="img/main/avatar2.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar3.webp" type="image/webp"><img src="img/main/avatar3.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar2.webp" type="image/webp"><img src="img/main/avatar2.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar3.webp" type="image/webp"><img src="img/main/avatar3.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+																<div class="messages__item">
+																	<div class="messages__avatar">
+																		<picture><source srcset="img/main/avatar2.webp" type="image/webp"><img src="img/main/avatar2.png" alt="Avatar"></picture>
+																	</div>
+																	<div class="messages__details">
+																		<div class="messages__user">Джигурда Джигурдинович
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<input type="file" id="file1">
+													<div class="comments__emoji emoji">
+														<button type="button" class="emoji__icon">
+															<svg>
+																<use xlink: href="img/icons/icons.svg#emoji"></use>
+															</svg>
+														</button>
+														<ul class="emoji__list">
+															<li class="emoji__item">🙂</li>
+															<li class="emoji__item">😢</li>
+															<li class="emoji__item">😜</li>
+															<li class="emoji__item">🤔</li>
+															<li class="emoji__item">🤑</li>
+															<li class="emoji__item">😐</li>
+															<li class="emoji__item">😍</li>
+															<li class="emoji__item">😘</li>
+															<li class="emoji__item">😇</li>
+															<li class="emoji__item">😆</li>
+															<li class="emoji__item">😡</li>
+															<li class="emoji__item">🤕</li>
+															<li class="emoji__item">🤩</li>
+															<li class="emoji__item">😅</li>
+															<li class="emoji__item">👍</li>
+															<li class="emoji__item">👎</li>
+														</ul>
+													</div>
+													<label for="file1" class="comments__camera">
+														<svg>
+															<use xlink: href="img/icons/icons.svg#camera"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="comments__help">
+													Натисніть ENTER, щоб надіслати коментар.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- content__body -->
+					</div> <!-- content -->
+				</div> <!-- page__body -->
+			</div> <!-- page__container -->
+		</div> <!-- page -->
 
-                            <div class="content__tasks tasks__single tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перша
-                                        абонплата</h2>
-                                    <div class="tasks__items">
-                                        <a href="#task-done" class="tasks__item done popup-link">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Поповніть свій баланс вперше, для можливості сплати щомісячної абонплати в розмірі 10 одиниць.
-                                            </div>
-                                        </a>
-                                        <div class="tasks__bg">
-                                            <img src="img/tasks/task_bg.svg" alt="Background">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- content__body --> 
-                    </div> <!-- content -->
-
-                </div> <!-- page__body -->
-            </div> <!-- page__container -->
-        </div> <!-- page -->
-
-        <div class="popup" id="likes">
+		<div class="popup" id="likes">
     <div class="popup__body">
         <div class="popup__content">
 
@@ -1366,8 +2541,8 @@
     </div>
 </div>
 
-    </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221031142418"></script>
+	</div> <!-- wrapper -->
+	<script src="js/app.min.js?_v=20221031142418"></script>
 </body>
 
 </html>
