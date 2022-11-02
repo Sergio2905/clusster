@@ -616,66 +616,82 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <div class="content__profile profile">
+                            <div class="content__profile profile profile_friends">
                                 <div class="profile__header header-profile">
                                     <div class="header-profile__bg">
-                                        <picture><source srcset="img/profile/bg.webp" type="image/webp"><img src="img/profile/bg.jpg" alt="Background"></picture>
+                                        <picture><source srcset="img/profile/friends/friends_bg.webp" type="image/webp"><img src="img/profile/friends/friends_bg.jpg" alt="Background"></picture>
                                     </div>
                                     <div class="header-profile__left">
-                                        <div class="header-profile__options">
-                                            <a href="#" class="header-profile__option">
-                                                <svg>
-                                                    <use xlink: href="img/icons/icons.svg#pencil"></use>
-                                                </svg>
-                                                <span class="header-profile__help">Редагувати</span>
-                                            </a>
-                                            <a href="#del-canvas-photo" class="header-profile__option popup-link">
-                                                <svg>
-                                                    <use xlink: href="img/icons/icons.svg#basket"></use>
-                                                </svg>
-                                                <span class="header-profile__help">Видалити</span>
-                                            </a>
-                                        </div>
                                         <div class="header-profile__wrapper">
                                             <div class="header-profile__photo">
-                                                <picture><source srcset="img/profile/avatar.webp" type="image/webp"><img src="img/profile/avatar.jpg" alt="Profile photo"></picture>
-                                            </div>
-                                            <div class="header-profile__options">
-                                                <a href="#" class="header-profile__option">
-                                                    <svg>
-                                                        <use xlink: href="img/icons/icons.svg#pencil"></use>
-                                                    </svg>
-                                                    <span class="header-profile__help">Редагувати</span>
-                                                </a>
-                                                <a href="#del-profile-photo" class="header-profile__option popup-link">
-                                                    <svg>
-                                                        <use xlink: href="img/icons/icons.svg#basket"></use>
-                                                    </svg>
-                                                    <span class="header-profile__help">Видалити</span>
-                                                </a>
+                                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Profile photo"></picture>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="header-profile__right">
                                         <div class="header-profile__info">
                                             <div class="header-profile__name">
-                                                <span>Игорь Бандера</span>
-                                                <div class="header-profile__status">
-                                                    <svg>
-                                                        <use xlink: href="img/icons/icons.svg#check"></use>
-                                                    </svg>
-                                                </div>
+                                                <span>Ліна Костенко</span>
                                             </div>
                                             <div class="header-profile__friends">
-                                                Друзів: 245
+                                                Спільних друзів: 130
                                             </div>
                                         </div>
-                                        <button class="header-profile__btn btn_grey">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#pencil"></use>
-                                            </svg>
-                                            <span>Редагувати профіль</span>
-                                        </button>
+                                        <div class="header-profile__btns">
+                                            <button class="header-profile__btn btn_green">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#check"></use>
+                                                </svg>
+                                                <span>Друзі</span>
+                                            </button>
+                                            <button class="header-profile__btn btn_grey">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                                <span>Повідомлення</span>
+                                            </button>
+                                            <div class="header-profile__options options">
+                                                <div class="options__icon btn_grey">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#chat"></use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="options__list">
+                                                    <li class="options__item">
+                                                        <button type="button" class="options__link switcher">
+                                                            <svg>
+                                                                <use xlink:="" href="img/icons/icons.svg#rss">
+                                                                </use>
+                                                            </svg>
+                                                            <span>Підписатися</span>
+                                                            <svg>
+                                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                                </use>
+                                                            </svg>
+                                                            <span>Відписатися</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="options__item">
+                                                        <a href="#block-user" class="options__link popup-link">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#block">
+                                                                </use>
+                                                            </svg>
+                                                            <span>Заблокувати</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="options__item">
+                                                        <a href="#complane-user" class="options__link popup-link">
+                                                            <svg>
+                                                                <use xlink: href="img/icons/icons.svg#attention">
+                                                                </use>
+                                                            </svg>
+                                                            <span>Поскаржитись</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="profile__content content-profile">
@@ -833,60 +849,559 @@
                                                         </div>
                                                     </div>
                                                     <div class="content-profile__right">
-                                                        <form class="profile__post-new post-new">
-                                                            <textarea class="post-new__message"
-                                                                placeholder="Що у Вас нового? Напишіть повідомлення..."></textarea>
-                                                            <div class="post-new__options">
-                                                                <div class="post-new__add">
-                                                                    <div class="post-new__file">
-                                                                        <input type="file" id="file-main">
-                                                                        <label for="file-main" class="post-new__camera">
-                                                                            <span>
-                                                                                <svg>
-                                                                                    <use xlink:
-                                                                                        href="img/icons/icons.svg#camera">
-                                                                                    </use>
-                                                                                </svg>
-                                                                            </span>
-                                                                            <span>Фото/відео</span>
-                                                                        </label>
+                                                        <div class="content-profile__post post">
+                                                            <div class="post__header">
+                                                                <div class="post__author author">
+                                                                    <div class="author__avatar">
+                                                                        <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
                                                                     </div>
-                                                                    <div class="post-new__emoji emoji-post">
-                                                                        <button type="button" class="emoji-post__btn">
-                                                                            <span>
+                                                                    <div class="author__details">
+                                                                        <div class="author__header">
+                                                                            <div class="author__name">Игорь Бандера
+                                                                            </div>
+                                                                            <div class="author__status">
                                                                                 <svg>
                                                                                     <use xlink:
-                                                                                        href="img/icons/icons.svg#emoji">
+                                                                                        href="img/icons/icons.svg#check">
                                                                                     </use>
                                                                                 </svg>
-                                                                            </span>
-                                                                            <span>Emoji</span>
-                                                                        </button>
-                                                                        <ul class="emoji-post__list">
-                                                                            <li class="emoji-post__item">🙂</li>
-                                                                            <li class="emoji-post__item">😢</li>
-                                                                            <li class="emoji-post__item">😜</li>
-                                                                            <li class="emoji-post__item">🤔</li>
-                                                                            <li class="emoji-post__item">🤑</li>
-                                                                            <li class="emoji-post__item">😐</li>
-                                                                            <li class="emoji-post__item">😍</li>
-                                                                            <li class="emoji-post__item">😘</li>
-                                                                            <li class="emoji-post__item">😇</li>
-                                                                            <li class="emoji-post__item">😆</li>
-                                                                            <li class="emoji-post__item">😡</li>
-                                                                            <li class="emoji-post__item">🤕</li>
-                                                                            <li class="emoji-post__item">🤩</li>
-                                                                            <li class="emoji-post__item">😅</li>
-                                                                            <li class="emoji-post__item">👍</li>
-                                                                            <li class="emoji-post__item">👎</li>
-
+                                                                            </div>
+                                                                            <div class="author__visibility visibility">
+                                                                                <span>Друзі</span>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#friends">
+                                                                                    </use>
+                                                                                </svg>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#arrow">
+                                                                                    </use>
+                                                                                </svg>
+                                                                                <div
+                                                                                    class="visibility__list radio-options">
+                                                                                    <div class="radio-options__item">
+                                                                                        <svg>
+                                                                                            <use xlink:
+                                                                                                href="img/icons/icons.svg#earth">
+                                                                                            </use>
+                                                                                        </svg>
+                                                                                        <span>Для усіх</span>
+                                                                                        <input type="radio"
+                                                                                            name="visibility"
+                                                                                            value="all">
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="radio-options__item _active">
+                                                                                        <svg>
+                                                                                            <use xlink:
+                                                                                                href="img/icons/icons.svg#friends">
+                                                                                            </use>
+                                                                                        </svg>
+                                                                                        <span>Друзі</span>
+                                                                                        <input type="radio"
+                                                                                            name="visibility"
+                                                                                            value="friends">
+                                                                                    </div>
+                                                                                    <div class="radio-options__item">
+                                                                                        <svg>
+                                                                                            <use xlink:
+                                                                                                href="img/icons/icons.svg#lock">
+                                                                                            </use>
+                                                                                        </svg>
+                                                                                        <span>Тільки я</span>
+                                                                                        <input type="radio"
+                                                                                            name="visibility"
+                                                                                            value="me">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="author__time">11 хвилин тому</div>
+                                                                    </div>
+                                                                    <div class="author__options options">
+                                                                        <div class="options__icon">
+                                                                            <svg>
+                                                                                <use xlink:
+                                                                                    href="img/icons/icons.svg#arrow">
+                                                                                </use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <ul class="options__list options__list">
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Зберегти публікацію</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Скасувати збереження</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#needle">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Закріпити публікацію</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#needle">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Від’єднати публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#pencil">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Редагувати публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <a href="#post-delete" type="button"
+                                                                                    class="options__link popup-link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#basket">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Видалити публікацію</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#link">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Відкрити у новій
+                                                                                        вкладці</span>
+                                                                                </button>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
-                                                                <button type="submit"
-                                                                    class="post-new__btn btn_green">Опублікувати</button>
                                                             </div>
-                                                        </form>
+                                                            <div class="post__body">
+                                                                <div class="post__content">
+                                                                    <div class="post__message">
+                                                                        Купуй зручно та заощаджуй. Здійсни замовлення, а
+                                                                        ми доставимо його
+                                                                        безкоштовно!
+                                                                    </div>
+                                                                    <div class="post__info">
+                                                                        <div class="post__likes">
+                                                                            <button type="button" class="post__like">
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#like">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </button>
+                                                                            <span>10</span>
+                                                                        </div>
+                                                                        <div class="post__details">
+                                                                            <div class="post__detail">
+                                                                                Поділились:
+                                                                                <span>10</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post__footer">
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#vote"></use>
+                                                                        </svg>
+                                                                        <span>Подобається</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#message">
+                                                                            </use>
+                                                                        </svg>
+                                                                        <span>Коментувати</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#share"></use>
+                                                                        </svg>
+                                                                        <span>Поділитись</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-profile__post post">
+                                                            <div class="post__header">
+                                                                <div class="post__author author">
+                                                                    <div class="author__avatar">
+                                                                        <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                                    </div>
+                                                                    <div class="author__details">
+                                                                        <div class="author__header">
+                                                                            <div class="author__name">Игорь Бандера
+                                                                            </div>
+                                                                            <div class="author__status">
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#check">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="author__visibility">
+                                                                                <span>Друзі</span>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#friends">
+                                                                                    </use>
+                                                                                </svg>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#arrow">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="author__time">11 хвилин тому</div>
+                                                                    </div>
+                                                                    <div class="author__options options">
+                                                                        <div class="options__icon">
+                                                                            <svg>
+                                                                                <use xlink:
+                                                                                    href="img/icons/icons.svg#arrow">
+                                                                                </use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <ul class="options__list options__list_other">
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Зберегти публікацію</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Скасувати збереження
+                                                                                        публікації</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#rss">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Підписатися на Джигурда
+                                                                                        Джигурдинович</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#minus">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Відписатися від Джигурда
+                                                                                        Джигурдинович</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#eye">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Приховати публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#attention">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Поскаржитись на
+                                                                                        публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#link">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Відкрити у новій
+                                                                                        вкладці</span>
+                                                                                </button>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post__body">
+                                                                <div class="post__content">
+                                                                    <div class="post__message">
+                                                                        Сайт рыбатекст поможет дизайнеру, верстальщику,
+                                                                        вебмастеру сгенерировать
+                                                                        несколько абзацев более менее осмысленного
+                                                                        текста рыбы на русском языке, а
+                                                                        начинающему оратору отточить навык публичных
+                                                                        выступлений в домашних
+                                                                        условиях.
+                                                                    </div>
+                                                                    <div class="post__info">
+                                                                        <div class="post__likes">
+                                                                            <button type="button" class="post__like">
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#like">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="post__details">
+                                                                            <div class="post__detail">
+                                                                                Поділились:
+                                                                                <span>150</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post__footer">
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#vote"></use>
+                                                                        </svg>
+                                                                        <span>Подобається</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#message">
+                                                                            </use>
+                                                                        </svg>
+                                                                        <span>Коментувати</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#share"></use>
+                                                                        </svg>
+                                                                        <span>Поділитись</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-profile__post post">
+                                                            <div class="post__header">
+                                                                <div class="post__author author">
+                                                                    <div class="author__avatar">
+                                                                        <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
+                                                                    </div>
+                                                                    <div class="author__details">
+                                                                        <div class="author__header">
+                                                                            <div class="author__name">Игорь Бандера
+                                                                            </div>
+                                                                            <div class="author__status">
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#check">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="author__visibility">
+                                                                                <span>Друзі</span>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#friends">
+                                                                                    </use>
+                                                                                </svg>
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#arrow">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="author__time">11 хвилин тому</div>
+                                                                    </div>
+                                                                    <div class="author__options options">
+                                                                        <div class="options__icon">
+                                                                            <svg>
+                                                                                <use xlink:
+                                                                                    href="img/icons/icons.svg#arrow">
+                                                                                </use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <ul class="options__list options__list">
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Зберегти публікацію</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#bookmark">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Скасувати збереження</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link switcher">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#needle">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Закріпити публікацію</span>
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#needle">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Від’єднати публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#pencil">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Редагувати публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#basket">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Видалити публікацію</span>
+                                                                                </button>
+                                                                            </li>
+                                                                            <li class="options__item">
+                                                                                <button type="button"
+                                                                                    class="options__link">
+                                                                                    <svg>
+                                                                                        <use xlink:
+                                                                                            href="img/icons/icons.svg#link">
+                                                                                        </use>
+                                                                                    </svg>
+                                                                                    <span>Відкрити у новій
+                                                                                        вкладці</span>
+                                                                                </button>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post__body">
+                                                                <div class="post__content">
+                                                                    <div class="post__message">
+                                                                        Купуй зручно та заощаджуй. Здійсни замовлення, а
+                                                                        ми доставимо його
+                                                                        безкоштовно!
+                                                                    </div>
+                                                                    <div class="post__gallery">
+                                                                        <div class="post__image">
+                                                                            <picture><source srcset="img/main/Image1.webp" type="image/webp"><img src="img/main/Image1.jpg" alt="Image"></picture>
+                                                                        </div>
+                                                                        <div class="post__image">
+                                                                            <picture><source srcset="img/main/Image2.webp" type="image/webp"><img src="img/main/Image2.jpg" alt="Image"></picture>
+                                                                        </div>
+                                                                        <div class="post__image">
+                                                                            <picture><source srcset="img/main/Image3.webp" type="image/webp"><img src="img/main/Image3.jpg" alt="Image"></picture>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post__info">
+                                                                        <div class="post__likes">
+                                                                            <button type="button" class="post__like">
+                                                                                <svg>
+                                                                                    <use xlink:
+                                                                                        href="img/icons/icons.svg#like">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </button>
+                                                                            <span>120</span>
+                                                                        </div>
+                                                                        <div class="post__details">
+                                                                            <div class="post__detail">
+                                                                                Поділились:
+                                                                                <span>120</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post__footer">
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#vote"></use>
+                                                                        </svg>
+                                                                        <span>Подобається</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#message">
+                                                                            </use>
+                                                                        </svg>
+                                                                        <span>Коментувати</span>
+                                                                    </a>
+                                                                    <a href="#" class="post__option">
+                                                                        <svg>
+                                                                            <use xlink:
+                                                                                href="img/icons/icons.svg#share"></use>
+                                                                        </svg>
+                                                                        <span>Поділитись</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -896,9 +1411,7 @@
     <div class="tabs__header">
         <div class="tabs__item _active" data-tabs="2">Усі друзі
         </div>
-        <div class="tabs__item" data-tabs="2">Дні народження</div>
-        <div class="tabs__item" data-tabs="2">Запити</div>
-        <div class="tabs__item" data-tabs="2">Пропозиції</div>
+        <div class="tabs__item" data-tabs="2">Спільні друзі</div>
         <div class="tabs__item" data-tabs="2">Підписники</div>
         <div class="tabs__item" data-tabs="2">Підписки</div>
         <div class="tabs__indicator" data-tabs="2"></div>
@@ -915,7 +1428,7 @@
                                 <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
                             </div>
                             <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Джигурда
+                                <a href="other-profile.html" class="friends__name">Джигурда
                                     Джигурдинович</a>
                                 <div class="friends__mutual">
                                     Спільних друзів: 10</div>
@@ -960,7 +1473,7 @@
                                 <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Friend photo"></picture>
                             </div>
                             <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Ліна
+                                <a href="#" class="friends__name">Ліна
                                     Костенко</a>
                                 <div class="friends__mutual">
                                     Спільних друзів: 10</div>
@@ -1005,276 +1518,6 @@
                                 <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Friend photo"></picture>
                             </div>
                             <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Иван
-                                    Франко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Тарас
-                                    Шевченко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="friends-profile.html" class="friends__name">Лариса
-                                    Косач</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Ліна
-                                    Костенко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
                                 <a href="#" class="friends__name">Иван
                                     Франко</a>
                                 <div class="friends__mutual">
@@ -1355,346 +1598,6 @@
                                             </svg>
                                             <span>Видалити з
                                                 друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Тарас
-                                    Шевченко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Лариса
-                                    Косач</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <button type="button" class="friends__all show-all btn_white">
-                        Переглянути всіх
-                    </button>
-                    <button class="friends__more hidden">
-                        <svg>
-                            <use xlink: href="img/icons/icons.svg#refresh">
-                            </use>
-                        </svg>
-                        <span>Завантажити ще</span>
-                    </button>
-                    <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
-                                </use>
-                            </svg>
-                            Назад
-                        </a>
-                        <a href="#" class="navigation__page">1</a>
-                        <a href="#" class="navigation__page active">2</a>
-                        <a href="#" class="navigation__page">3</a>
-                        <a href="#" class="navigation__page">4</a>
-                        <a href="#" class="navigation__page">5</a>
-                        <a href="#" class="navigation__next">
-                            Вперед
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
-                                </use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tabs__block" data-tabs="2">
-            <div class="tabs__content">
-                <div class="friends__body">
-                    <h2 class="friends__title">Дні народження друзів</h2>
-                    <ul class="friends__list">
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#gift">
-                                                </use>
-                                            </svg>
-                                            <span>Привітати</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Ліна
-                                    Костенко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#gift">
-                                                </use>
-                                            </svg>
-                                            <span>Привітати</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Иван
-                                    Франко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#gift">
-                                                </use>
-                                            </svg>
-                                            <span>Привітати</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#gift">
-                                                </use>
-                                            </svg>
-                                            <span>Привітати</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2188,7 +2091,7 @@
         <div class="tabs__block" data-tabs="2">
             <div class="tabs__content">
                 <div class="friends__body">
-                    <h2 class="friends__title">Отримані запити дружби</h2>
+                    <h2 class="friends__title">Усі друзі</h2>
                     <ul class="friends__list">
                         <li class="friends__item">
                             <div class="friends__photo">
@@ -2197,8 +2100,8 @@
                             <div class="friends__info">
                                 <a href="#" class="friends__name">Джигурда
                                     Джигурдинович</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
+                                <div class="friends__mutual">
+                                    Спільних друзів: 10</div>
                             </div>
                             <div class="friends__options options">
                                 <div class="options__icon">
@@ -2209,21 +2112,31 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
+                                                </use>
+                                            </svg>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
+                                        </button>
+                                    </li>
+                                    <li class="options__item">
+                                        <button type="button" class="options__link switcher">
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#del2">
+                                                </use>
+                                            </svg>
+                                            <span>Видалити з друзів</span>
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#accept">
                                                 </use>
                                             </svg>
-                                            <span>Прийняти запит</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відхилити запит</span>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2236,8 +2149,8 @@
                             <div class="friends__info">
                                 <a href="#" class="friends__name">Ліна
                                     Костенко</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
+                                <div class="friends__mutual">
+                                    Спільних друзів: 10</div>
                             </div>
                             <div class="friends__options options">
                                 <div class="options__icon">
@@ -2248,21 +2161,31 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher active">
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
+                                                </use>
+                                            </svg>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
+                                        </button>
+                                    </li>
+                                    <li class="options__item">
+                                        <button type="button" class="options__link switcher">
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#del2">
+                                                </use>
+                                            </svg>
+                                            <span>Видалити з друзів</span>
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#accept">
                                                 </use>
                                             </svg>
-                                            <span>Прийняти запит</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відхилити запит</span>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2275,8 +2198,8 @@
                             <div class="friends__info">
                                 <a href="#" class="friends__name">Иван
                                     Франко</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
+                                <div class="friends__mutual">
+                                    Спільних друзів: 140</div>
                             </div>
                             <div class="friends__options options">
                                 <div class="options__icon">
@@ -2287,21 +2210,31 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
+                                                </use>
+                                            </svg>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
+                                        </button>
+                                    </li>
+                                    <li class="options__item">
+                                        <button type="button" class="options__link switcher">
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#del2">
+                                                </use>
+                                            </svg>
+                                            <span>Видалити з друзів</span>
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#accept">
                                                 </use>
                                             </svg>
-                                            <span>Прийняти запит</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відхилити запит</span>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2314,8 +2247,8 @@
                             <div class="friends__info">
                                 <a href="#" class="friends__name">Панас
                                     Мирний</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
+                                <div class="friends__mutual">
+                                    Спільних друзів: 140</div>
                             </div>
                             <div class="friends__options options">
                                 <div class="options__icon">
@@ -2326,21 +2259,31 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
+                                                </use>
+                                            </svg>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
+                                        </button>
+                                    </li>
+                                    <li class="options__item">
+                                        <button type="button" class="options__link switcher">
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#del2">
+                                                </use>
+                                            </svg>
+                                            <span>Видалити з друзів</span>
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#accept">
                                                 </use>
                                             </svg>
-                                            <span>Прийняти запит</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відхилити запит</span>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2379,13 +2322,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Видалити з друзів</span>
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#accept">
+                                                </use>
+                                            </svg>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2424,13 +2371,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Видалити з друзів</span>
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#accept">
+                                                </use>
+                                            </svg>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2469,13 +2420,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Видалити з друзів</span>
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#accept">
+                                                </use>
+                                            </svg>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2514,13 +2469,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Видалити з друзів</span>
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#accept">
+                                                </use>
+                                            </svg>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2559,13 +2518,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Видалити з друзів</span>
+                                            <svg class="stroke">
+                                                <use xlink: href="img/icons/icons.svg#accept">
+                                                </use>
+                                            </svg>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -2604,623 +2567,17 @@
                                         </button>
                                     </li>
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
                                         <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
                                             <svg class="stroke">
                                                 <use xlink: href="img/icons/icons.svg#del2">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Тарас
-                                    Шевченко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
+                                            <span>Видалити з друзів</span>
                                             <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
+                                                <use xlink: href="img/icons/icons.svg#accept">
                                                 </use>
                                             </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Лариса
-                                    Косач</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item hidden">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <button type="button" class="friends__all show-all btn_white">
-                        Переглянути всіх
-                    </button>
-                    <button class="friends__more hidden">
-                        <svg>
-                            <use xlink: href="img/icons/icons.svg#refresh">
-                            </use>
-                        </svg>
-                        <span>Завантажити ще</span>
-                    </button>
-                    <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
-                                </use>
-                            </svg>
-                            Назад
-                        </a>
-                        <a href="#" class="navigation__page">1</a>
-                        <a href="#" class="navigation__page active">2</a>
-                        <a href="#" class="navigation__page">3</a>
-                        <a href="#" class="navigation__page">4</a>
-                        <a href="#" class="navigation__page">5</a>
-                        <a href="#" class="navigation__next">
-                            Вперед
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
-                                </use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tabs__block" data-tabs="2">
-            <div class="tabs__content">
-                <div class="friends__body">
-                    <h2 class="friends__title">Надіслані пропозиції дружби</h2>
-                    <ul class="friends__list">
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#x-mark">
-                                                </use>
-                                            </svg>
-                                            <span>Відмінити пропозицію</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Ліна
-                                    Костенко</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#x-mark">
-                                                </use>
-                                            </svg>
-                                            <span>Відмінити пропозицію</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Иван
-                                    Франко</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#x-mark">
-                                                </use>
-                                            </svg>
-                                            <span>Відмінити пропозицію</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__time">
-                                    11 хвилин тому</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg>
-                                                <use xlink: href="img/icons/icons.svg#x-mark">
-                                                </use>
-                                            </svg>
-                                            <span>Відмінити пропозицію</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Тарас
-                                    Шевченко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Лариса
-                                    Косач</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Джигурда
-                                    Джигурдинович</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Ліна
-                                    Костенко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 10</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Иван
-                                    Франко</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="friends__item">
-                            <div class="friends__photo">
-                                <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Friend photo"></picture>
-                            </div>
-                            <div class="friends__info">
-                                <a href="#" class="friends__name">Панас
-                                    Мирний</a>
-                                <div class="friends__mutual">
-                                    Спільних друзів: 140</div>
-                            </div>
-                            <div class="friends__options options">
-                                <div class="options__icon">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#dots">
-                                        </use>
-                                    </svg>
-                                </div>
-                                <ul class="options__list">
-                                    <li class="options__item">
-                                        <button type="button" class="options__link switcher">
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#rss">
-                                                </use>
-                                            </svg>
-                                            <span>Підписатися</span>
-                                            <svg>
-                                                <use xlink:="" href="img/icons/icons.svg#decline">
-                                                </use>
-                                            </svg>
-                                            <span>Відписатися</span>
-                                        </button>
-                                    </li>
-                                    <li class="options__item">
-                                        <button type="button" class="options__link">
-                                            <svg class="stroke">
-                                                <use xlink: href="img/icons/icons.svg#del2">
-                                                </use>
-                                            </svg>
-                                            <span>Видалити з
-                                                друзів</span>
+                                            <span>Додати в друзі</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -4151,12 +3508,17 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
                                                 </use>
                                             </svg>
-                                            <span>Відписатись</span>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
                                         </button>
                                     </li>
                                     <li class="options__item">
@@ -4195,12 +3557,17 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
                                                 </use>
                                             </svg>
-                                            <span>Відписатись</span>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
                                         </button>
                                     </li>
                                     <li class="options__item">
@@ -4239,12 +3606,17 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
                                                 </use>
                                             </svg>
-                                            <span>Відписатись</span>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
                                         </button>
                                     </li>
                                     <li class="options__item">
@@ -4283,12 +3655,17 @@
                                 </div>
                                 <ul class="options__list">
                                     <li class="options__item">
-                                        <button type="button" class="options__link">
+                                        <button type="button" class="options__link switcher">
                                             <svg>
-                                                <use xlink: href="img/icons/icons.svg#decline">
+                                                <use xlink:="" href="img/icons/icons.svg#rss">
                                                 </use>
                                             </svg>
-                                            <span>Відписатись</span>
+                                            <span>Підписатися</span>
+                                            <svg>
+                                                <use xlink:="" href="img/icons/icons.svg#decline">
+                                                </use>
+                                            </svg>
+                                            <span>Відписатися</span>
                                         </button>
                                     </li>
                                     <li class="options__item">
@@ -21460,10 +20837,10 @@
                                                     <div class="content-profile__pages pages-profile">
                                                         <div class="pages-profile__header">
                                                             <h2 class="pages-profile__title">Сторінки</h2>
-                                                            <a href="create-page.html" class="pages-profile__add">
+                                                            <button type="button" class="pages-profile__add">
                                                                 <span>+</span>
                                                                 <span>Додати сторінку</span>
-                                                            </a>
+                                                            </button>
                                                         </div>
                                                         <ul class="pages-profile__active">
                                                             <li class="pages-profile__item">
@@ -21472,7 +20849,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="pages-profile__info">
-                                                                    <a href="page.html" class="pages-profile__name">
+                                                                    <a href="page-other.html"
+                                                                        class="pages-profile__name">
                                                                         Я економіст
                                                                     </a>
                                                                     <div class="pages-profile__users">
@@ -21489,7 +20867,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="pages-profile__info">
-                                                                    <a href="page.html" class="pages-profile__name">
+                                                                    <a href="page-other.html"
+                                                                        class="pages-profile__name">
                                                                         Новини єкосвіту
                                                                     </a>
                                                                     <div class="pages-profile__users">
@@ -21508,7 +20887,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="pages-profile__info">
-                                                                    <a href="page.html" class="pages-profile__name">
+                                                                    <a href="page-other.html"
+                                                                        class="pages-profile__name">
                                                                         Новостний портал
                                                                     </a>
                                                                     <div class="pages-profile__likes">
@@ -21525,7 +20905,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="pages-profile__info">
-                                                                    <a href="page.html" class="pages-profile__name">
+                                                                    <a href="page-other.html"
+                                                                        class="pages-profile__name">
                                                                         Новини вашого міста
                                                                     </a>
                                                                     <div class="pages-profile__likes">
@@ -21545,10 +20926,10 @@
                                                     <div class="content-profile__groups groups-profile">
                                                         <div class="groups-profile__header">
                                                             <h2 class="groups-profile__title">Групи</h2>
-                                                            <a href="create-group.html" class="groups-profile__add">
+                                                            <button type="button" class="groups-profile__add">
                                                                 <span>+</span>
                                                                 <span>Додати групу</span>
-                                                            </a>
+                                                            </button>
                                                         </div>
                                                         <ul class="groups-profile__active">
                                                             <li class="groups-profile__item">
@@ -21557,7 +20938,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="groups-profile__info">
-                                                                    <a href="group.html" class="groups-profile__name">
+                                                                    <a href="group-in.html"
+                                                                        class="groups-profile__name">
                                                                         Нові інвестиції
                                                                     </a>
                                                                     <div class="groups-profile__users">
@@ -21574,7 +20956,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="groups-profile__info">
-                                                                    <a href="group.html" class="groups-profile__name">
+                                                                    <a href="group-in.html"
+                                                                        class="groups-profile__name">
                                                                         Нові партнери
                                                                     </a>
                                                                     <div class="groups-profile__users">
@@ -21593,7 +20976,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="groups-profile__info">
-                                                                    <a href="group.html" class="groups-profile__name">
+                                                                    <a href="group-out.html"
+                                                                        class="groups-profile__name">
                                                                         Новостний портал
                                                                     </a>
                                                                     <div class="groups-profile__likes">
@@ -21610,7 +20994,8 @@
                                                                         alt="Group image">
                                                                 </div>
                                                                 <div class="groups-profile__info">
-                                                                    <a href="group.html" class="groups-profile__name">
+                                                                    <a href="group-out.html"
+                                                                        class="groups-profile__name">
                                                                         Новини вашого міста
                                                                     </a>
                                                                     <div class="groups-profile__likes">

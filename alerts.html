@@ -613,7 +613,6 @@
         <div class="page">
             <div class="page__container container">
                 <div class="page__body">
-
                     <div class="page__menu menu">
                         <div class="menu__header">
                             <a href="profile.html" class="menu__link active">
@@ -628,329 +627,306 @@
                             <li class="menu__item">
                                 <a href="family-profile.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
+                                        <use xlink: href="img/icons/icons.svg#family"></use>
                                     </svg>
-                                    <span>Профіль</span>
+                                    <span>Сім’я</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
+                                <a href="messages.html" class="menu__link">
                                     <svg>
                                         <use xlink: href="img/icons/icons.svg#message"></use>
                                     </svg>
-                                    <span>Розсилання</span>
+                                    <span>Повідомлення</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
-                                    </svg>
-                                    <span>Мої кола</span>
-                                </a>
-                            </li>
-                            <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
+                                        <use xlink: href="img/icons/icons.svg#friends"></use>
                                     </svg>
-                                    <span>Завдання</span>
+                                    <span>Друзі</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
+                                        <use xlink: href="img/icons/icons.svg#bookmark"></use>
                                     </svg>
-                                    <span>Рейтинг</span>
+                                    <span>Збережено</span>
                                 </a>
                             </li>
-                            <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
+                            <li class="menu__item" data-spollers>
+                                <button type="button" class="menu__link" data-spoller>
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
+                                        <use xlink: href="img/icons/icons.svg#pages"></use>
                                     </svg>
-                                    <span>Калькулятор</span>
-                                </a>
+                                    <span>Сторінки</span>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="menu__sublist">
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/recipes.webp" type="image/webp"><img src="img/menu/recipes.png" alt="Recipes"></picture>
+                                            </span>
+                                            <span>Домашні пецепти</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/economist.webp" type="image/webp"><img src="img/menu/economist.png" alt="Economist"></picture>
+                                            </span>
+                                            <span>Я економіст</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
+                            <li class="menu__item" data-spollers>
+                                <button type="button" class="menu__link" data-spoller>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#groups"></use>
                                     </svg>
-                                    <span>Питання та відповіді</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
+                                    <span>Групи</span>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#arrow"></use>
                                     </svg>
-                                    <span>Про Clusster</span>
-                                </a>
+                                </button>
+                                <ul class="menu__sublist">
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/businesman.webp" type="image/webp"><img src="img/menu/businesman.png" alt="Businesman"></picture>
+                                            </span>
+                                            <span>Молоді бізнесмени</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/invest.webp" type="image/webp"><img src="img/menu/invest.png" alt="Invest"></picture>
+                                            </span>
+                                            <span>Нові інвестиції</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Сповіщення</h1>
 
-                            <div class="content__tasks tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перший рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="task.html" class="tasks__item done">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
+                            <div class="content__messages messages">
+                                <div class="messages__items">
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                </svg>
+                                                <span>Відвідав ваш профіль</span>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Перша
-                                                абонплата
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                                <span>Прокоментував вашу публікація</span>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item done">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/4 friends.svg" alt="Task">
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#friends"></use>
+                                                </svg>
+                                                <span>Прийняв пропозицію дружити</span>
                                             </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 4 друга
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#like"></use>
+                                                </svg>
+                                                <span>Подобається ваш коментар</span>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 points.svg" alt="Task">
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                                <span>Прокоментував вашу публікація</span>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 20 одиниць
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#friends"></use>
+                                                </svg>
+                                                <span>Прийняв пропозицію дружити</span>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/card data.svg" alt="Task">
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#friends"></use>
+                                                </svg>
+                                                <span>Прийняв пропозицію дружити</span>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Персональні дані карти на вивід
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#like"></use>
+                                                </svg>
+                                                <span>Подобається ваш коментар</span>
                                             </div>
-                                        </a>
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                                <span>Прокоментував вашу публікація</span>
+                                            </div>
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__avatar">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="messages__details">
+                                            <div class="messages__user">Джигурда Джигурдинович</div>
+                                            <div class="messages__info">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#friends"></use>
+                                                </svg>
+                                                <span>Прийняв пропозицію дружити</span>
+                                            </div>
+                                            <div class="messages__time">10 хвилин тому</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Другий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/first out.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Мій перший вивід одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/5 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 5 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/50 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 50 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 20 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/ref 4 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Реферали привели по 4 друга
-                                            </div>
-                                        </a>
-                                    </div>
+                                <button class="messages__more">
+                                    <svg>
+                                        <use xlink:="" href="img/icons/icons.svg#refresh">
+                                        </use>
+                                    </svg>
+                                    <span>Завантажити ще</span>
+                                </button>
+                                <div class="messages__navigation navigation">
+                                    <a href="#" class="navigation__prev">
+                                        <svg>
+                                            <use xlink:="" href="img/icons/icons.svg#prev">
+                                            </use>
+                                        </svg>
+                                        Назад
+                                    </a>
+                                    <a href="#" class="navigation__page">1</a>
+                                    <a href="#" class="navigation__page active">2</a>
+                                    <a href="#" class="navigation__page">3</a>
+                                    <a href="#" class="navigation__page">4</a>
+                                    <a href="#" class="navigation__page">5</a>
+                                    <a href="#" class="navigation__next">
+                                        Вперед
+                                        <svg>
+                                            <use xlink:="" href="img/icons/icons.svg#next">
+                                            </use>
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Третій рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/fop.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Персональні дані ФОПу на вивід
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/10 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 10 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/120 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 120 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/100 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 100 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/16 refs 4 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                16 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Четвертий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/150 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Вивід 150 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/15 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 15 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/400 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 400 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/350 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 350 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/64 refs.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                64 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Пятий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/500 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Вивід 500 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 20 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/1500 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 1 500 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/1400 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 1 400 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/256 refs.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                256 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Шостий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/end.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Відкриття шостого кола
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+
                             </div>
 
                         </div> <!-- content__body -->
                     </div> <!-- content -->
-
                 </div> <!-- page__body -->
             </div> <!-- page__container -->
         </div> <!-- page -->

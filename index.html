@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221031142418">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221102145002">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -812,6 +812,123 @@
     </div>
 </div>
 
+<div class="popup popup-confirm" id="del-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення групи</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити группу?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-group" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Групу було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="block-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Заблокувати</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                заблокувати цього користувача?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#blocked-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="blocked-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#block"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ви заблокували користувача
+                Ліна Костенко.</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complane-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Скарга на користувача</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                повідомити про цього користувача?
+            </div>
+            <textarea class="popup-confirm__message" placeholder="Напишіть причину скарги"></textarea>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#complaned-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complaned-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#attention"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ваша скарга на користувача
+                Ліна Костенко була відправлена!</div>
+        </div>
+    </div>
+</div>
+
 <div class="popup viewer" id="viewer">
     <div class="popup__body">
         <div class="popup__content">
@@ -855,7 +972,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221031142418"></script>
+    <script src="js/app.min.js?_v=20221102145002"></script>
 </body>
 
 </html>

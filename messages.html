@@ -628,322 +628,986 @@
                             <li class="menu__item">
                                 <a href="family-profile.html" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#user2"></use>
+                                        <use xlink: href="img/icons/icons.svg#family"></use>
                                     </svg>
-                                    <span>Профіль</span>
+                                    <span>Сім’я</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="mailing.html" class="menu__link">
+                                <a href="messages.html" class="menu__link">
                                     <svg>
                                         <use xlink: href="img/icons/icons.svg#message"></use>
                                     </svg>
-                                    <span>Розсилання</span>
+                                    <span>Повідомлення</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="circles.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#circle"></use>
-                                    </svg>
-                                    <span>Мої кола</span>
-                                </a>
-                            </li>
-                            <li class="menu__item active">
-                                <a href="tasks.html" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#target"></use>
+                                        <use xlink: href="img/icons/icons.svg#friends"></use>
                                     </svg>
-                                    <span>Завдання</span>
+                                    <span>Друзі</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="rating.html" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#star"></use>
+                                        <use xlink: href="img/icons/icons.svg#bookmark"></use>
                                     </svg>
-                                    <span>Рейтинг</span>
+                                    <span>Збережено</span>
                                 </a>
                             </li>
-                            <li class="menu__item">
-                                <a href="calc.html" class="menu__link">
+                            <li class="menu__item" data-spollers>
+                                <button type="button" class="menu__link" data-spoller>
                                     <svg>
-                                        <use xlink: href="img/icons/icons.svg#calc"></use>
+                                        <use xlink: href="img/icons/icons.svg#pages"></use>
                                     </svg>
-                                    <span>Калькулятор</span>
-                                </a>
+                                    <span>Сторінки</span>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="menu__sublist">
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/recipes.webp" type="image/webp"><img src="img/menu/recipes.png" alt="Recipes"></picture>
+                                            </span>
+                                            <span>Домашні пецепти</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/economist.webp" type="image/webp"><img src="img/menu/economist.png" alt="Economist"></picture>
+                                            </span>
+                                            <span>Я економіст</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="menu__item">
-                                <a href="faq.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#faq"></use>
+                            <li class="menu__item" data-spollers>
+                                <button type="button" class="menu__link" data-spoller>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#groups"></use>
                                     </svg>
-                                    <span>Питання та відповіді</span>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">
-                                    <svg class="stroke">
-                                        <use xlink: href="img/icons/icons.svg#clusster"></use>
+                                    <span>Групи</span>
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#arrow"></use>
                                     </svg>
-                                    <span>Про Clusster</span>
-                                </a>
+                                </button>
+                                <ul class="menu__sublist">
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/businesman.webp" type="image/webp"><img src="img/menu/businesman.png" alt="Businesman"></picture>
+                                            </span>
+                                            <span>Молоді бізнесмени</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu__subitem">
+                                        <a href="#" class="menu__link">
+                                            <span class="menu__image">
+                                                <picture><source srcset="img/menu/invest.webp" type="image/webp"><img src="img/menu/invest.png" alt="Invest"></picture>
+                                            </span>
+                                            <span>Нові інвестиції</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Завдання
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
-                                    </div>
-                                    <div class="prompt__info">
-                                        <p class="bold">Завдання:</p>
-                                        <p>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                        </p>
-                                        <p>
-                                            Більш детально про Виплату одиниць читайте у розділі <span
-                                                class="bold">Питаннях та відповідях</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </h1>
+                            <h1 class="content__title title">Повідомлення</h1>
 
-                            <div class="content__tasks tasks">
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Перший рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="task.html" class="tasks__item done">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/Money transfer.svg" alt="Task">
+                            <div class="content__chat chat">
+                                <div class="chat__contacts contacts">
+                                    <ul class="contacts__list" data-simplebar>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Андрій Кулявець
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Перша
-                                                абонплата
+                                            <div class="contacts__messages">
+                                                99+
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item done">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/4 friends.svg" alt="Task">
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 4 друга
+                                            <div class="contacts__messages">
+                                                12
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 points.svg" alt="Task">
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 20 одиниць
+                                            <div class="contacts__messages">
+                                                5
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/card data.svg" alt="Task">
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Персональні дані карти на вивід
+                                            <div class="contacts__messages">
+                                                20
                                             </div>
-                                        </a>
-                                    </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                    <div class="contacts__status">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend1.webp" type="image/webp"><img src="img/profile/friends/friend1.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Андрій Кулявець
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                    <div class="contacts__status">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                    <div class="contacts__status">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend2.webp" type="image/webp"><img src="img/profile/friends/friend2.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Сергей Друшлаков
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend3.webp" type="image/webp"><img src="img/profile/friends/friend3.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Марина Юрченко
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend4.webp" type="image/webp"><img src="img/profile/friends/friend4.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Бандера
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend5.webp" type="image/webp"><img src="img/profile/friends/friend5.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Артем Иванюк
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="contacts__item">
+                                            <div class="contacts__user">
+                                                <div class="contacts__avatar">
+                                                    <div class="contacts__photo">
+                                                        <picture><source srcset="img/profile/friends/friend6.webp" type="image/webp"><img src="img/profile/friends/friend6.jpg" alt="Avatar"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="contacts__name">
+                                                    Игорь Скотиштрайт
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Другий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/first out.svg" alt="Task">
+
+                                <div class="chat__body body-chat">
+                                    <div class="body-chat__wrapper" data-simplebar>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар</div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Мій перший вивід одиниць
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/5 friends.svg" alt="Task">
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
                                             </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 5 друзів
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар і ви його
+                                                не
+                                                приймаєте менеджеру </div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/50 points.svg" alt="Task">
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 50 одиниць
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 people.svg" alt="Task">
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар і ви його
+                                                не
+                                                приймаєте менеджеру про те, що товар пошкоджений і ви його не </div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 20 людей
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/ref 4 friends.svg" alt="Task">
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo14.webp" type="image/webp"><img src="img/profile/photos/photo14.jpg" alt="Image"></picture>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Реферали привели по 4 друга
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </a>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар</div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+                                            </div>
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар і ви його
+                                                не
+                                                приймаєте менеджеру </div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_other">
+                                            <div class="body-chat__name">Андрій Кулявець</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+                                            </div>
+                                            <div class="body-chat__text">Повідомити менеджеру про те, що товар і ви його
+                                                не
+                                                приймаєте менеджеру про те, що товар пошкоджений і ви його не </div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#delete-message" class="body-chat__delete popup-link">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <textarea class="body-chat__text"
+                                                disabled>Повідомити менеджеру про те, що товар пошкоджений і ви його не приймаєте</textarea>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-chat__item body-chat__item_my">
+                                            <div class="body-chat__name">Ігор Бандера</div>
+                                            <div class="body-chat__image">
+                                                <picture><source srcset="img/profile/photos/photo14.webp" type="image/webp"><img src="img/profile/photos/photo14.jpg" alt="Image"></picture>
+                                            </div>
+                                            <div class="body-chat__bottom">
+                                                <div class="body-chat__time">
+                                                    <span>09.08.22</span>
+                                                    <span>16:40</span>
+                                                </div>
+                                                <div class="body-chat__options">
+                                                    <a href="#" class="body-chat__edit">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#pencil"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Редагувати</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__delete">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Видалити</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__save">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#save"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Зберегти</span>
+                                                    </a>
+                                                    <a href="#" class="body-chat__discard">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                                        </svg>
+                                                        <span class="body-chat__help">Відміна</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Третій рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/fop.svg" alt="Task">
+                                    <div class="body-chat__create create-chat">
+                                        <div class="create-chat__options">
+                                            <div class="create-chat__emoji emoji">
+                                                <button type="button" class="emoji__icon">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#emoji"></use>
+                                                    </svg>
+                                                </button>
+                                                <ul class="emoji__list">
+                                                    <li class="emoji__item">🙂</li>
+                                                    <li class="emoji__item">😢</li>
+                                                    <li class="emoji__item">😜</li>
+                                                    <li class="emoji__item">🤔</li>
+                                                    <li class="emoji__item">🤑</li>
+                                                    <li class="emoji__item">😐</li>
+                                                    <li class="emoji__item">😍</li>
+                                                    <li class="emoji__item">😘</li>
+                                                    <li class="emoji__item">😇</li>
+                                                    <li class="emoji__item">😆</li>
+                                                    <li class="emoji__item">😡</li>
+                                                    <li class="emoji__item">🤕</li>
+                                                    <li class="emoji__item">🤩</li>
+                                                    <li class="emoji__item">😅</li>
+                                                    <li class="emoji__item">👍</li>
+                                                    <li class="emoji__item">👎</li>
+                                                </ul>
                                             </div>
-                                            <div class="tasks__desc">
-                                                Персональні дані ФОПу на вивід
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/10 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 10 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/120 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 120 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/100 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 100 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/16 refs 4 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                16 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
+                                            <input type="file" id="file">
+                                            <label for="file">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#camera"></use>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <textarea class="create-chat__input"
+                                            placeholder="Напишіть повідомлення..."></textarea>
                                     </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Четвертий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/150 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Вивід 150 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/15 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 15 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/400 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 400 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/350 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 350 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/64 refs.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                64 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Пятий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/500 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Вивід 500 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/20 friends.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На першому колі 20 друзів
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/1500 points.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Нараховано 1 500 одиниць
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/1400 people.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                На всіх моїх колах 1 400 людей
-                                            </div>
-                                        </a>
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/256 refs.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                256 рефералів привели по 4 людини
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tasks__block">
-                                    <h2 class="tasks__title">Шостий рівень</h2>
-                                    <div class="tasks__items">
-                                        <a href="#" class="tasks__item">
-                                            <div class="tasks__image">
-                                                <img src="img/tasks/end.svg" alt="Task">
-                                            </div>
-                                            <div class="tasks__desc">
-                                                Відкриття шостого кола
-                                            </div>
-                                        </a>
+                                    <div class="body-chat__btns">
+                                        <button class="body-chat__btn btn_white">Скасувати</button>
+                                        <button class="body-chat__btn btn_green">Надіслати</button>
                                     </div>
                                 </div>
                             </div>
