@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221102145002">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221103184224">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                         <div class="messages__footer">
-                            <a href="alerts.html" class="messages__all">
+                            <a href="messages.html" class="messages__all">
                                 Переглянути усі результати
                             </a>
                         </div>
@@ -395,7 +395,7 @@
                             </div>
                         </div>
                         <div class="messages__footer">
-                            <a href="#" class="messages__all">
+                            <a href="profile-requests.html" class="messages__all">
                                 Переглянути усі результати
                             </a>
                         </div>
@@ -523,7 +523,7 @@
                             </div>
                         </div>
                         <div class="messages__footer">
-                            <a href="#" class="messages__all">
+                            <a href="alerts.html" class="messages__all">
                                 Переглянути усі результати
                             </a>
                         </div>
@@ -545,39 +545,39 @@
                             </a>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="profile-pages.html" class="options__link options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#pages"></use>
                                 </svg>
                                 <span>Сторінки</span>
-                            </button>
+                            </a>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="profile-groups.html" class="options__link options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#groups"></use>
                                 </svg>
                                 <span>Групи</span>
-                            </button>
+                            </a>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="saved.html" class="options__link options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#bookmark"></use>
                                 </svg>
                                 <span>Збережене</span>
-                            </button>
+                            </a>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="faq.html" class="options__link options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#question"></use>
                                 </svg>
                                 <span>Питання та відповіді</span>
-                            </button>
+                            </a>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="#" class="options__link options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#shield"></use>
                                 </svg>
@@ -585,7 +585,7 @@
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#arrow-sub"></use>
                                 </svg>
-                            </button>
+                            </a>
                             <ul class="options__sublist">
                                 <li class="options__subitem">
                                     <a href="#" class="options__link">Політика конфіденціальності</a>
@@ -19066,6 +19066,27 @@
     </div>
 </div>
 
+<div class="popup popup-confirm" id="del-friend">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити
+                Тетяна Куриленко із друзів</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити Тетяна Куриленко зі списку друзів?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#r" class="popup-confirm__btn_green">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="popup viewer" id="viewer">
     <div class="popup__body">
         <div class="popup__content">
@@ -19109,7 +19130,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221102145002"></script>
+    <script src="js/app.min.js?_v=20221103184224"></script>
 </body>
 
 </html>
