@@ -494,6 +494,64 @@ body._lock {
   display: none;
 }
 
+.saved-page {
+  position: fixed;
+  top: 124px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1374px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.saved-page.active {
+  opacity: 1;
+  animation: savedHide 1s forwards 2s;
+}
+
+.saved-page__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 15px 22px;
+  background: #86BB64;
+  border-radius: 10px;
+}
+
+.saved-page__text {
+  font-size: 0.9375rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.saved-page__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saved-page__icon svg {
+  width: 60%;
+  height: 60%;
+  stroke: #fff;
+}
+
+@keyframes savedHide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -3237,6 +3295,15 @@ body._lock {
   color: #3B7319;
 }
 
+.form-registration__item {
+  position: relative;
+}
+
+.form-registration__item.active .form-registration__warning {
+  opacity: 1;
+  visibility: visible;
+}
+
 .form-registration__item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -3309,6 +3376,43 @@ body._lock {
   margin-right: 17px;
 }
 
+.form-registration__warning {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: #292929;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-registration__warning svg {
+  width: 20px;
+  height: 20px;
+  fill: #86BB64;
+  margin-right: 15px;
+}
+
+.form-registration__warning_red svg {
+  fill: #D20000;
+}
+
+.form-registration__warning_error {
+  background: #FFE8E8;
+  align-items: flex-start;
+}
+
+.form-registration__warning_error svg {
+  fill: #D20000;
+}
+
 .menu {
   position: sticky;
   top: 30px;
@@ -3339,6 +3443,7 @@ body._lock {
 .menu__item,
 .menu__subitem {
   padding: 5px 0;
+  position: relative;
 }
 
 .menu__item:not(:last-child),
@@ -3481,6 +3586,17 @@ body._lock {
   -webkit-mask: url("../img/icons/icons.svg#chat") center/cover no-repeat;
           mask: url("../img/icons/icons.svg#chat") center/cover no-repeat;
   background: #292929;
+}
+
+.menu__btn {
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+
+.menu__btn svg {
+  width: 18px;
+  height: 11px;
 }
 
 .post {
@@ -4508,6 +4624,7 @@ body._lock {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .groups-profile__title,
@@ -4515,7 +4632,6 @@ body._lock {
   font-weight: 600;
   font-size: 1.75rem;
   color: #292929;
-  margin-bottom: 50px;
 }
 
 .groups-profile__add,
@@ -4655,6 +4771,43 @@ body._lock {
 .groups-profile__btn,
 .pages-profile__btn {
   width: 220px;
+}
+
+.groups-profile__more,
+.pages-profile__more {
+  margin: 50px auto 5px;
+  color: #86BB64;
+  transition: all 0.2s linear;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.groups-profile__more:hover,
+.pages-profile__more:hover {
+  color: #3B7319;
+}
+
+.groups-profile__more:hover svg,
+.pages-profile__more:hover svg {
+  stroke: #3B7319;
+}
+
+.groups-profile__more svg,
+.pages-profile__more svg {
+  width: 17px;
+  height: 17px;
+  stroke: #86BB64;
+  margin-right: 10px;
+  transition: all 0.2s linear;
+}
+
+.groups-profile__navigation,
+.pages-profile__navigation {
+  margin-top: 30px;
 }
 
 .friends__body {

@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221103184224">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221104193455">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -21,7 +21,7 @@
                     </a>
                     <div class="header__btns">
                         <a href="#" class="header__btn header__btn_authorisation btn_green">Авторизація</a>
-                        <a href="#" class="header__btn header__btn_registration btn_green">Регістрація</a>
+                        <a href="#" class="header__btn header__btn_registration btn_green">Реєстрація</a>
                     </div>
                 </div>
             </div>
@@ -61,17 +61,35 @@
                                                 <div class="form-registration__input">
                                                     <input type="text">
                                                 </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
                                             </li>
                                             <li class="form-registration__item">
                                                 <div class="form-registration__title">Номер телефону</div>
                                                 <div class="form-registration__input">
-                                                    <input type="text" value="+380">
+                                                    <input type="text" id="reg-phone" value="+380">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
                                                 </div>
                                             </li>
                                             <li class="form-registration__item">
                                                 <div class="form-registration__title">Адреса ел.пошти</div>
                                                 <div class="form-registration__input">
                                                     <input type="text">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
                                                 </div>
                                             </li>
                                             <li class="form-registration__item">
@@ -87,6 +105,12 @@
                                                         </svg>
                                                     </button>
                                                 </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
                                             </li>
                                             <li class="form-registration__item">
                                                 <div class="form-registration__title">Повторіть пароль</div>
@@ -100,6 +124,12 @@
                                                             <use xlink: href="img/icons/icons.svg#eye2"></use>
                                                         </svg>
                                                     </button>
+                                                </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -119,13 +149,19 @@
                         <div class="registration" id="authorisation">
                             <div class="registration__body">
                                 <div class="registration__content">
-                                    <h2 class="registration__title">Авторизиція</h2>
+                                    <h2 class="registration__title">Авторизація</h2>
                                     <form class="registration__form form-registration" action="#">
                                         <ul class="form-registration__list">
                                             <li class="form-registration__item">
                                                 <div class="form-registration__title">Адреса ел.пошти</div>
                                                 <div class="form-registration__input">
                                                     <input type="text">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
                                                 </div>
                                             </li>
                                             <li class="form-registration__item">
@@ -141,13 +177,19 @@
                                                         </svg>
                                                     </button>
                                                 </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
+                                                </div>
                                             </li>
                                         </ul>
                                         <div class="registration__checkbox checkbox">
                                             Запам’ятати мене
                                             <input type="checkbox">
                                         </div>
-                                        <a href="#" class="registration__btn btn_green">Авторизація</a>
+                                        <a href="main.html" class="registration__btn btn_green">Авторизація</a>
                                         <div class="registration__bottom">
                                             <a href="#recover" class="registration__forgot">Забули пароль?</a>
                                             <div class="registration__create">
@@ -169,6 +211,14 @@
                                                 <div class="form-registration__title">Адреса ел.пошти</div>
                                                 <div class="form-registration__input">
                                                     <input type="text">
+                                                </div>
+                                                <div
+                                                    class="form-registration__warning form-registration__warning_error">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>За цією ел. поштою немає аккаунту, будь ласка,
+                                                        перевірте.</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -993,7 +1043,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221103184224"></script>
+    <script src="js/app.min.js?_v=20221104193455"></script>
 </body>
 
 </html>
