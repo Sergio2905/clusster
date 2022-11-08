@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221104193455">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221108121104">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -19,7 +19,7 @@
             <a href="main.html" class="header__logo_mob">
                 <img src="img/logo-mob.svg" alt="Logo">
             </a>
-            <a href="#" class="header__btn btn_green">
+            <a href="#" class="header__btn copy-link btn_green">
                 <span>Моє посилання</span>
                 <svg>
                     <use xlink: href="img/icons/icons.svg#copy"></use>
@@ -596,12 +596,12 @@
                             </ul>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="./" class="options__link options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#exit"></use>
                                 </svg>
                                 <span>Вийти</span>
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1736,7 +1736,7 @@
             <div class="popup-confirm__desc">1 одиниця = 50 грн
             </div>
             <div class="popup-confirm__form">
-                <input type="text" value="10">
+                <input type="text" id="pay-input" value="10">
                 <span>=</span>
                 <div class="popup-confirm__result"><span>500</span> грн</div>
             </div>
@@ -1838,6 +1838,44 @@
                 </svg>
             </div>
             <div class="popup-confirm__text">Групу було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення сторінки</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити сторінку?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-page" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Сторінку було видалено</div>
         </div>
     </div>
 </div>
@@ -1985,7 +2023,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221104193455"></script>
+    <script src="js/app.min.js?_v=20221108121104"></script>
 </body>
 
 </html>

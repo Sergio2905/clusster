@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221104193455">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221108121104">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -19,7 +19,7 @@
             <a href="main.html" class="header__logo_mob">
                 <img src="img/logo-mob.svg" alt="Logo">
             </a>
-            <a href="#" class="header__btn btn_green">
+            <a href="#" class="header__btn copy-link btn_green">
                 <span>Моє посилання</span>
                 <svg>
                     <use xlink: href="img/icons/icons.svg#copy"></use>
@@ -596,12 +596,12 @@
                             </ul>
                         </li>
                         <li class="options__item">
-                            <button class="options__link options__link">
+                            <a href="./" class="options__link options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#exit"></use>
                                 </svg>
                                 <span>Вийти</span>
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1126,20 +1126,20 @@
                                             <div class="tabs__content">
                                                 <div class="tabs-family__header">
                                                     <span>від</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <span>до</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <button class="tabs-family_btn btn_green">Завантажити</button>
                                                 </div>
-                                                <ul class="tabs-family__table">
-                                                    <li class="tabs-family__item">
-                                                        <div class="tabs-family__number">№</div>
-                                                        <div class="tabs-family__date">Дата</div>
-                                                        <div class="tabs-family__saldo">Сальдо</div>
-                                                        <div class="tabs-family__circle">Коло</div>
-                                                        <div class="tabs-family__earn">Нараховано</div>
-                                                        <div class="tabs-family__partner">Бізнес партнер</div>
-                                                    </li>
+                                                <div class="tabs-family__first">
+                                                    <div class="tabs-family__number">№</div>
+                                                    <div class="tabs-family__date">Дата</div>
+                                                    <div class="tabs-family__saldo">Сальдо</div>
+                                                    <div class="tabs-family__circle">Коло</div>
+                                                    <div class="tabs-family__earn">Нараховано</div>
+                                                    <div class="tabs-family__partner">Бізнес партнер</div>
+                                                </div>
+                                                <ul class="tabs-family__table" data-simplebar>
                                                     <li class="tabs-family__item">
                                                         <div class="tabs-family__number">1.</div>
                                                         <div class="tabs-family__date">22.08.22</div>
@@ -1220,27 +1220,135 @@
                                                         <div class="tabs-family__earn">3</div>
                                                         <div class="tabs-family__partner">Володимиров Володимир</div>
                                                     </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">11.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">12.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">13.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">14.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">15.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">16.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">17.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">18.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">19.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">20.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__circle">1</div>
+                                                        <div class="tabs-family__earn">3</div>
+                                                        <div class="tabs-family__partner">Володимиров Володимир</div>
+                                                    </li>
                                                 </ul>
+                                            </div>
+                                            <button class="family__more show-all">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#refresh">
+                                                    </use>
+                                                </svg>
+                                                <span>Завантажити ще</span>
+                                            </button>
+                                            <div class="family__navigation navigation">
+                                                <a href="#" class="navigation__prev">
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#prev">
+                                                        </use>
+                                                    </svg>
+                                                    Назад
+                                                </a>
+                                                <a href="#" class="navigation__page">1</a>
+                                                <a href="#" class="navigation__page active">2</a>
+                                                <a href="#" class="navigation__page">3</a>
+                                                <a href="#" class="navigation__page">4</a>
+                                                <a href="#" class="navigation__page">5</a>
+                                                <a href="#" class="navigation__next">
+                                                    Вперед
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#next">
+                                                        </use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
                                                 <div class="tabs-family__header">
                                                     <span>від</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <span>до</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <button class="tabs-family_btn btn_green">Завантажити</button>
                                                 </div>
-                                                <ul class="tabs-family__table">
-                                                    <li class="tabs-family__item">
-                                                        <div class="tabs-family__number">№</div>
-                                                        <div class="tabs-family__date">Дата</div>
-                                                        <div class="tabs-family__saldo">Сальдо</div>
-                                                        <div class="tabs-family__period">Період</div>
-                                                        <div class="tabs-family__sum">Сума одиниць</div>
-                                                        <div class="tabs-family__left">Залишок одиниць</div>
-                                                    </li>
+                                                <div class="tabs-family__first">
+                                                    <div class="tabs-family__number">№</div>
+                                                    <div class="tabs-family__date">Дата</div>
+                                                    <div class="tabs-family__saldo">Сальдо</div>
+                                                    <div class="tabs-family__period">Період</div>
+                                                    <div class="tabs-family__sum">Сума одиниць</div>
+                                                    <div class="tabs-family__left">Залишок одиниць</div>
+                                                </div>
+                                                <ul class="tabs-family__table" data-simplebar>
                                                     <li class="tabs-family__item">
                                                         <div class="tabs-family__number">1.</div>
                                                         <div class="tabs-family__date">22.08.22</div>
@@ -1321,27 +1429,135 @@
                                                         <div class="tabs-family__sum">10</div>
                                                         <div class="tabs-family__left">10</div>
                                                     </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">11.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">12.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">13.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">14.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">15.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">16.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">17.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">18.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">19.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">20.</div>
+                                                        <div class="tabs-family__date">22.08.22</div>
+                                                        <div class="tabs-family__saldo">20</div>
+                                                        <div class="tabs-family__period">серпень 22</div>
+                                                        <div class="tabs-family__sum">10</div>
+                                                        <div class="tabs-family__left">10</div>
+                                                    </li>
                                                 </ul>
+                                            </div>
+                                            <button class="family__more show-all">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#refresh">
+                                                    </use>
+                                                </svg>
+                                                <span>Завантажити ще</span>
+                                            </button>
+                                            <div class="family__navigation navigation">
+                                                <a href="#" class="navigation__prev">
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#prev">
+                                                        </use>
+                                                    </svg>
+                                                    Назад
+                                                </a>
+                                                <a href="#" class="navigation__page">1</a>
+                                                <a href="#" class="navigation__page active">2</a>
+                                                <a href="#" class="navigation__page">3</a>
+                                                <a href="#" class="navigation__page">4</a>
+                                                <a href="#" class="navigation__page">5</a>
+                                                <a href="#" class="navigation__next">
+                                                    Вперед
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#next">
+                                                        </use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
                                                 <div class="tabs-family__header">
                                                     <span>від</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <span>до</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <button class="tabs-family_btn btn_green">Завантажити</button>
                                                 </div>
-                                                <ul class="tabs-family__table">
-                                                    <li class="tabs-family__item">
-                                                        <div class="tabs-family__number">№</div>
-                                                        <div class="tabs-family__datetime">Дата / Час</div>
-                                                        <div class="tabs-family__left">Залишок</div>
-                                                        <div class="tabs-family__earn">Нараховано</div>
-                                                        <div class="tabs-family__ua-sum">Сума грн</div>
-                                                        <div class="tabs-family__status">Статус</div>
-                                                    </li>
+                                                <div class="tabs-family__first">
+                                                    <div class="tabs-family__number">№</div>
+                                                    <div class="tabs-family__datetime">Дата / Час</div>
+                                                    <div class="tabs-family__left">Залишок</div>
+                                                    <div class="tabs-family__earn">Нараховано</div>
+                                                    <div class="tabs-family__ua-sum">Сума грн</div>
+                                                    <div class="tabs-family__status">Статус</div>
+                                                </div>
+                                                <ul class="tabs-family__table" data-simplebar>
                                                     <li class="tabs-family__item">
                                                         <div class="tabs-family__number">1.</div>
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
@@ -1422,27 +1638,135 @@
                                                         <div class="tabs-family__ua-sum">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">11.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">12.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">13.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">14.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">15.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">16.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">17.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">18.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">19.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">20.</div>
+                                                        <div class="tabs-family__datetime">22.08.22 17:10</div>
+                                                        <div class="tabs-family__left">20</div>
+                                                        <div class="tabs-family__earn">30</div>
+                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__status">Звірка</div>
+                                                    </li>
                                                 </ul>
+                                            </div>
+                                            <button class="family__more show-all">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#refresh">
+                                                    </use>
+                                                </svg>
+                                                <span>Завантажити ще</span>
+                                            </button>
+                                            <div class="family__navigation navigation">
+                                                <a href="#" class="navigation__prev">
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#prev">
+                                                        </use>
+                                                    </svg>
+                                                    Назад
+                                                </a>
+                                                <a href="#" class="navigation__page">1</a>
+                                                <a href="#" class="navigation__page active">2</a>
+                                                <a href="#" class="navigation__page">3</a>
+                                                <a href="#" class="navigation__page">4</a>
+                                                <a href="#" class="navigation__page">5</a>
+                                                <a href="#" class="navigation__next">
+                                                    Вперед
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#next">
+                                                        </use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
                                                 <div class="tabs-family__header">
                                                     <span>від</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <span>до</span>
-                                                    <input type="text">
+                                                    <input class="date-input" type="text">
                                                     <button class="tabs-family_btn btn_green">Завантажити</button>
                                                 </div>
-                                                <ul class="tabs-family__table">
-                                                    <li class="tabs-family__item">
-                                                        <div class="tabs-family__number">№</div>
-                                                        <div class="tabs-family__datetime">Дата / Час</div>
-                                                        <div class="tabs-family__ua-sum">Сума грн.</div>
-                                                        <div class="tabs-family__system">Система</div>
-                                                        <div class="tabs-family__transaction">id транзакції</div>
-                                                        <div class="tabs-family__status">Статус</div>
-                                                    </li>
+                                                <div class="tabs-family__first">
+                                                    <div class="tabs-family__number">№</div>
+                                                    <div class="tabs-family__datetime">Дата / Час</div>
+                                                    <div class="tabs-family__ua-sum">Сума грн.</div>
+                                                    <div class="tabs-family__system">Система</div>
+                                                    <div class="tabs-family__transaction">id транзакції</div>
+                                                    <div class="tabs-family__status">Статус</div>
+                                                </div>
+                                                <ul class="tabs-family__table" data-simplebar>
                                                     <li class="tabs-family__item">
                                                         <div class="tabs-family__number">1.</div>
                                                         <div class="tabs-family__datetime">04.08.22 15:45</div>
@@ -1523,40 +1847,118 @@
                                                         <div class="tabs-family__transaction">2054094149</div>
                                                         <div class="tabs-family__status">Поповнено</div>
                                                     </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">11.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">12.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">13.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">14.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">15.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">16.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">17.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">18.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">19.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
+                                                    <li class="tabs-family__item hidden">
+                                                        <div class="tabs-family__number">20.</div>
+                                                        <div class="tabs-family__datetime">04.08.22 15:45</div>
+                                                        <div class="tabs-family__ua-sum">1 000 UAN</div>
+                                                        <div class="tabs-family__system">privat24</div>
+                                                        <div class="tabs-family__transaction">2054094149</div>
+                                                        <div class="tabs-family__status">Поповнено</div>
+                                                    </li>
                                                 </ul>
+                                            </div>
+                                            <button class="family__more show-all">
+                                                <svg>
+                                                    <use xlink:="" href="img/icons/icons.svg#refresh">
+                                                    </use>
+                                                </svg>
+                                                <span>Завантажити ще</span>
+                                            </button>
+                                            <div class="family__navigation navigation">
+                                                <a href="#" class="navigation__prev">
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#prev">
+                                                        </use>
+                                                    </svg>
+                                                    Назад
+                                                </a>
+                                                <a href="#" class="navigation__page">1</a>
+                                                <a href="#" class="navigation__page active">2</a>
+                                                <a href="#" class="navigation__page">3</a>
+                                                <a href="#" class="navigation__page">4</a>
+                                                <a href="#" class="navigation__page">5</a>
+                                                <a href="#" class="navigation__next">
+                                                    Вперед
+                                                    <svg>
+                                                        <use xlink:="" href="img/icons/icons.svg#next">
+                                                        </use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <button class="family__more">
-                                    <svg>
-                                        <use xlink:="" href="img/icons/icons.svg#refresh">
-                                        </use>
-                                    </svg>
-                                    <span>Завантажити ще</span>
-                                </button>
-
-                                <div class="family__navigation navigation">
-                                    <a href="#" class="navigation__prev">
-                                        <svg>
-                                            <use xlink:="" href="img/icons/icons.svg#prev">
-                                            </use>
-                                        </svg>
-                                        Назад
-                                    </a>
-                                    <a href="#" class="navigation__page">1</a>
-                                    <a href="#" class="navigation__page active">2</a>
-                                    <a href="#" class="navigation__page">3</a>
-                                    <a href="#" class="navigation__page">4</a>
-                                    <a href="#" class="navigation__page">5</a>
-                                    <a href="#" class="navigation__next">
-                                        Вперед
-                                        <svg>
-                                            <use xlink:="" href="img/icons/icons.svg#next">
-                                            </use>
-                                        </svg>
-                                    </a>
                                 </div>
 
                             </div>
@@ -2348,7 +2750,7 @@
             <div class="popup-confirm__desc">1 одиниця = 50 грн
             </div>
             <div class="popup-confirm__form">
-                <input type="text" value="10">
+                <input type="text" id="pay-input" value="10">
                 <span>=</span>
                 <div class="popup-confirm__result"><span>500</span> грн</div>
             </div>
@@ -2450,6 +2852,44 @@
                 </svg>
             </div>
             <div class="popup-confirm__text">Групу було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення сторінки</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити сторінку?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-page" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Сторінку було видалено</div>
         </div>
     </div>
 </div>
@@ -2597,7 +3037,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221104193455"></script>
+    <script src="js/app.min.js?_v=20221108121104"></script>
 </body>
 
 </html>
