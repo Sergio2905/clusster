@@ -90,7 +90,6 @@ html {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  height: -webkit-fill-available;
 }
 
 body {
@@ -119,11 +118,10 @@ body._lock {
 
 .page {
   position: absolute;
+  top: 0;
   width: 100%;
   overflow-y: auto;
   scrollbar-width: 0;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 .page::-webkit-scrollbar {
@@ -131,7 +129,6 @@ body._lock {
 }
 
 .page__body {
-  margin-top: 30px;
   display: flex;
   gap: 30px;
 }
@@ -8189,10 +8186,6 @@ body._lock {
 }
 
 @media (max-width: 1404px) {
-  .page__body {
-    gap: calc(10px + 20 * (100vw - 320px) / 1084);
-  }
-
   .btn_green {
     font-size: calc(12px + 4 * (100vw - 320px) / 1084);
     height: calc(36px + 18 * (100vw - 320px) / 1084);
@@ -9127,11 +9120,6 @@ body._lock {
 }
 
 @media (max-width: 992px) {
-  .page__body {
-    flex-direction: column;
-    margin-top: 0;
-  }
-
   .emoji__icon {
     width: 18px;
     height: 18px;
