@@ -9128,6 +9128,7 @@ body._lock {
   .page {
     top: 0;
     height: 100vh;
+    height: -webkit-fill-available;
   }
 
   .page__body {
