@@ -90,6 +90,7 @@ html {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -118,12 +119,12 @@ body._lock {
 
 .page {
   position: absolute;
-  top: 94px;
   width: 100%;
-  height: calc(100vh - 94px);
   margin-bottom: 30px;
   overflow-y: auto;
   scrollbar-width: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .page::-webkit-scrollbar {
@@ -9127,12 +9128,6 @@ body._lock {
 }
 
 @media (max-width: 992px) {
-  .page {
-    top: 0;
-    height: 100vh;
-    height: -webkit-fill-available;
-  }
-
   .page__body {
     flex-direction: column;
     margin-top: 0;
