@@ -122,8 +122,9 @@ body._lock {
   width: 100%;
   height: calc(100vh - 94px);
   padding-bottom: 30px;
+  transform: translate(0, 30px);
   overflow-y: auto;
-  scrollbar-width: none;
+  scrollbar-width: 0;
 }
 
 .page::-webkit-scrollbar {
@@ -1299,6 +1300,7 @@ body._lock {
   border-radius: 10px;
   overflow: hidden;
   flex: 0 0 73px;
+  margin-left: 10px;
 }
 
 .messages__image img {
@@ -2327,7 +2329,7 @@ body._lock {
   background: #fff;
   padding: 25px 30px;
   width: 100%;
-  height: 500px;
+  height: 50vh;
   overflow: auto;
 }
 
@@ -2491,6 +2493,10 @@ body._lock {
   width: 50%;
   height: 50%;
   fill: #8E8E8E;
+}
+
+.minichat__input {
+  font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1084);
 }
 
 @keyframes minichatBtn {
@@ -8275,6 +8281,43 @@ body._lock {
     border: calc(2px + 2 * (100vw - 320px) / 1084) solid #86BB64;
   }
 
+  .messages__body {
+    padding: calc(15px + 12 * (100vw - 320px) / 1084) calc(10px + 6 * (100vw - 320px) / 1084);
+  }
+
+  .messages__title {
+    font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1084);
+  }
+
+  .messages__avatar {
+    width: calc(30px + 12 * (100vw - 320px) / 1084);
+    height: calc(30px + 12 * (100vw - 320px) / 1084);
+    margin-right: calc(5px + 5 * (100vw - 320px) / 1084);
+  }
+
+  .messages__user {
+    font-size: calc(0.8125rem + 2 * (100vw - 20rem) / 1084);
+  }
+
+  .messages__all {
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1084);
+  }
+
+  .messages__btn {
+    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1084);
+    min-width: calc(100px + 90 * (100vw - 320px) / 1084);
+  }
+
+  .messages__menu {
+    width: calc(28px + 6 * (100vw - 320px) / 1084);
+    height: calc(28px + 6 * (100vw - 320px) / 1084);
+  }
+
+  .messages__image {
+    height: calc(50px + 23 * (100vw - 320px) / 1084);
+    flex: 0 0 calc(50px + 23 * (100vw - 320px) / 1084);
+  }
+
   .options__list {
     width: calc(230px + 65 * (100vw - 320px) / 1084);
     padding: calc(15px + 5 * (100vw - 320px) / 1084);
@@ -8364,6 +8407,42 @@ body._lock {
 
   .create__btn_del {
     width: calc(140px + 80 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__header {
+    padding: calc(10px + 10 * (100vw - 320px) / 1084) calc(15px + 15 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__name {
+    font-size: calc(0.875rem + 8 * (100vw - 20rem) / 1084);
+  }
+
+  .minichat__body {
+    padding: calc(15px + 10 * (100vw - 320px) / 1084) calc(15px + 15 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__block:not(:last-child) {
+    margin-bottom: calc(15px + 10 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__avatar {
+    width: calc(30px + 15 * (100vw - 320px) / 1084);
+    height: calc(30px + 15 * (100vw - 320px) / 1084);
+    flex: 0 0 calc(30px + 15 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__text {
+    font-size: calc(0.75rem + 3 * (100vw - 20rem) / 1084);
+    margin-bottom: calc(5px + 5 * (100vw - 320px) / 1084);
+  }
+
+  .minichat__time {
+    font-size: calc(0.625rem + 2 * (100vw - 20rem) / 1084);
+  }
+
+  .minichat__time svg {
+    width: calc(11px + 2 * (100vw - 320px) / 1084);
+    height: calc(11px + 2 * (100vw - 320px) / 1084);
   }
 
   .minichat__btn {
@@ -8524,6 +8603,10 @@ body._lock {
 
   .post__gallery {
     height: calc(200px + 185 * (100vw - 320px) / 1084);
+  }
+
+  .comments__form input {
+    font-size: calc(0.75rem + 3 * (100vw - 20rem) / 1084);
   }
 
   .groups-profile__title,
@@ -9044,8 +9127,8 @@ body._lock {
 
 @media (max-width: 992px) {
   .page {
-    top: calc(125px + 50 * (100vw - 480px) / 512);
-    height: calc(100vh - (140px + 40 * (100vw - 320px) / 672));
+    top: calc(95px + 50 * (100vw - 480px) / 512);
+    height: calc(100vh - (125px + 50 * (100vw - 480px) / 512));
   }
 
   .page__body {
@@ -9070,18 +9153,6 @@ body._lock {
   .emoji-minichat__icon {
     width: 18px;
     height: 18px;
-  }
-
-  .messages__title {
-    font-size: 1rem;
-  }
-
-  .messages__user {
-    font-size: 0.875rem;
-  }
-
-  .messages__all {
-    font-size: 1rem;
   }
 
   .contacts {
@@ -9221,10 +9292,6 @@ body._lock {
     font-size: 1rem;
   }
 
-  .comments__form input {
-    font-size: 0.875rem;
-  }
-
   .comments__camera {
     width: 22px;
     height: 22px;
@@ -9294,11 +9361,6 @@ body._lock {
     left: 30%;
   }
 
-  .messages__btn {
-    font-size: 0.875rem;
-    min-width: 140px;
-  }
-
   .options__list_other {
     width: 310px;
   }
@@ -9322,6 +9384,10 @@ body._lock {
 
   .contacts__show-hide {
     display: flex;
+  }
+
+  .minichat {
+    max-width: 100vw;
   }
 
   .menu-header__messages .messages__body {
