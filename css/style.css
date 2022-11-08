@@ -121,8 +121,7 @@ body._lock {
   top: 94px;
   width: 100%;
   height: calc(100vh - 94px);
-  padding-bottom: 30px;
-  transform: translate(0, 30px);
+  margin-bottom: 30px;
   overflow-y: auto;
   scrollbar-width: 0;
 }
@@ -9127,8 +9126,8 @@ body._lock {
 
 @media (max-width: 992px) {
   .page {
-    top: calc(95px + 50 * (100vw - 480px) / 512);
-    height: calc(100vh - (125px + 50 * (100vw - 480px) / 512));
+    top: 0;
+    height: 100vh;
   }
 
   .page__body {
@@ -9459,10 +9458,6 @@ body._lock {
 }
 
 @media (max-width: 480px) {
-  .page {
-    top: 125px;
-  }
-
   .popup__content {
     width: 100%;
   }
