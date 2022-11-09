@@ -103,9 +103,8 @@ body._lock {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 100vw;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -120,6 +119,8 @@ body._lock {
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
   overflow-y: auto;
   scrollbar-width: 0;
 }
@@ -129,6 +130,7 @@ body._lock {
 }
 
 .page__body {
+  margin-top: 30px;
   display: flex;
   gap: 30px;
 }
@@ -2289,6 +2291,7 @@ body._lock {
   width: 435px;
   transform: translate(0, 100%);
   transition: all 0.2s linear;
+  display: none;
 }
 
 .minichat.active {
@@ -8186,6 +8189,10 @@ body._lock {
 }
 
 @media (max-width: 1404px) {
+  .page__body {
+    gap: calc(10px + 20 * (100vw - 320px) / 1084);
+  }
+
   .btn_green {
     font-size: calc(12px + 4 * (100vw - 320px) / 1084);
     height: calc(36px + 18 * (100vw - 320px) / 1084);
@@ -9120,6 +9127,10 @@ body._lock {
 }
 
 @media (max-width: 992px) {
+  .page__body {
+    flex-direction: column;
+  }
+
   .emoji__icon {
     width: 18px;
     height: 18px;
