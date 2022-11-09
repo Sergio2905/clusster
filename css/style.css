@@ -2299,7 +2299,6 @@ body._lock {
   width: 435px;
   transform: translate(0, 100%);
   transition: all 0.2s linear;
-  display: none;
 }
 
 .minichat.active {
