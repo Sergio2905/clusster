@@ -37,7 +37,6 @@ body {
   min-width: 100%;
   max-width: 100vw;
   overflow: hidden;
-  height: -webkit-fill-available;
 }
 
 input,
@@ -87,14 +86,20 @@ h6 {
   font-weight: 400;
 }
 
+:root {
+  --app-height: 100%;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  height: var(--app-height);
 }
 
 body {
   background: #F3F3F3;
+  height: var(--app-height);
 }
 
 body._lock {
@@ -108,6 +113,7 @@ body._lock {
   max-width: 100vw;
   position: relative;
   overflow: hidden;
+  height: var(--app-height);
 }
 
 .container {
@@ -124,6 +130,7 @@ body._lock {
   padding-bottom: 30px;
   overflow-y: auto;
   scrollbar-width: 0;
+  height: var(--app-height);
 }
 
 .page::-webkit-scrollbar {
