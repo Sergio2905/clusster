@@ -4,8 +4,8 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221108192010">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221127140047">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
 <body>
@@ -694,37 +694,152 @@
 
                     <div class="page__content content">
                         <div class="content__body">
-                            <h1 class="content__title title">
-                                Рейтинг
-                                <div class="content__prompt prompt">
-                                    <div class="prompt__icon">
-                                        <span>i</span>
+                            <div class="content__wrapper">
+                                <h1 class="content__title title">
+                                    Рейтинг
+                                    <div class="content__prompt prompt">
+                                        <div class="prompt__icon">
+                                            <span>i</span>
+                                        </div>
+                                        <div class="prompt__info">
+                                            <p>
+                                                <span class="bold">Рейтинг:</span>
+                                                Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
+                                                Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
+                                                дорівнює еквіваленту одиниці до гривні.
+                                            </p>
+                                            <p>
+                                                <span class="bold">Кола:</span>
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                            </p>
+                                            <p>
+                                                <span class="bold">Відзнаки:</span>
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                                Більш детально про Виплату одиниць читайте у розділі Питаннях та
+                                                відповідях
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="prompt__info">
-                                        <p>
-                                            <span class="bold">Рейтинг:</span>
-                                            Це виплати, які здійснюються з вашого рахунку у кінці кожного місяця.
-                                            Еквівалент виплат в гривнях дорівнює еквіваленту одиниці до гривні.
-                                            дорівнює еквіваленту одиниці до гривні.
-                                        </p>
+                                </h1>
+                                <div class="content__filter filter">
+                                    <div class="filter__sort sort">
+                                        <button class="sort__btn" type="button">
+                                            <picture><source srcset="img/icons/filter.webp" type="image/webp"><img src="img/icons/filter.png" alt="Icon"></picture>
+                                        </button>
+                                        <div class="sort__menu">
+                                            <div class="sort__header">Сортувати:</div>
+                                            <ul class="sort__list">
+                                                <li class="sort__item active">за кількістю друзів</li>
+                                                <li class="sort__item">за збільшенням балів</li>
+                                                <li class="sort__item">за зменшенням балів</li>
+                                                <li class="sort__item">за надходженнями</li>
+                                            </ul>
+                                        </div>
+                                    </div>
 
-                                        <p>
-                                            <span class="bold">Кола:</span>
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                        </p>
-
-                                        <p>
-                                            <span class="bold">Відзнаки:</span>
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                            Більш детально про Виплату одиниць читайте у розділі Питаннях та відповідях
-                                        </p>
-
+                                    <div class="filter__select select-filter">
+                                        <div class="select-filter__box select-box">
+                                            <div class="options-container">
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle-all"
+                                                        name="filter-circles">
+                                                    <label for="for circle-all">
+                                                        <div type="button" class="header-rating__sum">
+                                                            <span>
+                                                                <svg>
+                                                                    <use xlink: href="img/icons/icons.svg#sum"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle1"
+                                                        name="filter-circles">
+                                                    <label for="for circle1">
+                                                        <div class="header-rating__circle">
+                                                            <span>1</span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle2"
+                                                        name="filter-circles">
+                                                    <label for="for circle3">
+                                                        <div class="header-rating__circle">
+                                                            <span>2</span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle3"
+                                                        name="filter-circles">
+                                                    <label for="for circle3">
+                                                        <div class="header-rating__circle">
+                                                            <span>3</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle4"
+                                                        name="filter-circles">
+                                                    <label for="for circle4">
+                                                        <div class="header-rating__circle">
+                                                            <span>4</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle5"
+                                                        name="filter-circles">
+                                                    <label for="for circle5">
+                                                        <div class="header-rating__circle">
+                                                            <span class="active">5</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="selected">
+                                                <div type="button" class="header-rating__sum">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#sum"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </h1>
+                            </div>
 
                             <div class="content__rating rating">
                                 <div class="rating__header header-rating">
@@ -811,14 +926,65 @@
                                         </div>
                                         <div class="rating__name">Игорь Бандера</div>
                                     </div>
-                                    <div class="rating__circle">4</div>
-                                    <div class="rating__circle">13</div>
-                                    <div class="rating__circle">13</div>
-                                    <div class="rating__circle">19</div>
-                                    <div class="rating__circle">1</div>
+                                    <div class="rating__circle">
+                                        <div type="button" class="header-rating__circle">
+                                            <span>1</span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="active"></span>
+                                        </div>
+                                        4
+                                    </div>
+                                    <div class="rating__circle">
+                                        <div type="button" class="header-rating__circle">
+                                            <span>2</span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                        </div>
+                                        13
+                                    </div>
+                                    <div class="rating__circle">
+                                        <div type="button" class="header-rating__circle">
+                                            <span>3</span>
+                                            <span></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                        </div>
+                                        13
+                                    </div>
+                                    <div class="rating__circle">
+                                        <div type="button" class="header-rating__circle">
+                                            <span>4</span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                        </div>
+                                        19
+                                    </div>
+                                    <div class="rating__circle">
+                                        <div type="button" class="header-rating__circle">
+                                            <span class="active">5</span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                        </div>
+                                        1
+                                    </div>
                                     <div class="rating__sum">51</div>
-                                    <div class="rating__friends">9</div>
-                                    <div class="rating__profit">3</div>
+                                    <div class="rating__friends">
+                                        <span>Друзі:</span>
+                                        9
+                                    </div>
+                                    <div class="rating__profit">
+                                        <span>Надходження:</span>
+                                        3
+                                    </div>
                                 </div>
                                 <div class="rating__wrapper">
                                     <div class="rating__table" data-simplebar>
@@ -830,14 +996,65 @@
                                                 </div>
                                                 <div class="rating__name">Тимофей Четверик</div>
                                             </div>
-                                            <div class="rating__circle">4</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">19</div>
-                                            <div class="rating__circle">1</div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                4
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>2</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>3</span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>4</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                19
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span class="active">5</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                1
+                                            </div>
                                             <div class="rating__sum">51</div>
-                                            <div class="rating__friends">9</div>
-                                            <div class="rating__profit">3</div>
+                                            <div class="rating__friends">
+                                                <span>Друзі:</span>
+                                                9
+                                            </div>
+                                            <div class="rating__profit">
+                                                <span>Надходження:</span>
+                                                3
+                                            </div>
                                         </div>
                                         <div class="rating__item">
                                             <div class="rating__number">7</div>
@@ -847,14 +1064,65 @@
                                                 </div>
                                                 <div class="rating__name">Андрей Андреев</div>
                                             </div>
-                                            <div class="rating__circle">4</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">19</div>
-                                            <div class="rating__circle">1</div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                4
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>2</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>3</span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>4</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                19
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span class="active">5</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                1
+                                            </div>
                                             <div class="rating__sum">51</div>
-                                            <div class="rating__friends">9</div>
-                                            <div class="rating__profit">3</div>
+                                            <div class="rating__friends">
+                                                <span>Друзі:</span>
+                                                9
+                                            </div>
+                                            <div class="rating__profit">
+                                                <span>Надходження:</span>
+                                                3
+                                            </div>
                                         </div>
                                         <div class="rating__item">
                                             <div class="rating__number">7</div>
@@ -878,14 +1146,65 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rating__circle">4</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">19</div>
-                                            <div class="rating__circle">1</div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                4
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>2</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>3</span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>4</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                19
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span class="active">5</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                1
+                                            </div>
                                             <div class="rating__sum">51</div>
-                                            <div class="rating__friends">9</div>
-                                            <div class="rating__profit">3</div>
+                                            <div class="rating__friends">
+                                                <span>Друзі:</span>
+                                                9
+                                            </div>
+                                            <div class="rating__profit">
+                                                <span>Надходження:</span>
+                                                3
+                                            </div>
                                         </div>
                                         <div class="rating__item">
                                             <div class="rating__number">7</div>
@@ -908,14 +1227,65 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rating__circle">4</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">19</div>
-                                            <div class="rating__circle">1</div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                4
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>2</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>3</span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>4</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                19
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span class="active">5</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                1
+                                            </div>
                                             <div class="rating__sum">51</div>
-                                            <div class="rating__friends">9</div>
-                                            <div class="rating__profit">3</div>
+                                            <div class="rating__friends">
+                                                <span>Друзі:</span>
+                                                9
+                                            </div>
+                                            <div class="rating__profit">
+                                                <span>Надходження:</span>
+                                                3
+                                            </div>
                                         </div>
                                         <div class="rating__item">
                                             <div class="rating__number">7</div>
@@ -925,14 +1295,65 @@
                                                 </div>
                                                 <div class="rating__name">Олег Душний</div>
                                             </div>
-                                            <div class="rating__circle">4</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">13</div>
-                                            <div class="rating__circle">19</div>
-                                            <div class="rating__circle">1</div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                4
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>2</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>3</span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                13
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span>4</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                19
+                                            </div>
+                                            <div class="rating__circle">
+                                                <div type="button" class="header-rating__circle">
+                                                    <span class="active">5</span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                                1
+                                            </div>
                                             <div class="rating__sum">51</div>
-                                            <div class="rating__friends">9</div>
-                                            <div class="rating__profit">3</div>
+                                            <div class="rating__friends">
+                                                <span>Друзі:</span>
+                                                9
+                                            </div>
+                                            <div class="rating__profit">
+                                                <span>Надходження:</span>
+                                                3
+                                            </div>
                                         </div>
                                         <div class="rating__item">
                                             <div class="rating__number">7</div>
@@ -1593,7 +2014,6 @@
         <div class="comments__creation">
             <div class="comments__form messages">
                 <input type="text" class="minichat__input" placeholder="Напишіть повідомлення...">
-                <input type="file" id="file1">
                 <div class="comments__emoji emoji-minichat">
                     <button type="button" class="emoji-minichat__icon">
                         <svg>
@@ -1619,11 +2039,11 @@
                         <li class="emoji-minichat__item">👎</li>
                     </ul>
                 </div>
-                <label for="file1" class="comments__camera">
+                <button type="button" class="comments__camera">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#camera"></use>
                     </svg>
-                </label>
+                </button>
             </div>
         </div>
     </div>
@@ -2430,7 +2850,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221108192010"></script>
+    <script src="js/app.min.js?_v=20221127140047"></script>
 </body>
 
 </html>
