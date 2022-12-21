@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202125919">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -35,11 +35,6 @@
                     </svg>
                 </span>
             </a>
-            <button type="button" class="header__search-btn">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#search"></use>
-                </svg>
-            </button>
             <div class="header__search search-header messages">
                 <button type="button" class="search-header__btn">
                     <svg>
@@ -147,6 +142,11 @@
                 </div>
             </div>
             <div class="header__menu menu-header">
+                <button type="button" class="header__search-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#family"></use>
@@ -603,6 +603,11 @@
                                 <span>Вийти</span>
                             </a>
                         </li>
+                        <button type="button" class="close">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -732,7 +737,7 @@
                                         </div>
                                         <div class="cards-family__card">
                                             <h2 class="cards-family__title">
-                                                Нараховано
+                                                Нараховано одиниць
                                                 <div class="cards-family__prompt prompt">
                                                     <div class="prompt__icon">
                                                         <span>i</span>
@@ -1073,6 +1078,36 @@
 
                                 </div>
 
+                                <div class="family__data data">
+                                    <div class="data__wrapper">
+                                        <div class="data__header">
+                                            <button type="button" class="data__back">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="data__table">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="family__details details">
+                                    <div class="details__wrapper">
+                                        <div class="details__header">
+                                            <button type="button" class="details__back">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="details__table">
+
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="family__tabs tabs-family tabs" data-tabs="1">
                                     <div class="tabs__header" data-tabs="1">
                                         <div class="tabs__item _active" data-tabs="1">
@@ -1302,34 +1337,39 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="family__more show-all">
+
+                                            <button class="content__more">
                                                 <svg>
                                                     <use xlink:="" href="img/icons/icons.svg#refresh">
                                                     </use>
                                                 </svg>
                                                 <span>Завантажити ще</span>
                                             </button>
-                                            <div class="family__navigation navigation">
-                                                <a href="#" class="navigation__prev">
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#prev">
-                                                        </use>
-                                                    </svg>
-                                                    Назад
-                                                </a>
-                                                <a href="#" class="navigation__page">1</a>
-                                                <a href="#" class="navigation__page active">2</a>
-                                                <a href="#" class="navigation__page">3</a>
-                                                <a href="#" class="navigation__page">4</a>
-                                                <a href="#" class="navigation__page">5</a>
-                                                <a href="#" class="navigation__next">
-                                                    Вперед
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#next">
-                                                        </use>
-                                                    </svg>
-                                                </a>
-                                            </div>
+
+                                            <div class="content__navigation navigation">
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
+
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
@@ -1511,34 +1551,39 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="family__more show-all">
+
+                                            <button class="content__more">
                                                 <svg>
                                                     <use xlink:="" href="img/icons/icons.svg#refresh">
                                                     </use>
                                                 </svg>
                                                 <span>Завантажити ще</span>
                                             </button>
-                                            <div class="family__navigation navigation">
-                                                <a href="#" class="navigation__prev">
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#prev">
-                                                        </use>
-                                                    </svg>
-                                                    Назад
-                                                </a>
-                                                <a href="#" class="navigation__page">1</a>
-                                                <a href="#" class="navigation__page active">2</a>
-                                                <a href="#" class="navigation__page">3</a>
-                                                <a href="#" class="navigation__page">4</a>
-                                                <a href="#" class="navigation__page">5</a>
-                                                <a href="#" class="navigation__next">
-                                                    Вперед
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#next">
-                                                        </use>
-                                                    </svg>
-                                                </a>
-                                            </div>
+
+                                            <div class="content__navigation navigation">
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
+
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
@@ -1554,7 +1599,7 @@
                                                     <div class="tabs-family__datetime">Дата / Час</div>
                                                     <div class="tabs-family__left">Залишок</div>
                                                     <div class="tabs-family__earn">Нараховано</div>
-                                                    <div class="tabs-family__ua-sum">Сума грн</div>
+                                                    <div class="tabs-family__uah">Сума грн</div>
                                                     <div class="tabs-family__status">Статус</div>
                                                 </div>
                                                 <ul class="tabs-family__table" data-simplebar>
@@ -1563,7 +1608,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1571,7 +1616,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">1 000 000 UAN</div>
+                                                        <div class="tabs-family__uah">1 000 000 UAN</div>
                                                         <div class="tabs-family__status">Виплачено</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1579,7 +1624,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1587,7 +1632,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">1 000 000 UAN</div>
+                                                        <div class="tabs-family__uah">1 000 000 UAN</div>
                                                         <div class="tabs-family__status">Виплачено</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1595,7 +1640,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1603,7 +1648,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Виплачено</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1611,7 +1656,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">1 000 000 UAN</div>
+                                                        <div class="tabs-family__uah">1 000 000 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1619,7 +1664,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1627,7 +1672,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item">
@@ -1635,7 +1680,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1643,7 +1688,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1651,7 +1696,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1659,7 +1704,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1667,7 +1712,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1675,7 +1720,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1683,7 +1728,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1691,7 +1736,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1699,7 +1744,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1707,7 +1752,7 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                     <li class="tabs-family__item hidden">
@@ -1715,39 +1760,44 @@
                                                         <div class="tabs-family__datetime">22.08.22 17:10</div>
                                                         <div class="tabs-family__left">20</div>
                                                         <div class="tabs-family__earn">30</div>
-                                                        <div class="tabs-family__ua-sum">100 UAN</div>
+                                                        <div class="tabs-family__uah">100 UAN</div>
                                                         <div class="tabs-family__status">Звірка</div>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="family__more show-all">
+
+                                            <button class="content__more">
                                                 <svg>
                                                     <use xlink:="" href="img/icons/icons.svg#refresh">
                                                     </use>
                                                 </svg>
                                                 <span>Завантажити ще</span>
                                             </button>
-                                            <div class="family__navigation navigation">
-                                                <a href="#" class="navigation__prev">
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#prev">
-                                                        </use>
-                                                    </svg>
-                                                    Назад
-                                                </a>
-                                                <a href="#" class="navigation__page">1</a>
-                                                <a href="#" class="navigation__page active">2</a>
-                                                <a href="#" class="navigation__page">3</a>
-                                                <a href="#" class="navigation__page">4</a>
-                                                <a href="#" class="navigation__page">5</a>
-                                                <a href="#" class="navigation__next">
-                                                    Вперед
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#next">
-                                                        </use>
-                                                    </svg>
-                                                </a>
-                                            </div>
+
+                                            <div class="content__navigation navigation">
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
+
                                         </div>
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
@@ -1929,34 +1979,39 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="family__more show-all">
+
+                                            <button class="content__more">
                                                 <svg>
                                                     <use xlink:="" href="img/icons/icons.svg#refresh">
                                                     </use>
                                                 </svg>
                                                 <span>Завантажити ще</span>
                                             </button>
-                                            <div class="family__navigation navigation">
-                                                <a href="#" class="navigation__prev">
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#prev">
-                                                        </use>
-                                                    </svg>
-                                                    Назад
-                                                </a>
-                                                <a href="#" class="navigation__page">1</a>
-                                                <a href="#" class="navigation__page active">2</a>
-                                                <a href="#" class="navigation__page">3</a>
-                                                <a href="#" class="navigation__page">4</a>
-                                                <a href="#" class="navigation__page">5</a>
-                                                <a href="#" class="navigation__next">
-                                                    Вперед
-                                                    <svg>
-                                                        <use xlink:="" href="img/icons/icons.svg#next">
-                                                        </use>
-                                                    </svg>
-                                                </a>
-                                            </div>
+
+                                            <div class="content__navigation navigation">
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -3036,7 +3091,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221202125919"></script>
+    <script src="js/app.min.js?_v=20221221124827"></script>
 </body>
 
 </html>

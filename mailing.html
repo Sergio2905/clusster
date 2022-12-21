@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202125919">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -35,11 +35,6 @@
                     </svg>
                 </span>
             </a>
-            <button type="button" class="header__search-btn">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#search"></use>
-                </svg>
-            </button>
             <div class="header__search search-header messages">
                 <button type="button" class="search-header__btn">
                     <svg>
@@ -147,6 +142,11 @@
                 </div>
             </div>
             <div class="header__menu menu-header">
+                <button type="button" class="header__search-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#family"></use>
@@ -603,6 +603,11 @@
                                 <span>Вийти</span>
                             </a>
                         </li>
+                        <button type="button" class="close">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -698,6 +703,12 @@
 
                             <div class="content__chat chat">
                                 <div class="chat__sidebar sidebar-chat" data-spollers data-one-spoller>
+                                    <button class="contacts__show-hide" type="button">
+                                        Контакти
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#arrow-sub"></use>
+                                        </svg>
+                                    </button>
                                     <div class="sidebar-chat__header">
                                         <h2 class="sidebar-chat__title">
                                             Ваш реферал
@@ -2589,7 +2600,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221202125919"></script>
+    <script src="js/app.min.js?_v=20221221124827"></script>
 </body>
 
 </html>

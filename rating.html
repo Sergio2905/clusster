@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202125919">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -35,11 +35,6 @@
                     </svg>
                 </span>
             </a>
-            <button type="button" class="header__search-btn">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#search"></use>
-                </svg>
-            </button>
             <div class="header__search search-header messages">
                 <button type="button" class="search-header__btn">
                     <svg>
@@ -147,6 +142,11 @@
                 </div>
             </div>
             <div class="header__menu menu-header">
+                <button type="button" class="header__search-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#family"></use>
@@ -603,6 +603,11 @@
                                 <span>Вийти</span>
                             </a>
                         </li>
+                        <button type="button" class="close">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -681,7 +686,7 @@
                                     <span>Питання та відповіді</span>
                                 </a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item menu__item-last">
                                 <a href="about.html" class="menu__link">
                                     <svg class="stroke">
                                         <use xlink: href="img/icons/icons.svg#clusster"></use>
@@ -737,10 +742,10 @@
                                         <div class="sort__menu">
                                             <div class="sort__header">Сортувати:</div>
                                             <ul class="sort__list">
-                                                <li class="sort__item active">за кількістю друзів</li>
-                                                <li class="sort__item">за збільшенням балів</li>
-                                                <li class="sort__item">за зменшенням балів</li>
-                                                <li class="sort__item">за надходженнями</li>
+                                                <li class="sort__item active"><span>за кількістю друзів</span></li>
+                                                <li class="sort__item"><span>за збільшенням балів</span></li>
+                                                <li class="sort__item"><span>за зменшенням балів</span></li>
+                                                <li class="sort__item"><span>за надходженнями</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1755,26 +1760,30 @@
                             </button>
 
                             <div class="content__navigation navigation">
-                                <a href="#" class="navigation__prev">
-                                    <svg>
-                                        <use xlink:="" href="img/icons/icons.svg#prev">
-                                        </use>
-                                    </svg>
-                                    Назад
-                                </a>
-                                <a href="#" class="navigation__page">1</a>
-                                <a href="#" class="navigation__page active">2</a>
-                                <a href="#" class="navigation__page">3</a>
-                                <a href="#" class="navigation__page">4</a>
-                                <a href="#" class="navigation__page">5</a>
-                                <a href="#" class="navigation__next">
-                                    Вперед
-                                    <svg>
-                                        <use xlink:="" href="img/icons/icons.svg#next">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </div>
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
+
+
 
                         </div>
                     </div>
@@ -2850,7 +2859,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221202125919"></script>
+    <script src="js/app.min.js?_v=20221221124827"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202125919">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -35,11 +35,6 @@
                     </svg>
                 </span>
             </a>
-            <button type="button" class="header__search-btn">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#search"></use>
-                </svg>
-            </button>
             <div class="header__search search-header messages">
                 <button type="button" class="search-header__btn">
                     <svg>
@@ -147,6 +142,11 @@
                 </div>
             </div>
             <div class="header__menu menu-header">
+                <button type="button" class="header__search-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#family"></use>
@@ -603,6 +603,11 @@
                                 <span>Вийти</span>
                             </a>
                         </li>
+                        <button type="button" class="close">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -693,11 +698,122 @@
                     </div>
 
                     <div class="page__content content">
-                        <div class="content__body">
-                            <h1 class="content__title title">Мої кола</h1>
+                        <div class="content__body" data-last="circles-header, prepend">
 
-                            <div class="content__circles circles">
-                                <div class="circles__header">
+                            <div class="content__wrapper">
+                                <h1 class="content__title title">Мої кола</h1>
+                                <div class="content__filter filter">
+                                    <div class="filter__sort sort">
+                                        <button class="sort__btn" type="button">
+                                            <picture><source srcset="img/icons/filter.webp" type="image/webp"><img src="img/icons/filter.png" alt="Icon"></picture>
+                                        </button>
+                                        <div class="sort__menu">
+                                            <div class="sort__header">Сортувати:</div>
+                                            <ul class="sort__list">
+                                                <li class="sort__item active"><span>за збільшенням кіл</span></li>
+                                                <li class="sort__item"><span>за зменшенням кіл</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__select select-filter">
+                                        <div class="select-filter__box select-box">
+                                            <div class="options-container">
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle1"
+                                                        name="filter-circles">
+                                                    <label for="for circle1">
+                                                        <div class="header-rating__circle">
+                                                            <span>1</span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle2"
+                                                        name="filter-circles">
+                                                    <label for="for circle3">
+                                                        <div class="header-rating__circle">
+                                                            <span>2</span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle3"
+                                                        name="filter-circles">
+                                                    <label for="for circle3">
+                                                        <div class="header-rating__circle">
+                                                            <span>3</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle4"
+                                                        name="filter-circles">
+                                                    <label for="for circle4">
+                                                        <div class="header-rating__circle">
+                                                            <span>4</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle5"
+                                                        name="filter-circles">
+                                                    <label for="for circle5">
+                                                        <div class="header-rating__circle">
+                                                            <span class="active">5</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="circle5"
+                                                        name="filter-circles">
+                                                    <label for="for circle5">
+                                                        <div class="header-rating__circle">
+                                                            <span class="active">6</span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                            <span class="active"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="selected">
+                                                <div class="header-rating__circle">
+                                                    <span>1</span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="active"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content__circles circles" data-first="circles-header, prepend">
+                                <div class="circles__header" data-move="circles-header, 768">
                                     <div class="circles__user">
                                         <div class="circles__avatar">
                                             <div class="circles__photo">
@@ -891,6 +1007,7 @@
                                                 </div>
                                                 <div class="circles__items">
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">1</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -904,6 +1021,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">2</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -918,6 +1036,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">3</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -928,6 +1047,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">4</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend5.jpg"
@@ -942,6 +1062,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">5</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -952,6 +1073,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">6</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -962,6 +1084,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">7</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -972,6 +1095,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">8</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -982,6 +1106,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">9</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -992,6 +1117,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">10</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1002,6 +1128,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">11</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1012,6 +1139,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">12</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1022,6 +1150,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">13</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1035,6 +1164,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">14</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1049,6 +1179,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">15</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1059,6 +1190,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">16</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend5.jpg"
@@ -1073,6 +1205,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">17</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1083,6 +1216,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">18</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1093,6 +1227,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">19</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1103,6 +1238,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">20</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1113,6 +1249,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">21</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1123,6 +1260,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">22</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1133,6 +1271,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">23</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1143,6 +1282,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">24</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1153,6 +1293,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">25</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1166,6 +1307,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">26</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1180,6 +1322,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">27</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1190,6 +1333,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">28</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend5.jpg"
@@ -1204,6 +1348,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">29</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1214,6 +1359,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">30</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1224,6 +1370,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">31</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1234,6 +1381,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">32</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1244,6 +1392,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">33</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1254,6 +1403,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">34</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1264,6 +1414,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">35</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1274,6 +1425,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">36</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1294,6 +1446,7 @@
                                                 </div>
                                                 <div class="circles__items">
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">1</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1307,6 +1460,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">2</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1331,6 +1485,7 @@
                                                 </div>
                                                 <div class="circles__items">
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">1</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1344,6 +1499,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">2</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1368,6 +1524,7 @@
                                                 </div>
                                                 <div class="circles__items">
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">1</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1381,6 +1538,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">2</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1395,6 +1553,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">3</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1409,6 +1568,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">4</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1419,6 +1579,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">5</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend5.jpg"
@@ -1433,6 +1594,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">6</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1453,6 +1615,7 @@
                                                 </div>
                                                 <div class="circles__items">
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">1</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="Avatar"></picture>
@@ -1466,6 +1629,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">2</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1480,6 +1644,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">3</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend3.jpg"
@@ -1494,6 +1659,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">4</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -1504,6 +1670,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">5</div>
                                                         <div class="item-circles__avatar">
                                                             <div class="item-circles__photo">
                                                                 <img src="img/profile/friends/friend5.jpg"
@@ -1518,6 +1685,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="circles__item item-circles">
+                                                        <div class="item-circles__number">6</div>
                                                         <div class="item-circles__avatar">
                                                             <svg>
                                                                 <use xlink: href="img/icons/icons.svg#user"></use>
@@ -2649,7 +2817,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221202125919"></script>
+    <script src="js/app.min.js?_v=20221221124827"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202125919">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -35,11 +35,6 @@
                     </svg>
                 </span>
             </a>
-            <button type="button" class="header__search-btn">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#search"></use>
-                </svg>
-            </button>
             <div class="header__search search-header messages">
                 <button type="button" class="search-header__btn">
                     <svg>
@@ -147,6 +142,11 @@
                 </div>
             </div>
             <div class="header__menu menu-header">
+                <button type="button" class="header__search-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#family"></use>
@@ -603,6 +603,11 @@
                                 <span>Вийти</span>
                             </a>
                         </li>
+                        <button type="button" class="close">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -617,7 +622,7 @@
                     <div class="page__content content">
                         <div class="content__body">
                             <div class="content__profile profile">
-                                <div class="profile__header header-profile">
+                                <div class="profile__header header-profile" data-last="profile-info, after">
                                     <div class="header-profile__bg">
                                         <picture><source srcset="img/profile/bg.webp" type="image/webp"><img src="img/profile/bg.jpg" alt="Background"></picture>
                                     </div>
@@ -656,8 +661,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="header-profile__right">
-                                        <div class="header-profile__info">
+                                    <div class="header-profile__right" data-first="profile-info, prepend">
+                                        <div class="header-profile__info" data-move="profile-info, 480">
                                             <div class="header-profile__name">
                                                 <span>Игорь Бандера</span>
                                                 <div class="header-profile__status">
@@ -681,12 +686,42 @@
                                 <div class="profile__content content-profile">
                                     <div class="content-profile__tabs tabs" data-tabs="1">
                                         <div class="tabs__header" data-tabs="1">
-                                            <div class="tabs__item" data-tabs="1">Стрічка</div>
-                                            <div class="tabs__item" data-tabs="1">Друзі</div>
-                                            <div class="tabs__item _active" data-tabs="1">Фотографії</div>
-                                            <div class="tabs__item" data-tabs="1">Сторінки</div>
-                                            <div class="tabs__item" data-tabs="1">Групи</div>
-                                            <div class="tabs__item" data-tabs="1">Вподобайки</div>
+                                            <div class="tabs__item _active" data-tabs="1">
+                                                <svg class="stroke">
+                                                    <use xlink: href="img/icons/icons.svg#tape"></use>
+                                                </svg>
+                                                <span>Стрічка</span>
+                                            </div>
+                                            <div class="tabs__item" data-tabs="1">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#friends"></use>
+                                                </svg>
+                                                <span>Друзі</span>
+                                            </div>
+                                            <div class="tabs__item" data-tabs="1">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#camera"></use>
+                                                </svg>
+                                                <span>Фотографії</span>
+                                            </div>
+                                            <div class="tabs__item" data-tabs="1">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#pages"></use>
+                                                </svg>
+                                                <span>Сторінки</span>
+                                            </div>
+                                            <div class="tabs__item" data-tabs="1">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#groups"></use>
+                                                </svg>
+                                                <span>Групи</span>
+                                            </div>
+                                            <div class="tabs__item" data-tabs="1">
+                                                <svg>
+                                                    <use xlink: href="img/icons/icons.svg#like"></use>
+                                                </svg>
+                                                <span>Вподобайки</span>
+                                            </div>
                                             <div class="tabs__indicator" data-tabs="1"></div>
                                         </div>
 
@@ -905,6 +940,7 @@
     </div>
 
     <div class="tabs__body" data-tabs="2">
+
         <div class="tabs__block _active" data-tabs="2">
             <div class="tabs__content">
                 <div class="friends__body">
@@ -1544,7 +1580,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -1552,12 +1588,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -1565,9 +1607,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -2154,7 +2202,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -2162,12 +2210,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -2175,9 +2229,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -2800,7 +2860,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -2808,12 +2868,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -2821,9 +2887,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -3410,7 +3482,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -3418,12 +3490,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -3431,9 +3509,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -4096,7 +4180,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -4104,12 +4188,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -4117,9 +4207,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -4762,7 +4858,7 @@
                     <button type="button" class="friends__all show-all btn_white">
                         Переглянути всіх
                     </button>
-                    <button class="friends__more hidden">
+                    <button class="friends__more content__more hidden">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#refresh">
                             </use>
@@ -4770,12 +4866,18 @@
                         <span>Завантажити ще</span>
                     </button>
                     <div class="friends__navigation navigation hidden">
-                        <a href="#" class="navigation__prev">
+                        <a href="#" class="navigation__to-the-begin">
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#prev">
+                                <use xlink:="" href="img/icons/icons.svg#prev">
                                 </use>
                             </svg>
-                            Назад
+                        </a>
+                        <a href="#" class="navigation__prev">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#prev">
+                                </use>
+                            </svg>
+                            <span>Назад</span>
                         </a>
                         <a href="#" class="navigation__page">1</a>
                         <a href="#" class="navigation__page active">2</a>
@@ -4783,9 +4885,15 @@
                         <a href="#" class="navigation__page">4</a>
                         <a href="#" class="navigation__page">5</a>
                         <a href="#" class="navigation__next">
-                            Вперед
+                            <span>Вперед</span>
                             <svg>
-                                <use xlink: href="img/icons/icons.svg#next">
+                                <use xlink:="" href="img/icons/icons.svg#next">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__to-the-end">
+                            <svg>
+                                <use xlink:="" href="img/icons/icons.svg#next">
                                 </use>
                             </svg>
                         </a>
@@ -4814,7 +4922,7 @@
                 <div class="gallery__body">
                     <div class="gallery__header">
                         <h2 class="gallery__title">Допомога</h2>
-                        <a href="#" onclick="window.history.back();" class="gallery__back">Повернутися до альбомів</a>
+                        <a href="#" class="gallery__back">Повернутися до альбомів</a>
                     </div>
                     <ul class="gallery__list">
                         <li class="gallery__add">
@@ -11551,7 +11659,7 @@
                                 </ul>
                             </div>
                         </li>
-                                                
+
                         <li class="gallery__item">
                             <div class="gallery__link" data-target="#viewer">
                                 <div class="photo-viewer__slide swiper-slide">
@@ -13915,7 +14023,7 @@
                                 </ul>
                             </div>
                         </li>
-                                                                        
+
                         <li class="gallery__item">
                             <div class="gallery__link" data-target="#viewer">
                                 <div class="photo-viewer__slide swiper-slide">
@@ -16279,7 +16387,7 @@
                                 </ul>
                             </div>
                         </li>
-                                                                                                
+
                         <li class="gallery__item">
                             <div class="gallery__link" data-target="#viewer">
                                 <div class="photo-viewer__slide swiper-slide">
@@ -18643,7 +18751,7 @@
                                 </ul>
                             </div>
                         </li>
-                                                                                                                        
+
                         <li class="gallery__item">
                             <div class="gallery__link" data-target="#viewer">
                                 <div class="photo-viewer__slide swiper-slide">
@@ -22915,7 +23023,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221202125919"></script>
+    <script src="js/app.min.js?_v=20221221124827"></script>
 </body>
 
 </html>
