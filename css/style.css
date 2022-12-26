@@ -3435,6 +3435,14 @@ body._lock {
   border-radius: 50%;
 }
 
+.menu-header__notifications .messages__wrapper {
+  flex: unset;
+}
+
+.menu-header__notifications .messages__items {
+  max-height: 350px;
+}
+
 .menu-header__settings {
   width: 54px;
   height: 54px;
@@ -10864,6 +10872,10 @@ body._lock {
 }
 
 @media (max-width: 993px) {
+  .menu-header__notifications .messages__body {
+    right: 0;
+  }
+
   .menu-header__settings .options__sublist {
     position: relative;
     left: 0;
@@ -11062,6 +11074,14 @@ body._lock {
 
   .menu-header {
     flex: unset;
+  }
+
+  .menu-header__messages .messages__body {
+    right: 0;
+  }
+
+  .menu-header__friends .messages__body {
+    right: 0;
   }
 
   .menu-header__settings {
@@ -11415,17 +11435,16 @@ body._lock {
 
   .menu-header__messages .messages__body {
     width: 85vw;
-    right: -110px;
+    right: -84px;
   }
 
   .menu-header__friends .messages__body {
     width: 85vw;
-    right: -100px;
+    right: -42px;
   }
 
   .menu-header__notifications .messages__body {
     width: 85vw;
-    right: -43px;
   }
 
   .registration#restore .registration__content {
@@ -11959,7 +11978,7 @@ body._lock {
 
   .menu-header__messages .messages__body {
     width: 100vw;
-    right: -125px;
+    right: -83px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
@@ -11969,7 +11988,7 @@ body._lock {
 
   .menu-header__friends .messages__body {
     width: 100vw;
-    right: -91px;
+    right: -49px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
@@ -11979,7 +11998,7 @@ body._lock {
 
   .menu-header__notifications .messages__body {
     width: 100vw;
-    right: -57px;
+    right: -15px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
