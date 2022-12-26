@@ -3435,14 +3435,6 @@ body._lock {
   border-radius: 50%;
 }
 
-.menu-header__notifications .messages__wrapper {
-  flex: unset;
-}
-
-.menu-header__notifications .messages__items {
-  max-height: 350px;
-}
-
 .menu-header__settings {
   width: 54px;
   height: 54px;
@@ -11986,6 +11978,14 @@ body._lock {
     border-top: 1px solid #8e8e8e;
   }
 
+  .menu-header__messages .messages__wrapper {
+    flex: 1 1 auto;
+  }
+
+  .menu-header__messages .messages__items {
+    max-height: calc(var(--app-height) - 180px);
+  }
+
   .menu-header__friends .messages__body {
     width: 100vw;
     right: -49px;
@@ -11996,6 +11996,14 @@ body._lock {
     border-top: 1px solid #8e8e8e;
   }
 
+  .menu-header__friends .messages__wrapper {
+    flex: 1 1 auto;
+  }
+
+  .menu-header__friends .messages__items {
+    max-height: calc(var(--app-height) - 180px);
+  }
+
   .menu-header__notifications .messages__body {
     width: 100vw;
     right: -15px;
@@ -12004,6 +12012,14 @@ body._lock {
     border-radius: 0;
     box-shadow: none;
     border-top: 1px solid #8e8e8e;
+  }
+
+  .menu-header__notifications .messages__wrapper {
+    flex: 1 1 auto;
+  }
+
+  .menu-header__notifications .messages__items {
+    max-height: calc(var(--app-height) - 180px);
   }
 
   .menu-header__settings {
