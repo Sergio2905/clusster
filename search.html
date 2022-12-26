@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221221124827">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221225210025">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -12,7 +12,7 @@
     <div class="wrapper">
         <header class="header">
     <div class="header__container container">
-        <div class="header__body">
+        <div class="header__body" data-last="burger, prepend">
             <a href="main.html" class="header__logo">
                 <img src="img/logo.svg" alt="Logo">
             </a>
@@ -36,115 +36,122 @@
                 </span>
             </a>
             <div class="header__search search-header messages">
-                <button type="button" class="search-header__btn">
-                    <svg>
-                        <use xlink: href="img/icons/icons.svg#search"></use>
-                    </svg>
-                </button>
-                <input type="text" class="search-header__input"
-                    placeholder="Пошук користувачів, сторінок, груп та  #hashtags">
-                </input>
-                <div class="messages__body">
-                    <div class="messages__header">
-                        <h2 class="messages__title">Результати пошуку</h2>
-                        <div class="messages__close">
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#x-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="messages__wrapper">
-                        <div class="messages__items" data-simplebar>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
-                            </div>
-                            <div class="messages__item">
-                                <div class="messages__avatar">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#user"></use>
-                                    </svg>
-                                </div>
-                                <div class="messages__details">
-                                    <div class="messages__user">Джигурда Джигурдинович</div>
-                                    <div class="messages__member">1 член клубу</div>
-                                </div>
+                <div class="search-header__wrapper">
+                    <button type="button" class="close">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="search-header__btn">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-header__input"
+                        placeholder="Пошук користувачів, сторінок, груп та  #hashtags">
+                    </input>
+                    <div class="messages__body">
+                        <div class="messages__header">
+                            <h2 class="messages__title">Результати пошуку</h2>
+                            <div class="messages__close">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                                </svg>
                             </div>
                         </div>
-                    </div>
-                    <div class="messages__footer">
-                        <a href="search.html" class="messages__all">
-                            Переглянути усі результати
-                        </a>
+                        <div class="messages__wrapper">
+                            <div class="messages__items" data-simplebar>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                                <div class="messages__item">
+                                    <div class="messages__avatar">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#user"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="messages__details">
+                                        <div class="messages__user">Джигурда Джигурдинович</div>
+                                        <div class="messages__member">1 член клубу</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages__footer">
+                            <a href="search.html" class="messages__all">
+                                Переглянути усі результати
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="header__menu menu-header">
+            <div class="header__menu menu-header" data-first="burger, append">
                 <button type="button" class="header__search-btn">
                     <svg>
-                        <use xlink: href="img/icons/icons.svg#search"></use>
+                        <use xlink: href="img/icons/icons.svg#search-icon"></use>
                     </svg>
                 </button>
                 <a href="family-profile.html" class="menu-header__icon menu-header__family">
@@ -401,7 +408,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-header__icon menu-header__notifications messages">
+                <div class="menu-header__icon menu-header__notifications messages active">
                     <div class="messages__icon">
                         <svg>
                             <use xlink: href="img/icons/icons.svg#notifications"></use>
@@ -529,39 +536,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-header__icon menu-header__settings options">
+                <div class="menu-header__icon menu-header__settings options" data-move="burger, 993">
                     <div class="options__icon">
                         <svg>
-                            <use xlink: href="img/icons/icons.svg#chat"></use>
+                            <use xlink: href="img/icons/icons.svg#burger"></use>
                         </svg>
                     </div>
                     <ul class="options__list">
                         <li class="options__item">
-                            <a href="settings.html" class="options__link options__link">
+                            <a href="settings.html" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#settings"></use>
                                 </svg>
                                 <span>Налаштування</span>
                             </a>
                         </li>
-                        <li class="options__item">
-                            <a href="pages.html" class="options__link options__link">
+                        <li class="options__item options__mob-hide">
+                            <a href="pages.html" class="options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#pages"></use>
                                 </svg>
                                 <span>Сторінки</span>
                             </a>
                         </li>
-                        <li class="options__item">
-                            <a href="groups.html" class="options__link options__link">
+                        <li class="options__item options__mob-hide">
+                            <a href="groups.html" class="options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#groups"></use>
                                 </svg>
                                 <span>Групи</span>
                             </a>
                         </li>
-                        <li class="options__item">
-                            <a href="saved.html" class="options__link options__link">
+                        <li class="options__item options__mob-hide">
+                            <a href="saved.html" class="options__link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#bookmark"></use>
                                 </svg>
@@ -569,7 +576,7 @@
                             </a>
                         </li>
                         <li class="options__item">
-                            <a href="faq.html" class="options__link options__link">
+                            <a href="faq.html" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#question"></use>
                                 </svg>
@@ -577,7 +584,7 @@
                             </a>
                         </li>
                         <li class="options__item">
-                            <a href="#" class="options__link options__link">
+                            <a href="#" class="options__link options__show">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#shield"></use>
                                 </svg>
@@ -611,6 +618,9 @@
                     </ul>
                 </div>
             </div>
+            <!--<a href="profile.html" class="header__user">
+                <picture><source srcset="img/Avatar.webp" type="image/webp"><img src="img/Avatar.png" alt="User"></picture>
+            </a>-->
         </div>
     </div>
 </header>
@@ -2701,7 +2711,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221221124827"></script>
+    <script src="js/app.min.js?_v=20221225210025"></script>
 </body>
 
 </html>
