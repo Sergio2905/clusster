@@ -114,6 +114,7 @@ body._lock {
   position: relative;
   overflow: hidden;
   height: var(--app-height);
+  min-width: 320px;
 }
 
 .container {
@@ -12361,7 +12362,9 @@ body._lock {
   }
 
   .comments__form .messages__body {
-    max-width: 100%;
+    max-width: 110%;
+    left: unset;
+    right: 0;
   }
 
   .post-new {
@@ -12671,12 +12674,6 @@ body._lock {
 
   .cards-family__btn {
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  body {
-    min-width: 320px;
   }
 }
 
