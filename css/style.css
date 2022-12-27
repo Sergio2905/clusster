@@ -4313,6 +4313,10 @@ body._lock {
   background: #86BB64;
 }
 
+.post.active .comments {
+  display: block;
+}
+
 .post__hashtag {
   font-weight: 700;
 }
@@ -4465,6 +4469,7 @@ body._lock {
 .comments {
   margin-top: 40px;
   position: relative;
+  display: none;
 }
 
 .comments::before {
@@ -8210,6 +8215,14 @@ body._lock {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.data__table {
+  flex: 1 1 auto;
+  max-height: calc(var(--app-height) - 300px);
+  overflow: auto;
 }
 
 .data__header {
@@ -8272,7 +8285,6 @@ body._lock {
 }
 
 .data .tabs-family__partner,
-.data .tabs-family__circle,
 .data .tabs-family__status,
 .data .tabs-family__period,
 .data .tabs-family__left,
@@ -8291,6 +8303,10 @@ body._lock {
 
 .data .tabs-family__first {
   display: none;
+}
+
+.data .tabs-family__circle {
+  margin-left: 10px;
 }
 
 .details {
@@ -11976,6 +11992,10 @@ body._lock {
     left: 0;
   }
 
+  .emoji-post {
+    display: none;
+  }
+
   .messages__wrapper {
     flex: 1 1 350px;
   }
@@ -12143,6 +12163,16 @@ body._lock {
     gap: 5px;
   }
 
+  .post__wrapper {
+    max-height: calc(var(--app-height) - 210px);
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .post__wrapper ::-webkit-scrollbar {
+    display: none;
+  }
+
   .post__footer {
     justify-content: flex-start;
   }
@@ -12249,6 +12279,10 @@ body._lock {
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
+  }
+
+  .post-new__camera {
+    margin-right: 0;
   }
 
   .header-profile__wrapper {
