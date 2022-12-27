@@ -12387,6 +12387,10 @@ body._lock {
     margin-right: 20px;
   }
 
+  .rating__table {
+    max-height: calc(var(--app-height) - 320px);
+  }
+
   .rating__partner .prompt__info {
     width: 85%;
     top: 100%;
