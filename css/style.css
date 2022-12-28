@@ -6550,6 +6550,12 @@ body._lock {
   margin-bottom: 30px;
 }
 
+.calc__prompt .prompt__info {
+  width: 500px;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
 .calc__item {
   display: flex;
   align-items: center;
@@ -7360,7 +7366,7 @@ body._lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex: 0 1 145px;
   margin-bottom: 34px;
   padding: 0 11px;
@@ -7402,7 +7408,6 @@ body._lock {
   font-size: 0.75rem;
   color: #292929;
   text-align: center;
-  white-space: nowrap;
 }
 
 .item-circles__count {
@@ -7470,6 +7475,15 @@ body._lock {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.sidebar-chat__title .prompt {
+  position: static;
+}
+
+.sidebar-chat__title .prompt__info {
+  width: 100%;
 }
 
 .sidebar-chat__item {
@@ -7482,6 +7496,7 @@ body._lock {
   align-items: center;
   border-bottom: 1px solid #619441;
   padding: 7px 0;
+  position: relative;
 }
 
 .sidebar-chat__circle svg {
@@ -7494,9 +7509,20 @@ body._lock {
   color: #86BB64;
 }
 
+.sidebar-chat__circle .prompt {
+  position: static;
+}
+
+.sidebar-chat__circle .prompt:hover .prompt__info {
+  transform: translate(0, 0);
+}
+
 .sidebar-chat__circle .prompt__info {
+  width: 100%;
   right: unset;
   left: 0;
+  top: 100%;
+  transform: translate(0, -50%);
 }
 
 .sidebar-chat__arrow {
@@ -7538,6 +7564,7 @@ body._lock {
   color: #292929;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar-chat__count {
@@ -7952,8 +7979,20 @@ body._lock {
   position: relative;
 }
 
+.cards-family__prompt {
+  position: static;
+}
+
+.cards-family__prompt:hover .prompt__info {
+  transform: translate(0, 0);
+}
+
 .cards-family__prompt .prompt__info {
   font-weight: 400;
+  width: 100%;
+  right: unset;
+  left: 0;
+  transform: translate(0, -50%);
 }
 
 .cards-family__body {
@@ -7999,6 +8038,7 @@ body._lock {
 
 .cards-family__extra .circles-family__title {
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .cards-family__bg {
@@ -8077,6 +8117,10 @@ body._lock {
   transition: all 0.3s ease-in-out;
 }
 
+.circles-family__list {
+  margin-top: 10px;
+}
+
 .circles-family__item {
   font-size: 0.9375rem;
   display: flex;
@@ -8101,7 +8145,6 @@ body._lock {
   font-weight: 600;
   font-size: 0.9375rem;
   border-radius: 5px;
-  text-transform: uppercase;
 }
 
 .tabs-family__header {
@@ -8279,6 +8322,7 @@ body._lock {
   flex: 1 1 auto;
   max-height: calc(var(--app-height) - 300px);
   overflow: auto;
+  padding-right: 5px;
 }
 
 .data__header {
@@ -10609,6 +10653,10 @@ body._lock {
     font-size: calc(1rem + 6 * (100vw - 20rem) / 1600);
   }
 
+  .calc__prompt .prompt__info {
+    width: calc(260px + 240 * (100vw - 320px) / 1600);
+  }
+
   .calc__input input {
     font-size: calc(0.75rem + 3 * (100vw - 20rem) / 1600);
   }
@@ -10851,6 +10899,10 @@ body._lock {
 
   .cards-family__extra {
     gap: calc(10px + 10 * (100vw - 320px) / 1600);
+  }
+
+  .cards-family__extra .cards-family__body {
+    margin-bottom: calc(10px + 5 * (100vw - 320px) / 1600);
   }
 
   .cards-family__bg img {
@@ -11755,6 +11807,32 @@ body._lock {
     height: 14px;
   }
 
+  .calc__prompt:hover .prompt__info {
+    transform: translate(0, 0);
+  }
+
+  .calc__prompt .prompt__info {
+    right: 0;
+    transform: translate(0, -50%);
+  }
+
+  .calc__input {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+  }
+
+  .calc__input span {
+    width: 50px;
+    height: unset;
+    justify-content: flex-end;
+  }
+
+  .info-calc__desc {
+    max-width: unset;
+  }
+
   .rating {
     box-shadow: none;
   }
@@ -11970,7 +12048,6 @@ body._lock {
   .sidebar-chat__header {
     border-radius: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: absolute;
     top: 40px;
@@ -11980,6 +12057,7 @@ body._lock {
 
   .sidebar-chat__title {
     margin-bottom: 0;
+    flex: 1 1 auto;
   }
 
   .sidebar-chat__list {
@@ -12000,23 +12078,12 @@ body._lock {
     grid-column: 2/3;
   }
 
-  .cards-family__prompt {
-    position: static;
-  }
-
-  .cards-family__prompt:hover .prompt__info {
-    transform: translate(0, 0);
-  }
-
-  .cards-family__prompt .prompt__info {
-    width: 100%;
-    right: unset;
-    left: 0;
-    transform: translate(0, -50%);
-  }
-
   .cards-family__extra {
     grid-template-columns: 1fr;
+  }
+
+  .cards-family__extra .cards-family__body {
+    min-height: unset;
   }
 
   .cards-family__tap::before {
@@ -12121,6 +12188,10 @@ body._lock {
   }
 
   .emoji-post {
+    display: none;
+  }
+
+  .emoji-minichat {
     display: none;
   }
 
@@ -12532,18 +12603,6 @@ body._lock {
     gap: 10px;
   }
 
-  .calc__input {
-    align-self: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px;
-  }
-
-  .calc__input span {
-    width: unset;
-    height: unset;
-  }
-
   .calc__count,
   .calc__profit {
     justify-content: space-between;
@@ -12553,10 +12612,6 @@ body._lock {
   .calc__profit span {
     width: 70px;
     min-width: 70px;
-  }
-
-  .info-calc {
-    margin-right: 20px;
   }
 
   .rating__table {
@@ -12584,13 +12639,11 @@ body._lock {
 
   .circles__tabs .tabs__item .prompt .prompt__icon {
     margin-left: 0;
-    background: #3B7319;
-    border: none;
+    background: #fff;
   }
 
   .circles__tabs .tabs__item .prompt .prompt__icon span {
     font-size: 0.625rem;
-    color: #fff;
   }
 
   .circles__tabs .tabs__item .prompt__info {
