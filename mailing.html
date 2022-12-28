@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221228121903">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221228164502">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -1492,7 +1492,44 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="body-chat__create create-chat">
+                                    <div class="comments__new">
+                                        <div class="comments__creation">
+                                            <div class="comments__form messages">
+                                                <input type="text" placeholder="Напишіть повідомлення">
+                                                <div class="comments__emoji emoji">
+                                                    <button type="button" class="emoji__icon">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#emoji"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <ul class="emoji__list">
+                                                        <li class="emoji__item">🙂</li>
+                                                        <li class="emoji__item">😢</li>
+                                                        <li class="emoji__item">😜</li>
+                                                        <li class="emoji__item">🤔</li>
+                                                        <li class="emoji__item">🤑</li>
+                                                        <li class="emoji__item">😐</li>
+                                                        <li class="emoji__item">😍</li>
+                                                        <li class="emoji__item">😘</li>
+                                                        <li class="emoji__item">😇</li>
+                                                        <li class="emoji__item">😆</li>
+                                                        <li class="emoji__item">😡</li>
+                                                        <li class="emoji__item">🤕</li>
+                                                        <li class="emoji__item">🤩</li>
+                                                        <li class="emoji__item">😅</li>
+                                                        <li class="emoji__item">👍</li>
+                                                        <li class="emoji__item">👎</li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button" class="comments__camera">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#camera"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="body-chat__create create-chat">
                                         <div class="create-chat__options">
                                             <div class="create-chat__emoji emoji">
                                                 <button type="button" class="emoji__icon">
@@ -1528,9 +1565,9 @@
                                         </div>
                                         <textarea class="create-chat__input"
                                             placeholder="Напишіть повідомлення..."></textarea>
-                                    </div>
+                                    </div>-->
+
                                     <div class="body-chat__btns">
-                                        <button class="body-chat__btn btn_white">Скасувати</button>
                                         <button class="body-chat__btn btn_green">Надіслати</button>
                                     </div>
                                 </div>
@@ -1821,7 +1858,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="messages__items">
+                <div class="messages__items" data-simplebar>
                     <div class="messages__item">
                         <div class="messages__avatar">
                             <svg>
@@ -1830,7 +1867,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1841,7 +1878,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1852,7 +1889,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1863,7 +1900,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1874,7 +1911,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1885,7 +1922,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
                     <div class="messages__item">
@@ -1896,7 +1933,7 @@
                         </div>
                         <div class="messages__details">
                             <div class="messages__user">Джигурда Джигурдинович</div>
-                            <div class="messages__member">1 член клубу</div>
+                            <div class="messages__member">15 хвилин тому</div>
                         </div>
                     </div>
 
@@ -2347,7 +2384,7 @@
                     <use xlink: href="img/icons/icons.svg#vote"></use>
                 </svg>
             </div>
-            <div class="popup-confirm__text">Ваш баланс було поповнено
+            <div class="popup-confirm__text popup-confirm__text_pay">Ваш баланс поповнено
                 на 10 одиниць!
             </div>
         </div>
@@ -2610,7 +2647,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221228121903"></script>
+    <script src="js/app.min.js?_v=20221228164502"></script>
 </body>
 
 </html>
