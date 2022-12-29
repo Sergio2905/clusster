@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221229145808">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221229205732">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -44,7 +44,7 @@
                     </button>
                     <button type="button" class="search-header__btn">
                         <svg>
-                            <use xlink: href="img/icons/icons.svg#search"></use>
+                            <use xlink: href="img/icons/icons.svg#search-icon"></use>
                         </svg>
                     </button>
                     <input type="text" class="search-header__input"
@@ -642,14 +642,62 @@
                         </svg>
                     </div>
                     <ul class="options__list">
-                        <li class="options__item">
+                        <li class="options__item" data-spollers>
                             <a href="settings.html" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#settings"></use>
                                 </svg>
                                 <span>Налаштування</span>
                             </a>
+                            <button type="button" class="options__btn" data-spoller>
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="options__sublist" hidden>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg class="stroke">
+                                            <use xlink: href="img/icons/icons.svg#login"></use>
+                                        </svg>
+                                        <span>Дані для входу</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg class="stroke">
+                                            <use xlink: href="img/icons/icons.svg#settings"></use>
+                                        </svg>
+                                        <span>Персональні дані</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#lock"></use>
+                                        </svg>
+                                        <span>Приватність</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#block"></use>
+                                        </svg>
+                                        <span>Блокування</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                        </svg>
+                                        <span>Видалити акаунт</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+
                         <li class="options__item options__mob-hide">
                             <a href="pages.html" class="options__link">
                                 <svg>
@@ -682,17 +730,19 @@
                                 <span>Питання та відповіді</span>
                             </a>
                         </li>
-                        <li class="options__item">
-                            <a href="#" class="options__link options__show">
+                        <li class="options__item" data-spollers>
+                            <a href="#" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#shield"></use>
                                 </svg>
                                 <span>Політика сайту</span>
-                                <svg>
-                                    <use xlink: href="img/icons/icons.svg#arrow-sub"></use>
-                                </svg>
                             </a>
-                            <ul class="options__sublist">
+                            <button type="button" class="options__btn" data-spoller>
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="options__sublist options__sublist_spec" hidden>
                                 <li class="options__subitem">
                                     <a href="#" class="options__link">Політика конфіденціальності</a>
                                 </li>
@@ -845,7 +895,7 @@
                                     <div class="search__input">
                                         <div class="search__icon">
                                             <svg>
-                                                <use xlink: href="img/icons/icons.svg#search"></use>
+                                                <use xlink: href="img/icons/icons.svg#search-icon"></use>
                                             </svg>
                                         </div>
                                         <input type="text"
@@ -894,7 +944,8 @@
                                                                     <button type="button" class="post__like">
                                                                         <svg>
                                                                             <use xlink:
-                                                                                href="img/icons/icons.svg#like"></use>
+                                                                                href="img/icons/icons.svg#like-green">
+                                                                            </use>
                                                                         </svg>
                                                                     </button>
                                                                     <span>10</span>
@@ -959,7 +1010,8 @@
                                                                     <button type="button" class="post__like">
                                                                         <svg>
                                                                             <use xlink:
-                                                                                href="img/icons/icons.svg#like"></use>
+                                                                                href="img/icons/icons.svg#like-green">
+                                                                            </use>
                                                                         </svg>
                                                                     </button>
                                                                     <span>10</span>
@@ -1505,34 +1557,38 @@
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                    <button class="friends__more">
+
+                                                    <button class="content__more">
                                                         <svg>
-                                                            <use xlink: href="img/icons/icons.svg#refresh">
+                                                            <use xlink:="" href="img/icons/icons.svg#refresh">
                                                             </use>
                                                         </svg>
                                                         <span>Завантажити ще</span>
                                                     </button>
-                                                    <div class="friends__navigation navigation">
-                                                        <a href="#" class="navigation__prev">
-                                                            <svg>
-                                                                <use xlink: href="img/icons/icons.svg#prev">
-                                                                </use>
-                                                            </svg>
-                                                            Назад
-                                                        </a>
-                                                        <a href="#" class="navigation__page">1</a>
-                                                        <a href="#" class="navigation__page active">2</a>
-                                                        <a href="#" class="navigation__page">3</a>
-                                                        <a href="#" class="navigation__page">4</a>
-                                                        <a href="#" class="navigation__page">5</a>
-                                                        <a href="#" class="navigation__next">
-                                                            Вперед
-                                                            <svg>
-                                                                <use xlink: href="img/icons/icons.svg#next">
-                                                                </use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
+
+                                                    <div class="content__navigation navigation">
+    <a href="#" class="navigation__prev">
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#prev">
+            </use>
+        </svg>
+        <span>Назад</span>
+    </a>
+
+    <a href="#" class="navigation__page">1</a>
+    <a href="#" class="navigation__page active">2</a>
+    <a href="#" class="navigation__page">3</a>
+    <span class="navigation__separator">...</span>
+    <a href="#" class="navigation__page">41</a>
+
+    <a href="#" class="navigation__next">
+        <span>Вперед</span>
+        <svg>
+            <use xlink:="" href="img/icons/icons.svg#next">
+            </use>
+        </svg>
+    </a>
+</div>
                                                 </div>
                                                 <div class="search__result">
                                                     Результати пошуку: 50
@@ -1623,22 +1679,22 @@
                                         <div class="tabs__block" data-tabs="1">
                                             <div class="tabs__content">
                                                 <div class="search__groups groups-profile">
-                                                    <ul class="groups-profile__list">
+                                                    <ul class="groups-profile__active">
                                                         <li class="groups-profile__item">
                                                             <div class="groups-profile__image">
                                                                 <img src="img/profile/photos/photo1.jpg"
                                                                     alt="Group image">
                                                             </div>
                                                             <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Новини вашого міста
-                                                                </div>
+                                                                <a href="group.html" class="groups-profile__name">
+                                                                    Нові інвестиції
+                                                                </a>
                                                                 <div class="groups-profile__users">
                                                                     Учасників 10 655
                                                                 </div>
                                                             </div>
                                                             <div class="groups-profile__btn btn_dark">
-                                                                Перебуваю у групі
+                                                                Видалити
                                                             </div>
                                                         </li>
                                                         <li class="groups-profile__item">
@@ -1647,32 +1703,34 @@
                                                                     alt="Group image">
                                                             </div>
                                                             <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Новини для тебе
-                                                                </div>
+                                                                <a href="group.html" class="groups-profile__name">
+                                                                    Нові партнери
+                                                                </a>
                                                                 <div class="groups-profile__users">
                                                                     Учасників 345
                                                                 </div>
                                                             </div>
                                                             <div class="groups-profile__btn btn_dark">
-                                                                Перебуваю у групі
+                                                                Видалити
                                                             </div>
                                                         </li>
+                                                    </ul>
+                                                    <ul class="groups-profile__recommend">
                                                         <li class="groups-profile__item">
                                                             <div class="groups-profile__image">
                                                                 <img src="img/profile/photos/photo3.jpg"
                                                                     alt="Group image">
                                                             </div>
                                                             <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Свіжі новини
-                                                                </div>
+                                                                <a href="group.html" class="groups-profile__name">
+                                                                    Новостний портал
+                                                                </a>
                                                                 <div class="groups-profile__likes">
                                                                     Сподобалось 5 220
                                                                 </div>
                                                             </div>
                                                             <div class="groups-profile__btn btn_green">
-                                                                Вступити до групи
+                                                                У групі
                                                             </div>
                                                         </li>
                                                         <li class="groups-profile__item">
@@ -1681,49 +1739,15 @@
                                                                     alt="Group image">
                                                             </div>
                                                             <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Щось новеньке
-                                                                </div>
+                                                                <a href="group.html" class="groups-profile__name">
+                                                                    Новини вашого міста
+                                                                </a>
                                                                 <div class="groups-profile__likes">
                                                                     Сподобалось 126
                                                                 </div>
                                                             </div>
                                                             <div class="groups-profile__btn btn_green">
-                                                                Вступити до групи
-                                                            </div>
-                                                        </li>
-                                                        <li class="groups-profile__item">
-                                                            <div class="groups-profile__image">
-                                                                <img src="img/profile/photos/photo2.jpg"
-                                                                    alt="Group image">
-                                                            </div>
-                                                            <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Новабудова
-                                                                </div>
-                                                                <div class="groups-profile__users">
-                                                                    Учасників 345
-                                                                </div>
-                                                            </div>
-                                                            <div class="groups-profile__btn btn_dark">
-                                                                Перебуваю у групі
-                                                            </div>
-                                                        </li>
-                                                        <li class="groups-profile__item">
-                                                            <div class="groups-profile__image">
-                                                                <img src="img/profile/photos/photo3.jpg"
-                                                                    alt="Group image">
-                                                            </div>
-                                                            <div class="groups-profile__info">
-                                                                <div class="groups-profile__name">
-                                                                    Новостний портал
-                                                                </div>
-                                                                <div class="groups-profile__likes">
-                                                                    Сподобалось 5 220
-                                                                </div>
-                                                            </div>
-                                                            <div class="groups-profile__btn btn_green">
-                                                                Вступити до групи
+                                                                У групі
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -2891,7 +2915,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221229145808"></script>
+    <script src="js/app.min.js?_v=20221229205732"></script>
 </body>
 
 </html>

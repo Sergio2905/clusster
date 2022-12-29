@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221229145808">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221229205732">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -44,7 +44,7 @@
                     </button>
                     <button type="button" class="search-header__btn">
                         <svg>
-                            <use xlink: href="img/icons/icons.svg#search"></use>
+                            <use xlink: href="img/icons/icons.svg#search-icon"></use>
                         </svg>
                     </button>
                     <input type="text" class="search-header__input"
@@ -642,14 +642,62 @@
                         </svg>
                     </div>
                     <ul class="options__list">
-                        <li class="options__item">
+                        <li class="options__item" data-spollers>
                             <a href="settings.html" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#settings"></use>
                                 </svg>
                                 <span>Налаштування</span>
                             </a>
+                            <button type="button" class="options__btn" data-spoller>
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="options__sublist" hidden>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg class="stroke">
+                                            <use xlink: href="img/icons/icons.svg#login"></use>
+                                        </svg>
+                                        <span>Дані для входу</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg class="stroke">
+                                            <use xlink: href="img/icons/icons.svg#settings"></use>
+                                        </svg>
+                                        <span>Персональні дані</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#lock"></use>
+                                        </svg>
+                                        <span>Приватність</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#block"></use>
+                                        </svg>
+                                        <span>Блокування</span>
+                                    </a>
+                                </li>
+                                <li class="options__subitem">
+                                    <a href="page.html" class="options__link">
+                                        <svg>
+                                            <use xlink: href="img/icons/icons.svg#basket"></use>
+                                        </svg>
+                                        <span>Видалити акаунт</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+
                         <li class="options__item options__mob-hide">
                             <a href="pages.html" class="options__link">
                                 <svg>
@@ -682,17 +730,19 @@
                                 <span>Питання та відповіді</span>
                             </a>
                         </li>
-                        <li class="options__item">
-                            <a href="#" class="options__link options__show">
+                        <li class="options__item" data-spollers>
+                            <a href="#" class="options__link">
                                 <svg class="stroke">
                                     <use xlink: href="img/icons/icons.svg#shield"></use>
                                 </svg>
                                 <span>Політика сайту</span>
-                                <svg>
-                                    <use xlink: href="img/icons/icons.svg#arrow-sub"></use>
-                                </svg>
                             </a>
-                            <ul class="options__sublist">
+                            <button type="button" class="options__btn" data-spoller>
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="options__sublist options__sublist_spec" hidden>
                                 <li class="options__subitem">
                                     <a href="#" class="options__link">Політика конфіденціальності</a>
                                 </li>
@@ -4018,7 +4068,7 @@
 </div>
 
 	</div> <!-- wrapper -->
-	<script src="js/app.min.js?_v=20221229145808"></script>
+	<script src="js/app.min.js?_v=20221229205732"></script>
 </body>
 
 </html>
