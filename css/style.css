@@ -1189,6 +1189,7 @@ body._lock {
   cursor: pointer;
   top: 10px;
   right: 10px;
+  position: absolute;
 }
 
 .messages__close svg {
@@ -4280,9 +4281,6 @@ body._lock {
 .post__like {
   width: 28px;
   height: 28px;
-  background: #86BB64;
-  border-radius: 50%;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4290,9 +4288,8 @@ body._lock {
 }
 
 .post__like svg {
-  width: 15px;
-  height: 15px;
-  fill: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 .post__like_empty {
@@ -4423,13 +4420,8 @@ body._lock {
 }
 
 .repost .post__like {
-  width: 15px;
-  height: 15px;
-}
-
-.repost .post__like svg {
-  width: 8px;
-  height: 8px;
+  width: 22px;
+  height: 22px;
 }
 
 .author {
@@ -4866,7 +4858,7 @@ body._lock {
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 39px;
+  padding-left: 30px;
   transition: all 0.2s linear;
   white-space: nowrap;
 }
@@ -4885,20 +4877,20 @@ body._lock {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
-  width: 22px;
-  height: 22px;
-  border: 1.8px solid #292929;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #292929;
   border-radius: 50%;
 }
 
 .visibility__list .radio-options__item::after {
   content: "";
   position: absolute;
-  left: 7.5px;
+  left: 0;
   top: 50%;
-  transform: translate(0, -50%) scale(0);
-  width: 7px;
-  height: 7px;
+  transform: translate(5px, -50%) scale(0);
+  width: 10px;
+  height: 10px;
   background: #292929;
   border-radius: 50%;
   transition: all 0.2s linear;
@@ -4913,7 +4905,7 @@ body._lock {
 }
 
 .visibility__list .radio-options__item._active::after {
-  transform: translate(0, -50%) scale(1);
+  transform: translate(5px, -50%) scale(1);
 }
 
 .header-profile {
@@ -5106,6 +5098,14 @@ body._lock {
 .content-profile__hidden {
   font-size: 0.9375rem;
   color: #292929;
+}
+
+.content-profile .empty circle {
+  fill: red;
+}
+
+.content-profile .empty path {
+  fill: red;
 }
 
 .info-profile__title {
@@ -10047,6 +10047,12 @@ body._lock {
     height: calc(200px + 185 * (100vw - 320px) / 1600);
   }
 
+  .post__like {
+    margin-right: calc(5px + 5 * (100vw - 320px) / 1600);
+    width: calc(24px + 4 * (100vw - 320px) / 1600);
+    height: calc(24px + 4 * (100vw - 320px) / 1600);
+  }
+
   .post__details {
     font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
     gap: calc(10px + 15 * (100vw - 320px) / 1600);
@@ -10194,7 +10200,7 @@ body._lock {
   }
 
   .visibility__list .radio-options__item {
-    padding-left: calc(25px + 14 * (100vw - 320px) / 1600);
+    padding-left: calc(20px + 10 * (100vw - 320px) / 1600);
   }
 
   .visibility__list .radio-options__item:not(:last-child) {
@@ -10202,15 +10208,13 @@ body._lock {
   }
 
   .visibility__list .radio-options__item::before {
-    width: calc(15px + 7 * (100vw - 320px) / 1600);
-    height: calc(15px + 7 * (100vw - 320px) / 1600);
-    border: calc(1px + 0.8 * (100vw - 320px) / 1600) solid #292929;
+    width: calc(15px + 5 * (100vw - 320px) / 1600);
+    height: calc(15px + 5 * (100vw - 320px) / 1600);
   }
 
   .visibility__list .radio-options__item::after {
-    width: calc(5px + 2 * (100vw - 320px) / 1600);
-    height: calc(5px + 2 * (100vw - 320px) / 1600);
-    left: calc(5.5px + 2 * (100vw - 320px) / 1600);
+    width: calc(5px + 5 * (100vw - 320px) / 1600);
+    height: calc(5px + 5 * (100vw - 320px) / 1600);
   }
 
   .header-profile {
@@ -11824,6 +11828,12 @@ body._lock {
     grid-template-columns: repeat(6, minmax(50px, 1fr));
   }
 
+  .friends-profile__item:nth-last-of-type(1) .friends-profile__help,
+  .friends-profile__item:nth-last-of-type(2) .friends-profile__help {
+    left: unset;
+    right: 20px;
+  }
+
   .photos-profile__list {
     gap: 5px;
     grid-template-columns: repeat(4, minmax(50px, 1fr));
@@ -12327,7 +12337,7 @@ body._lock {
 
   .menu-header__messages .messages__body {
     width: 100vw;
-    right: -83px;
+    right: -74px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
@@ -12345,7 +12355,7 @@ body._lock {
 
   .menu-header__friends .messages__body {
     width: 100vw;
-    right: -49px;
+    right: -40px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
@@ -12363,7 +12373,7 @@ body._lock {
 
   .menu-header__notifications .messages__body {
     width: 100vw;
-    right: -15px;
+    right: -6px;
     top: 154%;
     min-height: calc(var(--app-height) - 50px);
     border-radius: 0;
@@ -12472,17 +12482,6 @@ body._lock {
     margin-right: 10px;
   }
 
-  .post__like {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-  }
-
-  .post__like svg {
-    width: 12px;
-    height: 12px;
-  }
-
   .post__details {
     justify-content: flex-start;
     gap: 0;
@@ -12494,6 +12493,11 @@ body._lock {
 
   .post__detail svg {
     display: block;
+  }
+
+  .repost .post__like {
+    width: 15px;
+    height: 15px;
   }
 
   .author__avatar {
@@ -12570,7 +12574,7 @@ body._lock {
   }
 
   .header-profile__wrapper {
-    transform: translate(calc(70px + 60 * (100vw - 320px) / 160), calc(10px + 11 * (100vw - 320px) / 160));
+    transform: translate(calc(80px + 70 * (100vw - 320px) / 160), calc(10px + 11 * (100vw - 320px) / 160));
   }
 
   .header-profile__right {
@@ -12599,6 +12603,17 @@ body._lock {
 
   .friends-profile__list {
     grid-template-columns: repeat(3, minmax(50px, 1fr));
+  }
+
+  .friends-profile__item:nth-last-of-type(1) .friends-profile__help,
+  .friends-profile__item:nth-last-of-type(2) .friends-profile__help {
+    left: 20px;
+    right: unset;
+  }
+
+  .friends-profile__item:nth-of-type(3n+3) .friends-profile__help {
+    left: unset;
+    right: 20px;
   }
 
   .groups-profile__image,
@@ -12666,11 +12681,11 @@ body._lock {
   }
 
   .profile_friends .header-profile__wrapper {
-    transform: translate(calc(70px + 60 * (100vw - 320px) / 160), calc(20px + 15 * (100vw - 320px) / 160));
+    transform: translate(calc(80px + 70 * (100vw - 320px) / 160), calc(20px + 15 * (100vw - 320px) / 160));
   }
 
   .profile_other .header-profile__wrapper {
-    transform: translate(calc(70px + 60 * (100vw - 320px) / 160), calc(20px + 15 * (100vw - 320px) / 160));
+    transform: translate(calc(80px + 70 * (100vw - 320px) / 160), calc(20px + 15 * (100vw - 320px) / 160));
   }
 
   .profile_other .header-profile__btns {
