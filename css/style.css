@@ -1240,6 +1240,14 @@ body._lock {
   display: none;
 }
 
+.messages__items .simplebar-content-wrapper {
+  scrollbar-width: none;
+}
+
+.messages__items .simplebar-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .messages__item {
   display: flex;
   align-items: flex-start;
