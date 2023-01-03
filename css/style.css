@@ -1234,6 +1234,7 @@ body._lock {
   flex-direction: column;
   max-height: calc(var(--app-height) - 300px);
   scrollbar-width: none;
+  -webkit-overflow-scrolling: hidden;
 }
 
 .messages__items::-webkit-scrollbar {
