@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221229205732">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230105155850">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -138,9 +138,9 @@
                                             Якщо ваша ел. адрес вже була зареєстрована, будь ласка виберіть
                                             “Авторизація”, так як повторна реєстрація неможлива
                                         </div>
-                                        <a href="#" class="registration__btn btn_green">Реєстрація</a>
+                                        <a href="#" class="registration__btn btn_green">Зареєструватися</a>
                                         <div class="registration__note_last">
-                                            Натиснувши зареєструватися, ви погоджуєтесь
+                                            Натиснувши зареєструватися, ви погоджуєтесь <br>
                                             з <a href="#" class="registration__link">Умовами сайту</a>
                                         </div>
                                     </form>
@@ -188,7 +188,7 @@
                                             Запам’ятати мене
                                             <input type="checkbox">
                                         </div>
-                                        <a href="main.html" class="registration__btn btn_green">Авторизація</a>
+                                        <a href="main.html" class="registration__btn btn_green">Увійти</a>
                                         <div class="registration__bottom">
                                             <a href="#recover" class="registration__forgot">Забули пароль?</a>
                                             <div class="registration__create">
@@ -207,9 +207,9 @@
                                     <form class="registration__form form-registration" action="#">
                                         <ul class="form-registration__list">
                                             <li class="form-registration__item">
-                                                <div class="form-registration__title">Адреса ел.пошти</div>
+                                                <!--<div class="form-registration__title">Адреса ел.пошти</div>-->
                                                 <div class="form-registration__input">
-                                                    <input type="text">
+                                                    <input type="text" placeholder="Адреса ел.пошти">
                                                 </div>
                                                 <div
                                                     class="form-registration__warning form-registration__warning_error">
@@ -680,6 +680,7 @@
             <h2 class="popup-confirm__title">Назва альбома</h2>
             <input type="text" class="popup-confirm__name" value="Допомога">
             <div class="popup-confirm__btns">
+
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
                 <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
             </div>
@@ -1114,9 +1115,9 @@
     </div>
 </div>
 
-<div class="popup viewer" id="viewer">
-    <div class="popup__body">
-        <div class="popup__content">
+<div class="viewer" id="viewer">
+    <div class="viewer__wrapper">
+        <div class="viewer__content">
             <div class="viewer__body">
 
                 <div class="viewer__photo photo-viewer">
@@ -1157,7 +1158,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221229205732"></script>
+    <script src="js/app.min.js?_v=20230105155850"></script>
 </body>
 
 </html>
