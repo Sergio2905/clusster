@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230105155850">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230112223032">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -30,6 +30,12 @@
                 </svg>
                 <span class="header__help">
                     Скопіювати
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#check"></use>
+                    </svg>
+                </span>
+                <span class="header__help_done">
+                    Скопійовано
                     <svg>
                         <use xlink: href="img/icons/icons.svg#check"></use>
                     </svg>
@@ -961,7 +967,7 @@
                                     </div>
                                     <div class="header-profile__left">
                                         <div class="header-profile__options">
-                                            <a href="#" class="header-profile__option">
+                                            <a href="#crop-image" class="header-profile__option popup-link">
                                                 <svg>
                                                     <use xlink: href="img/icons/icons.svg#pencil"></use>
                                                 </svg>
@@ -979,7 +985,7 @@
                                                 <picture><source srcset="img/profile/avatar.webp" type="image/webp"><img src="img/profile/avatar.jpg" alt="Profile photo"></picture>
                                             </div>
                                             <div class="header-profile__options">
-                                                <a href="#" class="header-profile__option">
+                                                <a href="#" class="header-profile__option header-profile__option_edit">
                                                     <svg>
                                                         <use xlink: href="img/icons/icons.svg#pencil"></use>
                                                     </svg>
@@ -1008,12 +1014,12 @@
                                                 Друзів: 245
                                             </div>
                                         </div>
-                                        <button class="header-profile__btn btn_grey">
+                                        <a href="settings.html" class="header-profile__btn btn_grey">
                                             <svg>
                                                 <use xlink: href="img/icons/icons.svg#pencil"></use>
                                             </svg>
                                             <span>Редагувати профіль</span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="profile__content content-profile">
@@ -19985,7 +19991,7 @@
                     <ul class="albums__list">
 
                         <li class="albums__new">
-                            <a href="#" class="albums__add">
+                            <a href="#create-album" class="albums__add popup-link">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#new-album"></use>
                                 </svg>
@@ -20507,9 +20513,10 @@
                                                                         Сподобалося 126
                                                                     </div>
                                                                 </div>
-                                                                <div class="pages-profile__btn btn_dark">
+                                                                <a href="#del-page"
+                                                                    class="pages-profile__btn btn_dark popup-link">
                                                                     Видалити
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                             <li class="pages-profile__item">
                                                                 <div class="pages-profile__image">
@@ -20524,9 +20531,10 @@
                                                                         Сподобалося 1264
                                                                     </div>
                                                                 </div>
-                                                                <div class="pages-profile__btn btn_dark">
+                                                                <a href="#del-page"
+                                                                    class="pages-profile__btn btn_dark popup-link">
                                                                     Видалити
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul class="pages-profile__recommend">
@@ -20543,9 +20551,9 @@
                                                                         Сподобалось 5 220
                                                                     </div>
                                                                 </div>
-                                                                <div class="pages-profile__btn btn_green">
+                                                                <a href="#" class="pages-profile__btn btn_green">
                                                                     Відписатися
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                             <li class="pages-profile__item">
                                                                 <div class="pages-profile__image">
@@ -20560,9 +20568,9 @@
                                                                         Сподобалось 126
                                                                     </div>
                                                                 </div>
-                                                                <div class="pages-profile__btn btn_green">
+                                                                <a href="#" class="pages-profile__btn btn_green">
                                                                     Відписатися
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -20592,9 +20600,10 @@
                                                                         Учасників 10 655
                                                                     </div>
                                                                 </div>
-                                                                <div class="groups-profile__btn btn_dark">
+                                                                <a href="#del-group"
+                                                                    class="groups-profile__btn btn_dark popup-link">
                                                                     Видалити
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                             <li class="groups-profile__item">
                                                                 <div class="groups-profile__image">
@@ -20609,9 +20618,10 @@
                                                                         Учасників 345
                                                                     </div>
                                                                 </div>
-                                                                <div class="groups-profile__btn btn_dark">
+                                                                <a href="#del-group"
+                                                                    class="groups-profile__btn btn_dark popup-link">
                                                                     Видалити
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                         <ul class="groups-profile__recommend">
@@ -20628,9 +20638,9 @@
                                                                         Сподобалось 5 220
                                                                     </div>
                                                                 </div>
-                                                                <div class="groups-profile__btn btn_green">
+                                                                <a href="#" class="groups-profile__btn btn_green">
                                                                     У групі
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                             <li class="groups-profile__item">
                                                                 <div class="groups-profile__image">
@@ -20645,9 +20655,9 @@
                                                                         Сподобалось 126
                                                                     </div>
                                                                 </div>
-                                                                <div class="groups-profile__btn btn_green">
+                                                                <a href="#" class="groups-profile__btn btn_green">
                                                                     У групі
-                                                                </div>
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -21406,7 +21416,7 @@
             </div>
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Завантажити</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Завантажити</a>
             </div>
         </div>
     </div>
@@ -21449,6 +21459,25 @@
     </div>
 </div>
 
+<div class="popup popup-confirm" id="create-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Назва альбома</h2>
+            <input type="text" class="popup-confirm__name" placeholder="Введіть назву альбому">
+            <div class="popup-confirm__btns">
+
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="popup popup-confirm" id="edit-album">
     <div class="popup__body">
         <div class="popup__content">
@@ -21462,7 +21491,7 @@
             <div class="popup-confirm__btns">
 
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -21529,7 +21558,7 @@
 
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -21617,7 +21646,7 @@
             </div>
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -21938,7 +21967,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20230105155850"></script>
+    <script src="js/app.min.js?_v=20230112223032"></script>
 </body>
 
 </html>

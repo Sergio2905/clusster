@@ -4,7 +4,7 @@
 <head>
     <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230105155850">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230112223032">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -30,6 +30,12 @@
                 </svg>
                 <span class="header__help">
                     Скопіювати
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#check"></use>
+                    </svg>
+                </span>
+                <span class="header__help_done">
+                    Скопійовано
                     <svg>
                         <use xlink: href="img/icons/icons.svg#check"></use>
                     </svg>
@@ -1945,7 +1951,7 @@
             </div>
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Завантажити</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Завантажити</a>
             </div>
         </div>
     </div>
@@ -1988,6 +1994,25 @@
     </div>
 </div>
 
+<div class="popup popup-confirm" id="create-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Назва альбома</h2>
+            <input type="text" class="popup-confirm__name" placeholder="Введіть назву альбому">
+            <div class="popup-confirm__btns">
+
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="popup popup-confirm" id="edit-album">
     <div class="popup__body">
         <div class="popup__content">
@@ -2001,7 +2026,7 @@
             <div class="popup-confirm__btns">
 
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -2068,7 +2093,7 @@
 
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -2156,7 +2181,7 @@
             </div>
             <div class="popup-confirm__btns">
                 <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
-                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+                <a href="#" class="popup-confirm__btn_green close-popup">Зберегти</a>
             </div>
         </div>
     </div>
@@ -2477,7 +2502,7 @@
 </div>
 
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20230105155850"></script>
+    <script src="js/app.min.js?_v=20230112223032"></script>
 </body>
 
 </html>
